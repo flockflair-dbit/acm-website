@@ -31,8 +31,20 @@ eventData=[
     {
         id:"1",
         imgSrc:"assets/images/event/pic4.jpg",
-        title:"1Education Autumn Tour 2019",
-        content:"1Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since thn",
+        title:"C / C++ Workshop",
+        content:`
+        <p>In an attempt of increasing the knowledge of our college students, ACM DBIT organized the C/C++ workshop, which was held on 03rd September, 2020 from 11AM to 4PM. The main aim of this workshop was to brush up the C/C++ language coding of the students and also to make them ready for the future competitive environments and interviews.</p>
+
+
+
+<p>The workshop started of with Manasi Anantpurkar giving a brief about the importance of C/C++ language in today’s world, its use in interviews as a base for coders to get into jobs and also its application in various things. Followed by Hayden Cordeiro who started off with basic C/C++ syntax, which IDEs are preferred for both Windows and Linus. As time went complexity of the language increased. The participants were given a open for all chat box, wherein at any point of time they could stop the mentor and ask a doubt.</p>
+
+ 
+<p>Later, Pakshal Ranawat took the next phase of the workshop and taught the remaining parts of C/C++ language which was the more advanced use of it. Then came the theory part which was handled by Grejo Joby, followed by Hayden Cordeiro who explained the code of a sample project and explained the proper application of this language with the help of the examples. Pakshal Ranawat explained different output questions which are usually asked in exams and interviews. A last and final doubt session was conducted wherein all the participants enthusiastically came up with doubts and problems and our group of resource persons handled them in a proper manner. The participants were asked to fill out feedback forms that were supplied to them via WhatsApp.</p>
+
+ 
+<p>The workshop thus came to an end.</p>
+        `,
         fullDate:"20/06/2021",
         date:"26",
         month:"20/06/2021"
