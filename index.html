@@ -115,7 +115,9 @@
 								</li>
 								<li ><a href="portfolio.html">Gallery</a>
 								<li ><a href="event.html">Blog</a>
+									<li ><a href="courses.html">Courses</a>
 									<li ><a href="reports.html">Reports</a>
+										<li ><a href="team-2021.html">Team</a>
 								<li><a href="javascript:;">Pages <i class="fa fa-chevron-down"></i></a><li>
 									<ul class="sub-menu">
 										<li><a href="javascript:;">About<i class="fa fa-angle-right"></i></a>
@@ -519,7 +521,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="courses-carousel owl-carousel owl-btn-1 col-12 p-lr0">
+							<div class="courses-carousel owl-carousel owl-btn-1 col-12 p-lr0" id="coursesHere">
 								<div class="item">
 									<div class="cours-bx">
 										<div class="action-box">
@@ -636,6 +638,31 @@
 						</div>
 					</div>
 				</div>
+				<script src="assets/js/courseData.js"></script>
+
+				<script>
+					var tempTotal=""
+					for(var i=0;i<courseData.length;i++){
+						tempTotal+=`
+
+					<div class="item">
+									<div class="cours-bx">
+										<div class="action-box">
+											<img src="https://img.youtube.com/vi/${courseData[i].videoID}/mqdefault.jpg" loading="lazy" alt="">
+											<a href="#" class="btn">${courseData[i].date}</a>
+										</div>
+										<div class="info-bx text-center">
+											<h5><a href="https://www.youtube.com/watch?v=${courseData[i].videoID}">${courseData[i].title}</a></h5>
+											<span>${courseData[i].taughtBy}</span>
+										</div>
+			
+									</div>
+								</div>
+						`
+					}
+					document.getElementById("coursesHere").innerHTML="";
+					document.getElementById("coursesHere").innerHTML=tempTotal;
+				</script>
 				<!-- Popular Courses END -->
 
 				<!-- Form -->
