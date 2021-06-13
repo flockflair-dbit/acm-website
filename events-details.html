@@ -44,7 +44,8 @@
 	<!-- STYLESHEETS ============================================= -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link class="skin" rel="stylesheet" type="text/css" href="assets/css/color/color-1.css">
-	<script src="assets/js/eventData.js"></script>
+
+	<script src="assets/js/eventData.js" ></script>
 
 </head>
 
@@ -181,7 +182,22 @@
 			<!-- contact area END -->
 
 			<script>
-				var selected = parseInt(localStorage.getItem("selectedEvent"));
+				function FillData(){
+				
+				var temp = (window.location.href.split('#')[1]);
+				var selected=-1;
+				for(var i=0;i<eventData.length;i++){
+				
+					if(temp==eventData[i].slug){
+						selected=i;
+					}
+				}
+
+				
+				if(selected<0){
+					setTimeout(FillData,500)
+					return
+				}
 				console.log(selected)
 				document.getElementById("eventDetailsData").innerHTML = `
 			<div class="">
@@ -208,7 +224,9 @@
 						</div>
 
 			`
-
+				
+					}
+				setTimeout(FillData,500)
 			</script>
 
 

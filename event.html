@@ -256,52 +256,51 @@
 	<script src="assets/js/eventData.js"></script>
 
 	<script>
-		var allEvents = ""
+					function generateEventBlock({ date, month, fullDate, content, title, imgSrc ,slug}) {
+				return `
 
-		function redirectAndSet(id) {
-			localStorage.setItem("selectedEvent", id);
-			window.location = `./events-details.html`;
+			<li class="action-card col-lg-6 col-md-6 col-sm-12 happening">
+										<div class="event-bx m-b30">
+											<div class="action-box">
+												<img src="${imgSrc}" alt="" loading="lazy">
+											</div>
+											<div class="info-bx d-flex">
+												<div>
+													<div class="event-time">
+														<div class="event-date">${date}</div>
+														<div class="event-month">${month}</div>
+													</div>
+												</div>
+												<div class="event-info">
+													<h4 class="event-title"><a href="events-details.html#${slug}">${title}</h4>
+													<ul class="media-post">
+														<li><a href="#"><i class="fa fa-clock-o"></i> ${fullDate}</a></li>
+													
+													</ul>
+													<p>${content.substring(0, 145)}</p>
+												</div>
+											</div>
+										</div>
+									</li>
+			`
+			}
+		function buildEvents(){
+			console.log("here")
+			var allEvents = ""
+			for (var i = 0; i < eventData.length; i++) {
 
+				allEvents += generateEventBlock(eventData[i])
+			}
+
+			document.getElementById("masonry").innerHTML = allEvents
+			if(allEvents==""){
+		setTimeout(buildEvents,100)
+
+			}
 		}
+		setTimeout(buildEvents,500)
+		// buildEvents();
 
-		function generateEventBlock({ date, month, fullDate, content, title, imgSrc, id }) {
-			return `
-
-    <li class="action-card col-lg-6 col-md-6 col-sm-12 happening">
-                                    <div class="event-bx m-b30">
-                                        <div class="action-box">
-                                            <img src="${imgSrc}" alt="" loading="lazy">
-                                        </div>
-                                        <div class="info-bx d-flex">
-                                            <div>
-                                                <div class="event-time">
-                                                    <div class="event-date">${date}</div>
-                                                    <div class="event-month">${month}</div>
-                                                </div>
-                                            </div>
-                                            <div class="event-info">
-                                                <h4 class="event-title" onClick="redirectAndSet(${id})">${title}</h4>
-                                                <ul class="media-post">
-                                                    <li><a href="#"><i class="fa fa-clock-o"></i> ${fullDate}</a></li>
-                                                   
-                                                </ul>
-                                                <p>${content.substring(0, 145)}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-    `
-		}
-
-		for (var i = 0; i < eventData.length; i++) {
-
-			allEvents += generateEventBlock(eventData[i])
-		}
-
-
-
-
-		document.getElementById("masonry").innerHTML = allEvents
 	</script>
 
 	<script src="assets/js/jquery.min.js"></script>
