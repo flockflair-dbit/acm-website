@@ -28,11 +28,12 @@ async function getEventDataFromServer(){
            
            blogid:curr.id,
            content:curr.blog.html,
+           contentRaw:curr.blog.text,
            title:curr.title,
            imgSrc:curr.thumbnail.url,
            slug:curr.slug,
            fullDate:curr.date,
-           date:curr.date_number,
+           date:curr.date.slice(-2),
            month:curr.month_name,
            footerImages:curr.images,
         

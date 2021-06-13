@@ -257,7 +257,14 @@
 	<script src="assets/js/eventData.js"></script>
 
 	<script>
-		function generateEventBlock({ date, month, fullDate, content, title, imgSrc, slug }) {
+		function generateEventBlock({ date, month, fullDate, contentRaw, title, imgSrc, slug }) {
+
+			tempCon=String(contentRaw).split("\\n")
+			description=""
+			for(var i=0;i<tempCon.length;i++){
+				description+=tempCon[i]
+			}
+			console.log(description)
 			return `
 			<li class="action-card col-lg-4 col-md-6 col-sm-12">
 										<div class="event-bx m-b30">
@@ -277,16 +284,17 @@
 														<li><a href="#"><i class="fa fa-clock-o"></i> ${fullDate}</a></li>
 													
 													</ul>
-													<p style="word-break: break-word;">${content.substring(0, 145)}...</p>
+													<p style="word-break: break-word;">${description.substring(0, 145)}...</p>
 												</div>
 											</div>
 										</div>
 									</li>
 									
 								`
-		}
+		
+							}
 		function buildEvents() {
-			console.log("here")
+		
 			var allEvents = ""
 			for (var i = 0; i < eventData.length; i++) {
 
@@ -295,7 +303,7 @@
 
 			document.getElementById("masonry").innerHTML = allEvents
 			if (allEvents == "") {
-				setTimeout(buildEvents, 100)
+				setTimeout(buildEvents, 500)
 
 			}
 		}
