@@ -29,11 +29,12 @@ async function getEventDataFromServer(){
            blogid:curr.id,
            content:curr.blog.html,
            title:curr.title,
-           imgSrc:"assets/images/event/flashposter.jpg",
+           imgSrc:curr.thumbnail.url,
            slug:curr.slug,
            fullDate:curr.date,
            date:curr.date_number,
-           month:curr.month_name
+           month:curr.month_name,
+           footerImages:curr.images,
         
         }
         eventData.push(temp)

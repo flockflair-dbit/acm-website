@@ -195,11 +195,12 @@
 
 				
 				if(selected<0){
-					setTimeout(FillData,500)
+					setTimeout(FillData,100)
 					return
 				}
 				console.log(selected)
-				document.getElementById("eventDetailsData").innerHTML = `
+				var tempeventDetailsData=""
+				tempeventDetailsData = `
 			<div class="">
 							<div class="courses-post">
 								<div class="ttr-post-media media-effect">
@@ -222,8 +223,36 @@
 								</div>
 							</div>
 						</div>
-
+						<div class="clearfix">
+						<ul id="masonry" class="ttr-gallery-listing magnific-image row" style="list-style: none;">
+						
 			`
+			for(var i=0;i<eventData[selected].footerImages.length;i++){
+				tempeventDetailsData+=`
+			<li class="action-card col-lg-3 col-md-4 col-sm-6 book">
+							<div class="ttr-box portfolio-bx">
+								<div class="ttr-media media-ov2 media-effect">
+									<a href="javascript:void(0);">
+										<img src="${eventData[selected].footerImages[0].url}" alt="" loading="lazy"> 
+									</a>
+									<div class="ov-box">
+										<div class="overlay-icon align-m"> 
+											<a href="${eventData[selected].footerImages[0].url}" class="magnific-anchor" title="${eventData[selected].footerImages[0].fileName}">
+												<i class="ti-search"></i>
+											</a>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</li>	`
+			}
+			tempeventDetailsData+=`
+							
+						</ul>
+					</div>
+			`
+			document.getElementById("eventDetailsData").innerHTML=tempeventDetailsData
 				
 					}
 				setTimeout(FillData,500)
