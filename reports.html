@@ -198,7 +198,7 @@
 														{
 															continue
 														}
-														if(i==2){
+														if(i==0){
 														buildYears+=`
 														<li class="nav-item px-3" role="presentation">
 														<a class="btn nav-link active" id="pills-${reportData[i].year}-tab" data-toggle="pill"
@@ -366,7 +366,7 @@
 				continue
 			}
 			
-			if(i==2){
+			if(i==0){
 
 			
 			totalReports+=`
@@ -410,7 +410,7 @@
 		</div>
 			`
 		}
-		// console.log(totalReports)
+		// console.log(reportData)
 		document.getElementById("pills-tabContent").innerHTML=totalReports
 		}
 AddReports()
