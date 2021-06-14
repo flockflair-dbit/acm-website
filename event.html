@@ -266,10 +266,10 @@
 			}
 			// console.log(description)
 			return `
-			<li class="action-card col-lg-4 col-md-6 col-sm-12">
+			<li class="action-card col-lg-6 col-md-6 col-sm-12">
 										<div class="event-bx m-b30">
 											<div class="action-box">
-												<img src="${imgSrc}" style="max-height: 280px;" alt="" loading="lazy">
+												<img src="${imgSrc}" style="height: 280px;" alt="" loading="lazy">
 											</div>
 											<div class="info-bx d-flex">
 												<div>
@@ -279,12 +279,12 @@
 													</div>
 												</div>
 												<div class="event-info">
-													<h4 class="event-title"><a href="events-details.html#${slug}">${title}</h4>
+													<h4 class="event-title eventsTitleLines"><a href="events-details.html#${slug}">${title}</h4>
 													<ul class="media-post">
 														<li><a href="#"><i class="fa fa-clock-o"></i> ${fullDate}</a></li>
 													
 													</ul>
-													<p style="word-break: break-word;">${description.substring(0, 145)}...</p>
+													<p class="eventShortDesc" style="word-break: break-word;">${description.substring(0, 200)}...</p>
 												</div>
 											</div>
 										</div>
