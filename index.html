@@ -228,9 +228,8 @@
 									An Initiative By DBIT Computer Dept.
 								</div>
 								<!-- LAYER NR. 4 -->
-								<div
-								onclick="location.href='./portfolio.html'" 
-								class="tp-caption Newspaper-Button rev-btn " id="slide-100-layer-5"
+								<div onclick="location.href='./portfolio.html'"
+									class="tp-caption Newspaper-Button rev-btn " id="slide-100-layer-5"
 									data-x="['center','center','center','center']" data-hoffset="['90','80','75','90']"
 									data-y="['top','top','top','top']" data-voffset="['400','400','400','420']"
 									data-width="none" data-height="none" data-whitespace="nowrap" data-type="button"
@@ -241,9 +240,8 @@
 									data-paddingbottom="[12,12,12,12]" data-paddingleft="[30,35,35,15]"
 									style="z-index: 8; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; background-color:var(--primary) !important; border:0; border-radius:30px; margin-right:5px;">
 									Our Gallery </div>
-								<div onclick="location.href='./event.html'" 
-								class="tp-caption Newspaper-Button rev-btn" id="slide-100-layer-6"
-									data-x="['center','center','center','center']"
+								<div onclick="location.href='./event.html'" class="tp-caption Newspaper-Button rev-btn"
+									id="slide-100-layer-6" data-x="['center','center','center','center']"
 									data-hoffset="['-90','-80','-75','-90']" data-y="['top','top','top','top']"
 									data-voffset="['400','400','400','420']" data-width="none" data-height="none"
 									data-whitespace="nowrap" data-type="button" data-responsive_offset="on"
@@ -253,7 +251,7 @@
 									data-paddingtop="[12,12,12,12]" data-paddingright="[30,35,35,15]"
 									data-paddingbottom="[12,12,12,12]" data-paddingleft="[30,35,35,15]"
 									style="z-index: 8; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; border-radius:30px;">
-									
+
 									Read Our Blog</div>
 							</li>
 
@@ -622,411 +620,313 @@
 
 
 				<!-- Form END -->
-				<div class="section-area section-sp2">
+				<div class="section-area section-sp2 mb-5 pb-5">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12 text-center heading-bx">
 								<h2 class="title-head m-b0">Recent <span>Events</span></h2>
-								<p class="m-b0">Recent Events To Feed Brain. Teknack is one of the amazing battlefields provided by ACM for students of not
-									just DBIT but also of other colleges to boost up their creative skills and pump
-									up their technical skills by amalgamating with newer ideas and facts to build up
-									Games that give the players an experience that would last with them forever</p>
+								<p class="m-b0">Recent Events To Feed Brain. <br>We host a series of exceptional activities
+									throughout the year. The kinds of activities a student chapter can undertake are
+									endless, depending on the creativity and interest of each group. Here are the academic, social, and professional activities we have conducted.
+								</p>
 							</div>
 						</div>
-						<!-- <div class="row">
-							<div id="upcomingEvents"
-								class="upcoming-event-carousel owl-carousel owl-btn-center-lr owl-btn-1 col-12 p-lr0  m-b30">
-
-								<div class="item">
-									<div class="event-bx">
-										<div class="action-box">
-											<img src="assets/images/event/pic3.jpg" alt="">
-										</div>
-										<div class="info-bx d-flex">
-											<div>
-												<div class="event-time">
-													<div class="event-date">29</div>
-													<div class="event-month">October</div>
-												</div>
-											</div>
-											<div class="event-info">
-												<h4 class="event-title"><a href="#">Education Autumn Tour 2019</a></h4>
-												<ul class="media-post">
-													<li><a href="#"><i class="fa fa-clock-o"></i> 7:00am 8:00am</a></li>
-													<li><a href="#"><i class="fa fa-map-marker"></i> Berlin, Germany</a>
-													</li>
-												</ul>
-												<p>Lorem Ipsum is simply dummy text of the printing and typesetting
-													industry. Lorem Ipsum has been the industry's standard dummy text
-													ever since the..</p>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									<div class="event-bx">
-										<div class="action-box">
-											<img src="assets/images/event/pic2.jpg" alt="">
-										</div>
-										<div class="info-bx d-flex">
-											<div>
-												<div class="event-time">
-													<div class="event-date">29</div>
-													<div class="event-month">October</div>
-												</div>
-											</div>
-											<div class="event-info">
-												<h4 class="event-title"><a href="#">Education Autumn Tour 2019</a></h4>
-												<ul class="media-post">
-													<li><a href="#"><i class="fa fa-clock-o"></i> 7:00am 8:00am</a></li>
-													<li><a href="#"><i class="fa fa-map-marker"></i> Berlin, Germany</a>
-													</li>
-												</ul>
-												<p>Lorem Ipsum is simply dummy text of the printing and typesetting
-													industry. Lorem Ipsum has been the industry's standard dummy text
-													ever since the..</p>
-											</div>
-										</div>
-									</div>
-								</div>
+						<div class="row justify-content-center mb-5 pb-5">
+			
+							<div class="text-center">
+								<a href="event.html" class="btn">View All Events</a>
 							</div>
-						</div> -->
-						<div class="text-center">
-							<a href="event.html" class="btn">View All Event</a>
 						</div>
 					</div>
-				</div> 
-				<script src="assets/js/eventData.js"></script>
+				
 
-				<script>
-					var allEvents = ""
-
-					function redirectAndSet(id) {
-						localStorage.setItem("selectedEvent", id);
-						window.location = `./events-details.html`;
-
-					}
-
-					function generateEventBlock({ date, month, fullDate, content, title, imgSrc, id }) {
-						return `
-					<div class="item">
-									<div class="event-bx">
-										<div class="action-box">
-											<img src="${imgSrc}"  loading="lazy"  alt="">
+					<!-- Testimonials -->
+					<div class="section-area section-sp2 bg-fix ovbl-dark join-bx"
+						style="background-image:url(assets/images/background/bg-teknack2.jpg);">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 text-white heading-bx left">
+									<h2 class="title-head text-uppercase">what people <span>say</span></h2>
+									<p>Learning from mistakes, encouraged by suppoters, and motivated by inspiration, we
+										are
+										moving forward each day.</p>
+								</div>
+							</div>
+							<div class="testimonial-carousel owl-carousel owl-btn-1 col-12 p-lr0">
+								<div class="item">
+									<div class="testimonial-bx">
+										<div class="testimonial-thumb">
+											<img src="assets/images/testimonials/pic2.jpg" alt="">
 										</div>
-										<div class="info-bx d-flex">
-											<div>
-												<div class="event-time">
-													<div class="event-date">${date}</div>
-													<div class="event-month">${month}</div>
-												</div>
-											</div>
-											<div class="event-info">
-												<h4 class="event-title" onClick="redirectAndSet(${id})">${title}</h4>
-												<ul class="media-post">
-													<li><a href="#"><i class="fa fa-clock-o"></i> ${fullDate}</a></li>
-
-													</li>
-												</ul>
-											
-
-											</div>
+										<div class="testimonial-info">
+											<h5 class="name">Glen Martin</h5>
+											<p>Software Engineer, LTI</p>
+										</div>
+										<div class="testimonial-content">
+											<p>ACM - DBIT is always giving you an upper edge. If you have an idea, love
+												to
+												innovate, design, want to learn, teach or just talk tech this is the
+												perfect
+												place for you to be at.</p>
 										</div>
 									</div>
 								</div>
-					`
-					}
-
-					for (var i = 0; i < eventData.length; i++) {
-
-						allEvents += generateEventBlock(eventData[i])
-					}
-
-
-
-					document.getElementById("upcomingEvents").innerHTML = ""
-					document.getElementById("upcomingEvents").innerHTML = allEvents
-				</script>
-
-
-
-
-				<!-- Testimonials -->
-				<div class="section-area section-sp2 bg-fix ovbl-dark"
-					style="background-image:url(assets/images/background/bg3.jpg);">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12 text-white heading-bx left">
-								<h2 class="title-head text-uppercase">what people <span>say</span></h2>
-								<p>Learning from mistakes, encouraged by suppoters, and motivated by inspiration, we are
-									moving forward each day.</p>
-							</div>
-						</div>
-						<div class="testimonial-carousel owl-carousel owl-btn-1 col-12 p-lr0">
-							<div class="item">
-								<div class="testimonial-bx">
-									<div class="testimonial-thumb">
-										<img src="assets/images/testimonials/pic2.jpg" alt="">
-									</div>
-									<div class="testimonial-info">
-										<h5 class="name">Glen Martin</h5>
-										<p>Software Engineer, LTI</p>
-									</div>
-									<div class="testimonial-content">
-										<p>ACM - DBIT is always giving you an upper edge. If you have an idea, love to
-											innovate, design, want to learn, teach or just talk tech this is the perfect
-											place for you to be at.</p>
+								<div class="item">
+									<div class="testimonial-bx">
+										<div class="testimonial-thumb">
+											<img src="assets/images/testimonials/pic2.jpg" alt="">
+										</div>
+										<div class="testimonial-info">
+											<h5 class="name">Sean D'Cruz</h5>
+											<p>Chairperson (2019-20)</p>
+										</div>
+										<div class="testimonial-content">
+											<p>ACM DBIT is not doubt the one place when it comes to learning,
+												experimenting
+												new possibilities, exploring new ideas and so on and so forth .One could
+												do
+												everything being a part of ACM and that's exactly what helped me, ACM
+												DBIT
+												is the one major reason that helped me achieve my goals.</p>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="item">
-								<div class="testimonial-bx">
-									<div class="testimonial-thumb">
-										<img src="assets/images/testimonials/pic2.jpg" alt="">
-									</div>
-									<div class="testimonial-info">
-										<h5 class="name">Sean D'Cruz</h5>
-										<p>Chairperson (2019-20)</p>
-									</div>
-									<div class="testimonial-content">
-										<p>ACM DBIT is not doubt the one place when it comes to learning, experimenting
-											new possibilities, exploring new ideas and so on and so forth .One could do
-											everything being a part of ACM and that's exactly what helped me, ACM DBIT
-											is the one major reason that helped me achieve my goals.</p>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="testimonial-bx">
-									<div class="testimonial-thumb">
-										<img src="assets/images/testimonials/pic2.jpg" alt="">
-									</div>
-									<div class="testimonial-info">
-										<h5 class="name">Cherag Bachhawat</h5>
-										<p>Founder, CV Dragon</p>
-									</div>
-									<div class="testimonial-content">
-										<p>What happens when the entire Initiative-Planning-Execution is done by
-											students! A great interaction and high respect for coordinating team!!
-											Special thanks to entire team of DBIT-Mumbai for inviting me !</p>
+								<div class="item">
+									<div class="testimonial-bx">
+										<div class="testimonial-thumb">
+											<img src="assets/images/testimonials/pic2.jpg" alt="">
+										</div>
+										<div class="testimonial-info">
+											<h5 class="name">Cherag Bachhawat</h5>
+											<p>Founder, CV Dragon</p>
+										</div>
+										<div class="testimonial-content">
+											<p>What happens when the entire Initiative-Planning-Execution is done by
+												students! A great interaction and high respect for coordinating team!!
+												Special thanks to entire team of DBIT-Mumbai for inviting me !</p>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- Testimonials END -->
+					<!-- Testimonials END -->
 
-				<div class="section-area section-sp1">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12 heading-bx left">
-								<h2 class="title-head text-uppercase">Reach Out <span>To Us</span></h2>
-								<!-- <p>Learning from mistakes, encouraged by suppoters, and motivated by inspiration, we are
+					<div class="section-area section-sp1">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 heading-bx left">
+									<h2 class="title-head text-uppercase">Reach Out <span>To Us</span></h2>
+									<!-- <p>Learning from mistakes, encouraged by suppoters, and motivated by inspiration, we are
 									moving forward each day.</p> -->
-							</div>
-						</div>
-						<div class="row justify-content-center">
-							<div class="col-lg-7 col-md-7 col-sm-7 m-b30">
-								<div class="feature-container">
-
-									<div class="icon-content">
-										<h5 class="ttr-tilte">Address</h5>
-										<p>Premier Automobiles Road, Opp. HDIL Premier Exotica, <br>Kurla West, Mumbai,
-											Maharashtra 400070</p>
-									</div>
 								</div>
 							</div>
-							<div class="col-lg-5 col-md-5 col-sm-5 m-b30">
-								<div class="feature-container">
+							<div class="row justify-content-center">
+								<div class="col-lg-7 col-md-7 col-sm-7 m-b30">
+									<div class="feature-container">
 
-									<div class="icon-content">
-										<h5 class="ttr-tilte">Email</h5>
-										<p>dbitacm@gmail.com</p>
+										<div class="icon-content">
+											<h5 class="ttr-tilte">Address</h5>
+											<p>Premier Automobiles Road, Opp. HDIL Premier Exotica, <br>Kurla West,
+												Mumbai,
+												Maharashtra 400070</p>
+										</div>
 									</div>
 								</div>
+								<div class="col-lg-5 col-md-5 col-sm-5 m-b30">
+									<div class="feature-container">
+
+										<div class="icon-content">
+											<h5 class="ttr-tilte">Email</h5>
+											<p>dbitacm@gmail.com</p>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!-- contact area END -->
+			</div>
+			<!-- Content END-->
+			<!-- Footer ==== -->
+			<footer>
+				<div class="footer-top">
+					<div class="pt-exebar">
+						<div class="container">
+							<div class="d-flex align-items-stretch">
+								<div class="pt-logo mr-auto">
+									<a href="index.html" aria-label="Home Page" rel="noopner"><img
+											src="assets/images/2.png" alt="" /></a>
+								</div>
+								<div class="pt-logo mr-auto">
+									<a rel="noopener" href="https://www.dbit.in/" target="_blank"
+										aria-label="Dbit website"><img src="assets/images/DBIT.png" alt="" width="75px"
+											class="img-fluid"></a>
+								</div>
+								<div class="pt-logo mr-auto">
+									<a rel="noopener" href="https://dbit.acm.org/teknack"
+										aria-label="Teknack website"><img src="assets/images/teknack.png" alt=""
+											width="75px" class="img-fluid"></a>
+								</div>
+								<div class="pt-social-link">
+									<ul class="list-inline m-a0">
+
+										<li><a rel="noopener" href="https://www.instagram.com/acmdbitt/?hl=en"
+												target="_blank" aria-label="instagram" class="btn-link"><i
+													class="fa fa-instagram"></i></a></li>
+										<li><a rel="noopener" href="https://www.linkedin.com/company/acm-dbit/"
+												target="_blank" aria-label="linkedin" class="btn-link"><i
+													class="fa fa-linkedin"></i></a></li>
+										<li><a rel="noopener" href="https://twitter.com/acmdbit?lang=en" target="_blank"
+												aria-label="twitter" class="btn-link"><i class="fa fa-twitter"></i></a>
+										</li>
+										<li><a rel="noopener"
+												href="https://www.youtube.com/channel/UC58zaYJo0LL_aJXvqLDJGLA"
+												aria-label="youtube" target="_blank" class="btn-link"><i
+													class="fa fa-youtube-play"></i></a></li>
+										<li><a rel="noopener" href="https://www.facebook.com/ACMDBIT/"
+												aria-label="facebook" target="_blank" class="btn-link"><i
+													class="fa fa-facebook"></i></a></li>
+									</ul>
+								</div>
+
 							</div>
 
-
 						</div>
+
+					</div>
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 text-center mb-3"> <a target="_blank"
+								href="index.html">&copy;2021 ACM DBIT Student Chapter. All Rights Reserved.</a></div>
 					</div>
 				</div>
 
-			</div>
-			<!-- contact area END -->
+			</footer>
+			<!-- Footer END ==== -->
+			<button class="back-to-top fa fa-chevron-up" aria-label="Back To Top"></button>
 		</div>
-		<!-- Content END-->
-		<!-- Footer ==== -->
-		<footer>
-			<div class="footer-top">
-				<div class="pt-exebar">
-					<div class="container">
-						<div class="d-flex align-items-stretch">
-							<div class="pt-logo mr-auto">
-								<a href="index.html" aria-label="Home Page" rel="noopner"><img src="assets/images/2.png"
-										alt="" /></a>
-							</div>
-							<div class="pt-logo mr-auto">
-								<a rel="noopener" href="https://www.dbit.in/" target="_blank" aria-label="Dbit website"><img
-										src="assets/images/DBIT.png" alt="" width="75px" class="img-fluid"></a>
-							</div>
-							<div class="pt-logo mr-auto">
-								<a rel="noopener" href="https://dbit.acm.org/teknack" aria-label="Teknack website"><img
-										src="assets/images/teknack.png" alt="" width="75px" class="img-fluid"></a>
-							</div>
-							<div class="pt-social-link">
-								<ul class="list-inline m-a0">
 
-									<li><a rel="noopener" href="https://www.instagram.com/acmdbitt/?hl=en"
-											target="_blank" aria-label="instagram" class="btn-link"><i
-												class="fa fa-instagram"></i></a></li>
-									<li><a rel="noopener" href="https://www.linkedin.com/company/acm-dbit/"
-											target="_blank" aria-label="linkedin" class="btn-link"><i
-												class="fa fa-linkedin"></i></a></li>
-									<li><a rel="noopener" href="https://twitter.com/acmdbit?lang=en" target="_blank"
-											aria-label="twitter" class="btn-link"><i class="fa fa-twitter"></i></a></li>
-									<li><a rel="noopener"
-											href="https://www.youtube.com/channel/UC58zaYJo0LL_aJXvqLDJGLA"
-											aria-label="youtube" target="_blank" class="btn-link"><i
-												class="fa fa-youtube-play"></i></a></li>
-									<li><a rel="noopener" href="https://www.facebook.com/ACMDBIT/" aria-label="facebook"
-											target="_blank" class="btn-link"><i class="fa fa-facebook"></i></a></li>
-								</ul>
-							</div>
+		<!-- External JavaScripts -->
 
-						</div>
-
-					</div>
-
-				</div>
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12 text-center mb-3"> <a target="_blank"
-							href="index.html">&copy;2021 ACM DBIT Student Chapter. All Rights Reserved.</a></div>
-				</div>
-			</div>
-
-		</footer>
-		<!-- Footer END ==== -->
-		<button class="back-to-top fa fa-chevron-up" aria-label="Back To Top"></button>
-	</div>
-
-	<!-- External JavaScripts -->
-
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/vendors/bootstrap/js/popper.min.js"></script>
-	<script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-	<script src="assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
-	<script src="assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
-	<script src="assets/vendors/magnific-popup/magnific-popup.js"></script>
-	<script src="assets/vendors/counter/waypoints-min.js"></script>
-	<script src="assets/vendors/counter/counterup.min.js"></script>
-	<script src="assets/vendors/imagesloaded/imagesloaded.js"></script>
-	<script src="assets/vendors/masonry/masonry.js"></script>
-	<script src="assets/vendors/masonry/filter.js"></script>
-	<script src="assets/vendors/owl-carousel/owl.carousel.js"></script>
-	<script src="assets/js/functions.js"></script>
-	<script src="assets/js/contact.js"></script>
-	<!-- <script src='assets/vendors/switcher/switcher.js'></script> -->
-	<!-- Revolution JavaScripts Files -->
-	<script src="assets/vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
-	<script src="assets/vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
-	<!-- Slider revolution 5.0 Extensions  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-	<script src="assets/vendors/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-	<script src="assets/vendors/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-	<script src="assets/vendors/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-	<script src="assets/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-	<script src="assets/vendors/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-	<script src="assets/vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-	<script src="assets/vendors/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-	<script src="assets/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-	<script src="assets/vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
-	<script>
-		jQuery(document).ready(function () {
-			var ttrevapi;
-			var tpj = jQuery;
-			if (tpj("#rev_slider_486_1").revolution == undefined) {
-				revslider_showDoubleJqueryError("#rev_slider_486_1");
-			} else {
-				ttrevapi = tpj("#rev_slider_486_1").show().revolution({
-					sliderType: "standard",
-					jsFileLocation: "assets/vendors/revolution/js/",
-					sliderLayout: "fullwidth",
-					dottedOverlay: "none",
-					delay: 9000,
-					navigation: {
-						keyboardNavigation: "on",
-						keyboard_direction: "horizontal",
-						mouseScrollNavigation: "off",
-						mouseScrollReverse: "default",
-						onHoverStop: "on",
-						touch: {
-							touchenabled: "on",
-							swipe_threshold: 75,
-							swipe_min_touches: 1,
-							swipe_direction: "horizontal",
-							drag_block_vertical: false
-						}
-						,
-						arrows: {
-							style: "uranus",
-							enable: true,
-							hide_onmobile: false,
-							hide_onleave: false,
-							tmp: '',
-							left: {
-								h_align: "left",
-								v_align: "center",
-								h_offset: 10,
-								v_offset: 0
-							},
-							right: {
-								h_align: "right",
-								v_align: "center",
-								h_offset: 10,
-								v_offset: 0
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/vendors/bootstrap/js/popper.min.js"></script>
+		<script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
+		<script src="assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
+		<script src="assets/vendors/magnific-popup/magnific-popup.js"></script>
+		<script src="assets/vendors/counter/waypoints-min.js"></script>
+		<script src="assets/vendors/counter/counterup.min.js"></script>
+		<script src="assets/vendors/imagesloaded/imagesloaded.js"></script>
+		<script src="assets/vendors/masonry/masonry.js"></script>
+		<script src="assets/vendors/masonry/filter.js"></script>
+		<script src="assets/vendors/owl-carousel/owl.carousel.js"></script>
+		<script src="assets/js/functions.js"></script>
+		<script src="assets/js/contact.js"></script>
+		<!-- <script src='assets/vendors/switcher/switcher.js'></script> -->
+		<!-- Revolution JavaScripts Files -->
+		<script src="assets/vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
+		<script src="assets/vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
+		<!-- Slider revolution 5.0 Extensions  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+		<script src="assets/vendors/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+		<script src="assets/vendors/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+		<script src="assets/vendors/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+		<script src="assets/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+		<script src="assets/vendors/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+		<script src="assets/vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+		<script src="assets/vendors/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+		<script src="assets/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+		<script src="assets/vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
+		<script>
+			jQuery(document).ready(function () {
+				var ttrevapi;
+				var tpj = jQuery;
+				if (tpj("#rev_slider_486_1").revolution == undefined) {
+					revslider_showDoubleJqueryError("#rev_slider_486_1");
+				} else {
+					ttrevapi = tpj("#rev_slider_486_1").show().revolution({
+						sliderType: "standard",
+						jsFileLocation: "assets/vendors/revolution/js/",
+						sliderLayout: "fullwidth",
+						dottedOverlay: "none",
+						delay: 9000,
+						navigation: {
+							keyboardNavigation: "on",
+							keyboard_direction: "horizontal",
+							mouseScrollNavigation: "off",
+							mouseScrollReverse: "default",
+							onHoverStop: "on",
+							touch: {
+								touchenabled: "on",
+								swipe_threshold: 75,
+								swipe_min_touches: 1,
+								swipe_direction: "horizontal",
+								drag_block_vertical: false
 							}
-						},
+							,
+							arrows: {
+								style: "uranus",
+								enable: true,
+								hide_onmobile: false,
+								hide_onleave: false,
+								tmp: '',
+								left: {
+									h_align: "left",
+									v_align: "center",
+									h_offset: 10,
+									v_offset: 0
+								},
+								right: {
+									h_align: "right",
+									v_align: "center",
+									h_offset: 10,
+									v_offset: 0
+								}
+							},
 
-					},
-					viewPort: {
-						enable: true,
-						outof: "pause",
-						visible_area: "80%",
-						presize: false
-					},
-					responsiveLevels: [1240, 1024, 778, 480],
-					visibilityLevels: [1240, 1024, 778, 480],
-					gridwidth: [1240, 1024, 778, 480],
-					gridheight: [768, 600, 600, 600],
-					lazyType: "none",
-					parallax: {
-						type: "scroll",
-						origo: "enterpoint",
-						speed: 400,
-						levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 46, 47, 48, 49, 50, 55],
-						type: "scroll",
-					},
-					shadow: 0,
-					spinner: "off",
-					stopLoop: "off",
-					stopAfterLoops: -1,
-					stopAtSlide: -1,
-					shuffle: "off",
-					autoHeight: "off",
-					hideThumbsOnMobile: "off",
-					hideSliderAtLimit: 0,
-					hideCaptionAtLimit: 0,
-					hideAllCaptionAtLilmit: 0,
-					debugMode: false,
-					fallbacks: {
-						simplifyAll: "off",
-						nextSlideOnWindowFocus: "off",
-						disableFocusListener: false,
-					}
-				});
-			}
-		});
-	</script>
+						},
+						viewPort: {
+							enable: true,
+							outof: "pause",
+							visible_area: "80%",
+							presize: false
+						},
+						responsiveLevels: [1240, 1024, 778, 480],
+						visibilityLevels: [1240, 1024, 778, 480],
+						gridwidth: [1240, 1024, 778, 480],
+						gridheight: [768, 600, 600, 600],
+						lazyType: "none",
+						parallax: {
+							type: "scroll",
+							origo: "enterpoint",
+							speed: 400,
+							levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 46, 47, 48, 49, 50, 55],
+							type: "scroll",
+						},
+						shadow: 0,
+						spinner: "off",
+						stopLoop: "off",
+						stopAfterLoops: -1,
+						stopAtSlide: -1,
+						shuffle: "off",
+						autoHeight: "off",
+						hideThumbsOnMobile: "off",
+						hideSliderAtLimit: 0,
+						hideCaptionAtLimit: 0,
+						hideAllCaptionAtLilmit: 0,
+						debugMode: false,
+						fallbacks: {
+							simplifyAll: "off",
+							nextSlideOnWindowFocus: "off",
+							disableFocusListener: false,
+						}
+					});
+				}
+			});
+		</script>
 </body>
 
 </html>
