@@ -45,11 +45,11 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link class="skin" rel="stylesheet" type="text/css" href="assets/css/color/color-1.css">
 
-	<script src="assets/js/eventData.js" ></script>
+	<script src="assets/js/eventData.js"></script>
 
 </head>
 
-<body id="bg">
+<body id="bg" style="width: 100%;margin: 0;">
 
 	<div class="page-wraper">
 		<div id="loading-icon-bx"></div>
@@ -174,162 +174,148 @@
 					<div class="container">
 						<div class="row" id="eventDetailsData">
 
-
 						</div>
 					</div>
 				</div>
-			</div>
-			<!-- contact area END -->
+				<!-- contact area END -->
 
-			<script>
-				function FillData(){
-				
-				var temp = (window.location.href.split('#')[1]);
-				var selected=-1;
-				for(var i=0;i<eventData.length;i++){
-				
-					if(temp==eventData[i].slug){
-						selected=i;
-					}
-				}
+				<script>
+					function FillData() {
 
-				
-				if(selected<0){
-					setTimeout(FillData,100)
-					return
-				}
-				console.log(selected)
-				var tempeventDetailsData=""
-				tempeventDetailsData = `
-			<div class="">
-							<div class="courses-post">
-								<div class="ttr-post-media media-effect">
-									<a href="#"><img src="${eventData[selected].imgSrc}" alt=""></a>
-								</div>
-								<div class="ttr-post-info">
-									<div class="ttr-post-title ">
-										
-											<h2 class="post-title">${eventData[selected].title}</h2>
-									</div>
+						var temp = (window.location.href.split('#')[1]);
+						var selected = -1;
+						for (var i = 0; i < eventData.length; i++) {
 
+							if (temp == eventData[i].slug) {
+								selected = i;
+							}
+						}
+
+
+						if (selected < 0) {
+							setTimeout(FillData, 100)
+							return
+						}
+						console.log(selected)
+						var tempeventDetailsData = ""
+						tempeventDetailsData = `
+						<div class="courses-post px-3">
+							<div class="ttr-post-media media-effect">
+								<img src="${eventData[selected].imgSrc}" alt="">
+							</div>
+							<div class="ttr-post-info">
+								<div class="ttr-post-title ">
+									<h2 class="post-title">${eventData[selected].title}</h2>
 								</div>
 							</div>
-							<div class="courese-overview" id="overview">
-								<div class="row">
-		
-									<div class="" >
-										${eventData[selected].content}
-									</div>
-								</div>
+						</div>
+						<div class="courese-overview" id="overview" style="width:100%;">
+							<div class="px-3">
+								${eventData[selected].content}
 							</div>
 						</div>
 						<div class="clearfix">
-						<ul id="masonry" class="ttr-gallery-listing magnific-image row" style="list-style: none;">
+							<ul id="masonry" class="ttr-gallery-listing magnific-image row" style="list-style: none;">
 						
 			`
-			for(var i=0;i<eventData[selected].footerImages.length;i++){
-				tempeventDetailsData+=`
-			<li class="action-card col-lg-3 col-md-4 col-sm-6 book">
-							<div class="ttr-box portfolio-bx">
-								<div class="ttr-media media-ov2 media-effect">
-									<a href="javascript:void(0);">
-										<img src="${eventData[selected].footerImages[0].url}" alt="" loading="lazy"> 
-									</a>
-									<div class="ov-box">
-										<div class="overlay-icon align-m"> 
-											<a href="${eventData[selected].footerImages[0].url}" class="magnific-anchor" title="${eventData[selected].footerImages[0].fileName}">
-												<i class="ti-search"></i>
+						for (var i = 0; i < eventData[selected].footerImages.length; i++) {
+							tempeventDetailsData += `
+								<li class="action-card col-lg-3 col-md-4 col-sm-6 book">
+									<div class="ttr-box portfolio-bx">
+										<div class="ttr-media media-ov2 media-effect">
+											<a href="javascript:void(0);">
+												<img src="${eventData[selected].footerImages[0].url}" alt="" loading="lazy"> 
 											</a>
 										</div>
-										
 									</div>
-								</div>
-							</div>
-						</li>	`
-			}
-			tempeventDetailsData+=`
-							
-						</ul>
-					</div>
+								</li>	`
+						}
+						tempeventDetailsData += `
+							</ul>
+						</div>
 			`
-			document.getElementById("eventDetailsData").innerHTML=tempeventDetailsData
-				
+						document.getElementById("eventDetailsData").innerHTML = tempeventDetailsData
+
 					}
-				setTimeout(FillData,500)
-			</script>
+					setTimeout(FillData, 500)
+				</script>
 
 
-		</div>
-		<!-- Content END-->
-		<!-- Footer ==== -->
-		<footer>
-			<div class="footer-top">
-				<div class="pt-exebar">
-					<div class="container">
-						<div class="d-flex align-items-stretch">
-							<div class="pt-logo mr-auto">
-								<a href="index.html" aria-label="Home Page" rel="noopner"><img src="assets/images/2.png"
-										alt="" /></a>
-							</div>
-							<div class="pt-logo mr-auto">
-								<a rel="noopener" href="https://www.dbit.in/" target="_blank" aria-label="Dbit website"><img
-										src="assets/images/DBIT.png" alt="" width="75px" class="img-fluid"></a>
-							</div>
-							<div class="pt-logo mr-auto">
-								<a rel="noopener" href="https://dbit.acm.org/teknack" aria-label="Teknack website"><img
-										src="assets/images/teknack.png" alt="" width="75px" class="img-fluid"></a>
-							</div>
-							<div class="pt-social-link">
-								<ul class="list-inline m-a0">
+			</div>
+			<!-- Content END-->
+			<!-- Footer ==== -->
+			<footer style="width: 100%;">
+				<div class="footer-top">
+					<div class="pt-exebar">
+						<div class="container">
+							<div class="d-flex align-items-stretch">
+								<div class="pt-logo mr-auto">
+									<a href="index.html" aria-label="Home Page" rel="noopner"><img
+											src="assets/images/2.png" alt="" /></a>
+								</div>
+								<div class="mr-auto my-auto">
+									<a rel="noopener" href="https://www.dbit.in/" target="_blank"
+										aria-label="Dbit website"><img src="assets/images/DBIT.png" alt="" width="75px"
+											class="py-5"></a>
+								</div>
+								<div class="mr-auto my-auto">
+									<a rel="noopener" href="https://dbit.acm.org/teknack"
+										aria-label="Teknack website"><img src="assets/images/teknack.png" alt=""
+											width="75px" class="py-5"></a>
+								</div>
+								<div class="pt-social-link">
+									<ul class="list-inline m-a0">
 
-									<li><a rel="noopener" href="https://www.instagram.com/acmdbitt/?hl=en"
-											target="_blank" aria-label="instagram" class="btn-link"><i
-												class="fa fa-instagram"></i></a></li>
-									<li><a rel="noopener" href="https://www.linkedin.com/company/acm-dbit/"
-											target="_blank" aria-label="linkedin" class="btn-link"><i
-												class="fa fa-linkedin"></i></a></li>
-									<li><a rel="noopener" href="https://twitter.com/acmdbit?lang=en" target="_blank"
-											aria-label="twitter" class="btn-link"><i class="fa fa-twitter"></i></a></li>
-									<li><a rel="noopener"
-											href="https://www.youtube.com/channel/UC58zaYJo0LL_aJXvqLDJGLA"
-											aria-label="youtube" target="_blank" class="btn-link"><i
-												class="fa fa-youtube-play"></i></a></li>
-									<li><a rel="noopener" href="https://www.facebook.com/ACMDBIT/" aria-label="facebook"
-											target="_blank" class="btn-link"><i class="fa fa-facebook"></i></a></li>
-								</ul>
+										<li><a rel="noopener" href="https://www.instagram.com/acmdbitt/?hl=en"
+												target="_blank" aria-label="instagram" class="btn-link"><i
+													class="fa fa-instagram"></i></a></li>
+										<li><a rel="noopener" href="https://www.linkedin.com/company/acm-dbit/"
+												target="_blank" aria-label="linkedin" class="btn-link"><i
+													class="fa fa-linkedin"></i></a></li>
+										<li><a rel="noopener" href="https://twitter.com/acmdbit?lang=en" target="_blank"
+												aria-label="twitter" class="btn-link"><i class="fa fa-twitter"></i></a>
+										</li>
+										<li><a rel="noopener"
+												href="https://www.youtube.com/channel/UC58zaYJo0LL_aJXvqLDJGLA"
+												aria-label="youtube" target="_blank" class="btn-link"><i
+													class="fa fa-youtube-play"></i></a></li>
+										<li><a rel="noopener" href="https://www.facebook.com/ACMDBIT/"
+												aria-label="facebook" target="_blank" class="btn-link"><i
+													class="fa fa-facebook"></i></a></li>
+									</ul>
+								</div>
+
 							</div>
 
 						</div>
 
 					</div>
-
+					<div class="row" style="width: 100%;">
+						<div class="col-lg-12 col-md-12 col-sm-12 text-center mb-3"> <a target="_blank"
+								href="index.html">&copy;2021 ACM DBIT Student Chapter.All Rights Reserved.</a></div>
+					</div>
 				</div>
-				<div class="row" style="width: 100%;">
-					<div class="col-lg-12 col-md-12 col-sm-12 text-center mb-3"> <a target="_blank"
-							href="index.html">&copy;2021 ACM DBIT Student Chapter. All Rights Reserved.</a></div>
-				</div>
-			</div>
 
-		</footer>
-		<!-- Footer END ==== -->
-		<button class="back-to-top fa fa-chevron-up"></button>
-	</div>
-	<!-- External JavaScripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/vendors/bootstrap/js/popper.min.js"></script>
-	<script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-	<script src="assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
-	<script src="assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
-	<script src="assets/vendors/magnific-popup/magnific-popup.js"></script>
-	<script src="assets/vendors/counter/waypoints-min.js"></script>
-	<script src="assets/vendors/counter/counterup.min.js"></script>
-	<script src="assets/vendors/imagesloaded/imagesloaded.js"></script>
-	<script src="assets/vendors/masonry/masonry.js"></script>
-	<script src="assets/vendors/masonry/filter.js"></script>
-	<script src="assets/vendors/owl-carousel/owl.carousel.js"></script>
-	<script src="assets/js/functions.js"></script>
-	<script src="assets/js/contact.js"></script>
-	<!-- <script src='assets/vendors/switcher/switcher.js'></script> -->
+			</footer>
+			<!-- Footer END ==== -->
+			<button class="back-to-top fa fa-chevron-up"></button>
+		</div>
+		<!-- External JavaScripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/vendors/bootstrap/js/popper.min.js"></script>
+		<script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
+		<script src="assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
+		<script src="assets/vendors/magnific-popup/magnific-popup.js"></script>
+		<script src="assets/vendors/counter/waypoints-min.js"></script>
+		<script src="assets/vendors/counter/counterup.min.js"></script>
+		<script src="assets/vendors/imagesloaded/imagesloaded.js"></script>
+		<script src="assets/vendors/masonry/masonry.js"></script>
+		<script src="assets/vendors/masonry/filter.js"></script>
+		<script src="assets/vendors/owl-carousel/owl.carousel.js"></script>
+		<script src="assets/js/functions.js"></script>
+		<script src="assets/js/contact.js"></script>
+		<!-- <script src='assets/vendors/switcher/switcher.js'></script> -->
 </body>
 
 </html>
