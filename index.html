@@ -17,8 +17,23 @@
 	<meta property="og:image" content="" />
 
 	<!-- FAVICONS ICON ============================================= -->
-	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
-	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
+	<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 
 	<!-- PAGE TITLE HERE ============================================= -->
 	<title>ACM-DBIT Student Chapter</title>
@@ -62,7 +77,7 @@
 					<div class="container clearfix">
 						<!-- Header Logo ==== -->
 						<div class="menu-logo">
-							<a href="index.html" rel="noopener" aria-label="acm logo"><img src="assets/images/2.png"
+							<a href="index" rel="noopener" aria-label="acm logo"><img src="./assets/images/2.png"
 									alt=""></a>
 						</div>
 						<!-- Mobile Nav Button ==== -->
@@ -111,16 +126,16 @@
 						<!-- Navigation Menu ==== -->
 						<div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
 							<div class="menu-logo">
-								<a href="index.html" aria-label="home page" rel="noopner"><img src="assets/images/1.png"
+								<a href="index" aria-label="home page" rel="noopner"><img src="assets/images/1.png"
 										alt=""></a>
 							</div>
 							<ul class="nav navbar-nav">
-								<li class="active"><a href="index.html">Home </a>
-								<li><a href="team-2021.html">Team</a></li>
-								<li><a href="portfolio.html">Gallery</a></li>
-								<li><a href="courses.html">Courses</a></li>
-								<li><a href="reports.html">Reports</a></li>
-								<li><a href="event.html">Blog</a></li>
+								<li class="active"><a href="index">Home </a>
+								<li><a href="team-2021">Team</a></li>
+								<li><a href="portfolio">Gallery</a></li>
+								<li><a href="courses">Courses</a></li>
+								<li><a href="reports">Reports</a></li>
+								<li><a href="event">Blog</a></li>
 							</ul>
 						</div>
 						<!-- Navigation Menu END ==== -->
@@ -143,7 +158,7 @@
 							<!-- SLIDE  -->
 							<li data-index="rs-100" data-transition="parallaxvertical" data-slotamount="default"
 								data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default"
-								data-easeout="default" data-masterspeed="default" data-thumb="error-404.html"
+								data-easeout="default" data-masterspeed="default" data-thumb="error-404"
 								data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7"
 								data-saveperformance="off" data-title="ACM STUDENT CHAPTER" data-param1=""
 								data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
@@ -209,7 +224,7 @@
 									An Initiative By DBIT Computer Dept.
 								</div>
 								<!-- LAYER NR. 4 -->
-								<div onclick="location.href='./portfolio.html'"
+								<div onclick="location.href='portfolio'"
 									class="tp-caption Newspaper-Button rev-btn " id="slide-100-layer-5"
 									data-x="['center','center','center','center']" data-hoffset="['90','80','75','90']"
 									data-y="['top','top','top','top']" data-voffset="['400','400','400','420']"
@@ -221,7 +236,7 @@
 									data-paddingbottom="[12,12,12,12]" data-paddingleft="[30,35,35,15]"
 									style="z-index: 8; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; background-color:var(--primary) !important; border:0; border-radius:30px; margin-right:5px;">
 									Our Gallery </div>
-								<div onclick="location.href='./event.html'" class="tp-caption Newspaper-Button rev-btn"
+								<div onclick="location.href='event'" class="tp-caption Newspaper-Button rev-btn"
 									id="slide-100-layer-6" data-x="['center','center','center','center']"
 									data-hoffset="['-90','-80','-75','-90']" data-y="['top','top','top','top']"
 									data-voffset="['400','400','400','420']" data-width="none" data-height="none"
@@ -432,118 +447,7 @@
 						</div>
 						<div class="row">
 							<div class="courses-carousel owl-carousel owl-btn-1 col-12 p-lr0" id="coursesHere">
-								<div class="item">
-									<div class="cours-bx">
-										<div class="action-box">
-											<img src="assets/images/courses/pic1.jpg" alt="">
-											<a href="#" class="btn">Read </a>
-										</div>
-										<div class="info-bx text-center">
-											<h5><a href="#">Introduction EduChamp – LMS plugin</a></h5>
-											<span>Programming</span>
-										</div>
-										<div class="cours-more-info">
-											<div class="review">
-												<span>3 Review</span>
-												<ul class="cours-star">
-													<li class="active"><i class="fa fa-star"></i></li>
-													<li class="active"><i class="fa fa-star"></i></li>
-													<li class="active"><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-												</ul>
-											</div>
-											<div class="price">
-												<del>$190</del>
-												<h5>$120</h5>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									<div class="cours-bx">
-										<div class="action-box">
-											<img src="assets/images/courses/pic2.jpg" alt="">
-											<a href="#" class="btn">Read More</a>
-										</div>
-										<div class="info-bx text-center">
-											<h5><a href="#">Introduction EduChamp – LMS plugin</a></h5>
-											<span>Programming</span>
-										</div>
-										<div class="cours-more-info">
-											<div class="review">
-												<span>3 Review</span>
-												<ul class="cours-star">
-													<li class="active"><i class="fa fa-star"></i></li>
-													<li class="active"><i class="fa fa-star"></i></li>
-													<li class="active"><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-												</ul>
-											</div>
-											<div class="price">
-												<del>$190</del>
-												<h5>$120</h5>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									<div class="cours-bx">
-										<div class="action-box">
-											<img src="assets/images/courses/pic3.jpg" alt="">
-											<a href="#" class="btn">Read More</a>
-										</div>
-										<div class="info-bx text-center">
-											<h5><a href="#">Introduction EduChamp – LMS plugin</a></h5>
-											<span>Programming</span>
-										</div>
-										<div class="cours-more-info">
-											<div class="review">
-												<span>3 Review</span>
-												<ul class="cours-star">
-													<li class="active"><i class="fa fa-star"></i></li>
-													<li class="active"><i class="fa fa-star"></i></li>
-													<li class="active"><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-												</ul>
-											</div>
-											<div class="price">
-												<del>$190</del>
-												<h5>$120</h5>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									<div class="cours-bx">
-										<div class="action-box">
-											<img src="assets/images/courses/pic4.jpg" alt="">
-											<a href="#" class="btn">Read More</a>
-										</div>
-										<div class="info-bx text-center">
-											<h5><a href="#">Introduction EduChamp – LMS plugin</a></h5>
-											<span>Programming</span>
-										</div>
-										<div class="cours-more-info">
-											<div class="review">
-												<span>3 Review</span>
-												<ul class="cours-star">
-													<li class="active"><i class="fa fa-star"></i></li>
-													<li class="active"><i class="fa fa-star"></i></li>
-													<li class="active"><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-												</ul>
-											</div>
-											<div class="price">
-												<del>$190</del>
-												<h5>$120</h5>
-											</div>
-										</div>
-									</div>
-								</div>
+								
 							</div>
 						</div>
 					</div>
@@ -639,7 +543,7 @@
 						<div class="row justify-content-center mb-5 pb-5">
 			
 							<div class="text-center">
-								<a href="event.html" class="btn">View All Events</a>
+								<a href="event" class="btn">View All Events</a>
 							</div>
 						</div>
 					</div> -->
@@ -764,7 +668,7 @@
 					<div class="container">
 						<div class="d-flex align-items-stretch">
 							<div class="pt-logo mr-auto">
-								<a href="index.html" aria-label="Home Page" rel="noopner"><img src="assets/images/2.png"
+								<a href="index" aria-label="Home Page" rel="noopner"><img src="assets/images/2.png"
 										alt="" /></a>
 							</div>
 							<div class="mr-auto my-auto">
@@ -800,7 +704,7 @@
 				</div>
 				<div class="row" style="width: 100%;">
 					<div class="col-lg-12 col-md-12 col-sm-12 text-center mb-3"> <a target="_blank"
-							href="index.html">&copy;2021 ACM DBIT Student Chapter.All Rights Reserved.</a></div>
+							href="index">&copy;2021 ACM DBIT Student Chapter.All Rights Reserved.</a></div>
 				</div>
 			</div>
 		</footer>
