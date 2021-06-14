@@ -18,23 +18,8 @@
 	<meta property="og:image" content="" />
 
 	<!-- FAVICONS ICON ============================================= -->
-	<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-	<link rel="manifest" href="manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
+	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
 
 	<!-- PAGE TITLE HERE ============================================= -->
 	<title>Reports | ACM-DBIT</title>
@@ -60,7 +45,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link class="skin" rel="stylesheet" type="text/css" href="assets/css/color/color-1.css">
 	<link rel="stylesheet" href="assets/css/reports.css">
-
+		<script src="assets/js/reportData.js"></script>
 </head>
 
 <body id="bg">
@@ -73,7 +58,7 @@
 					<div class="container clearfix">
 						<!-- Header Logo ==== -->
 						<div class="menu-logo">
-							<a href="index" rel="noopener" aria-label="acm logo"><img src="assets/images/2.png"
+							<a href="index.html" rel="noopener" aria-label="acm logo"><img src="assets/images/2.png"
 									alt=""></a>
 						</div>
 						<!-- Mobile Nav Button ==== -->
@@ -122,17 +107,36 @@
 						<!-- Navigation Menu ==== -->
 						<div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
 							<div class="menu-logo">
-								<a href="index" aria-label="home page" rel="noopner"><img src="assets/images/1.png"
+								<a href="index.html" aria-label="home page" rel="noopner"><img src="assets/images/1.png"
 										alt=""></a>
 							</div>
 							<ul class="nav navbar-nav">
-								<li><a href="index">Home </a>
-								<li><a href="team-2021">Team</a></li>
-								<li><a href="gallery">Gallery</a></li>
-								<li><a href="courses">Courses</a></li>
-								<li class="active"><a href="reports">Reports</a></li>
-								<li><a href="event">Events</a></li>
+								<li><a href="index.html">Home </a>
+								<li><a href="team-2021.html">Team</a></li>
+								<li><a href="portfolio.html">Gallery</a></li>
+								<li><a href="courses.html">Courses</a></li>
+								<li class="active"><a href="reports.html">Reports</a></li>
+								<li><a href="event.html">Blog</a></li>
 							</ul>
+							<div class="nav-social-link">
+								<ul>
+									<li><a rel="noopener" href="https://www.instagram.com/acmdbitt/?hl=en"
+											target="_blank" aria-label="instagram" class="btn-link"><i
+												class="fa fa-instagram"></i></a></li>
+									<li><a rel="noopener" href="https://www.linkedin.com/company/acm-dbit/"
+											target="_blank" aria-label="linkedin" class="btn-link"><i
+												class="fa fa-linkedin"></i></a></li>
+									<li><a rel="noopener" href="https://twitter.com/acmdbit?lang=en" target="_blank"
+											aria-label="twitter" class="btn-link"><i class="fa fa-twitter"></i></a></li>
+									<li><a rel="noopener"
+											href="https://www.youtube.com/channel/UC58zaYJo0LL_aJXvqLDJGLA"
+											target="_blank" aria-label="youtube" class="btn-link"><i
+												class="fa fa-youtube-play"></i></a></li>
+									<li><a rel="noopener" href="https://www.facebook.com/ACMDBIT/" target="_blank"
+											class="btn-link" aria-label="facebook"><i class="fa fa-facebook"></i></a>
+									</li>
+								</ul>
+							</div>
 						</div>
 						<!-- Navigation Menu END ==== -->
 					</div>
@@ -177,638 +181,81 @@
 										</div>
 										<div class="row justify-content-center mb-5">
 											<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist"
-												style="justify-content: center;">
+												style="justify-content: space-evenly;">
 												<!-- <li class="nav-item px-3" role="presentation">
 													<a class="btn nav-link active" id="pills-2021-tab"
 														data-toggle="pill" href="#pills-2021" role="tab"
 														aria-controls="pills-2021" aria-selected="true">2021</a>
 												</li> -->
-												<li class="nav-item px-3 py-3" role="presentation">
-													<a class="btn nav-link active" id="pills-2020-tab" data-toggle="pill"
-														href="#pills-2020" role="tab" aria-controls="pills-2020"
-														aria-selected="true">2020</a>
-												</li>
-												<li class="nav-item px-3 py-3" role="presentation">
+										
+												<script>
+													function BuildYears(){
+
+													
+													var buildYears=``
+													for(var i=0;i<reportData.length;i++){
+														if(reportData[i].year==999 || reportData[i].year==888  )
+														{
+															continue
+														}
+														if(i==2){
+														buildYears+=`
+														<li class="nav-item px-3" role="presentation">
+														<a class="btn nav-link active" id="pills-${reportData[i].year}-tab" data-toggle="pill"
+															href="#pills-${reportData[i].year}" role="tab" aria-controls="pills-${reportData[i].year}"
+															aria-selected="true">${reportData[i].year}</a>
+													</li>
+														`
+													}else{
+														buildYears+=`
+														<li class="nav-item px-3" role="presentation">
+														<a class="btn nav-link" id="pills-${reportData[i].year}-tab" data-toggle="pill"
+															href="#pills-${reportData[i].year}" role="tab" aria-controls="pills-${reportData[i].year}"
+															>${reportData[i].year}</a>
+													</li>`
+													}
+													document.getElementById("pills-tab").innerHTML=buildYears;
+													
+												}
+											}
+												</script>
+												<!-- <li class="nav-item px-3" role="presentation">
 													<a class="btn nav-link" id="pills-2019-tab" data-toggle="pill"
 														href="#pills-2019" role="tab" aria-controls="pills-2019"
 														aria-selected="false">2019</a>
 												</li>
-												<li class="nav-item px-3 py-3" role="presentation">
+												<li class="nav-item px-3" role="presentation">
 													<a class="btn nav-link" id="pills-2018-tab" data-toggle="pill"
 														href="#pills-2018" role="tab" aria-controls="pills-2018"
 														aria-selected="false">2018</a>
 												</li>
-												<li class="nav-item px-3 py-3" role="presentation">
+												<li class="nav-item px-3" role="presentation">
 													<a class="btn nav-link" id="pills-2017-tab" data-toggle="pill"
 														href="#pills-2017" role="tab" aria-controls="pills-2017"
 														aria-selected="false">2017</a>
 												</li>
-												<li class="nav-item px-3 py-3" role="presentation">
+												<li class="nav-item px-3" role="presentation">
 													<a class="btn nav-link" id="pills-2016-tab" data-toggle="pill"
 														href="#pills-2016" role="tab" aria-controls="pills-2016"
 														aria-selected="false">2016</a>
-												</li>
+												</li> -->
 											</ul>
 										</div>
 										<div class="row">
-											<!-- ======================== 2021 Reports =========================================  -->
-											<div class="tab-content" id="pills-tabContent">
-												<!-- <div class="tab-pane fade show active" id="pills-2021" role="tabpanel"
-													aria-labelledby="pills-2021-tab">
-													<div class="row">
-														
-
-													</div>
-												</div> -->
-
-												<!-- ======================== 2020 Reports =========================================  -->
-												<div class="tab-pane fade show active" id="pills-2020" role="tabpanel"
-													aria-labelledby="pills-2020-tab">
-													<div class="row">
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2020/2020-COD-IT_report-1.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">COD-IT</h5>
-																	<p class="mb-0"><small>1561 KB</small></p>
-																</div>
-															</div>
-														</div>
-
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2020/2020-C-Workshop.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">C++ Crash Course</h5>
-																	<p class="mb-0"><small>370 KB</small></p>
-																</div>
-															</div>
-														</div>
-
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2020/2020-Domain_DNS_and_webhosting_report.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">Domain, DNS & Web Hosting</h5>
-																	<p class="mb-0"><small>285 KB</small></p>
-																</div>
-															</div>
-														</div>
-
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2020/2020-Felicitation-Report.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">Felicitation 2020</h5>
-																	<p class="mb-0"><small>572 KB</small></p>
-																</div>
-															</div>
-														</div>
-
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2020/2020-Flash_workshop_report_compressed-1.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">Macromedia Flash</h5>
-																	<p class="mb-0"><small>360 KB</small></p>
-																</div>
-															</div>
-														</div>
-
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2020/2020-Git_and_Github_Report-1.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">Git & GitHub</h5>
-																	<p class="mb-0"><small>224 KB</small></p>
-																</div>
-															</div>
-														</div>
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2020/2020-GRE-Webinar.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">GRE & Study Abroad</h5>
-																	<p class="mb-0"><small>521 KB</small></p>
-																</div>
-															</div>
-														</div>
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2020/2020-Ilustrator_Workshop_report-1.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">Illustrator Workshop</h5>
-																	<p class="mb-0"><small>342 KB</small></p>
-																</div>
-															</div>
-														</div>
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2020/2020-Housie.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">Teknack Housie</h5>
-																	<p class="mb-0"><small>366 KB</small></p>
-																</div>
-															</div>
-														</div>
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2020/2020-Valorant.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">Teknack Valorant Tournament</h5>
-																	<p class="mb-0"><small>1650 KB</small></p>
-																</div>
-															</div>
-														</div>
-
-													</div>
-												</div>
-												<!-- ======================== 2019 Reports =========================================  -->
-												<div class="tab-pane fade" id="pills-2019" role="tabpanel"
-													aria-labelledby="pills-2019-tab">
-													<div class="row">
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2019/2019-CMS-1.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">CMS Workshop</h5>
-																	<p class="mb-0"><small>2015 KB</small></p>
-																</div>
-															</div>
-														</div>
-
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2019/2019-Code-It-Out.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">Code It Out</h5>
-																	<p class="mb-0"><small>1036 KB</small></p>
-																</div>
-															</div>
-														</div>
-
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2019/2019-DESIGN-TEAM-TRAINING-WORKSHOP2019-1.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">Design Team Training Workshop</h5>
-																	<p class="mb-0"><small>1192 KB</small></p>
-																</div>
-															</div>
-														</div>
-
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2019/2019-flutter-workshop-final-1.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">Flutter Workshop</h5>
-																	<p class="mb-0"><small>1895 KB</small></p>
-																</div>
-															</div>
-														</div>
-
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2019/2019-JAVA-APPLET-WORKSHOP2019-1.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">Java Applet Workshop</h5>
-																	<p class="mb-0"><small>1112 KB</small></p>
-																</div>
-															</div>
-														</div>
-
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2019/2019-SOUND-ENGG-WORKSHOP2019-1.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">Sound Engineering Workshop</h5>
-																	<p class="mb-0"><small>1245 KB</small></p>
-																</div>
-															</div>
-														</div>
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2019/2019-VIDEO-EDITING-WORKSHOP2019-1.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">Video Editing Workshop</h5>
-																	<p class="mb-0"><small>790 KB</small></p>
-																</div>
-															</div>
-														</div>
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2019/2019-Wallofkindness-1.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">Wall of Kindness</h5>
-																	<p class="mb-0"><small>251 KB</small></p>
-																</div>
-															</div>
-														</div>
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2019/2019-Web-Dev-workshop-2019-20-newfinal-1.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">Web Development Workshop</h5>
-																	<p class="mb-0"><small>1586 KB</small></p>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
+											
+											<div class="tab-content" id="pills-tabContent" >
 
 
-												<!-- ======================== 2018 Reports =========================================  -->
-												<div class="tab-pane fade" id="pills-2018" role="tabpanel"
-													aria-labelledby="pills-2018-tab">
-													<div class="row">
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2018/2018-Arduino_report_18-19.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">Arduino Workshop</h5>
-																	<p class="mb-0"><small>585 KB</small></p>
-																</div>
-															</div>
-														</div>
-
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2018/2018-Code-it-out-report.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">Code It Out</h5>
-																	<p class="mb-0"><small>351 KB</small></p>
-																</div>
-															</div>
-														</div>
-
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2018/2018-Design-team-training-wkshp-Report.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">Design Team Training Workshop</h5>
-																	<p class="mb-0"><small>550 KB</small></p>
-																</div>
-															</div>
-														</div>
-
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2018/2018-FE-Web-Dev-Training-Core-Haramrit_Report.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">FE Web Development</h5>
-																	<p class="mb-0"><small>291 KB</small></p>
-																</div>
-															</div>
-														</div>
-
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2018/2018-HTMLCSS_JS.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">HTML CSS JS</h5>
-																	<p class="mb-0"><small>391 KB</small></p>
-																</div>
-															</div>
-														</div>
-
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2018/2018-MongoDBreport.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">MongoDB Workshop</h5>
-																	<p class="mb-0"><small>1279 KB</small></p>
-																</div>
-															</div>
-														</div>
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2018/2018-PC-Assembly.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">PC Assembly</h5>
-																	<p class="mb-0"><small>10.83 MB</small></p>
-																</div>
-															</div>
-														</div>
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2018/2018-PhotoshopWorkshopReoprt.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">Photoshop Workshop</h5>
-																	<p class="mb-0"><small>1087 KB</small></p>
-																</div>
-															</div>
-														</div>
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2018/2018-Refractus-2019-report.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">Refractus 2019</h5>
-																	<p class="mb-0"><small>3252 KB</small></p>
-																</div>
-															</div>
-														</div>
-														
-													</div>
-												</div>
+											
+											
 
 
-
-												<!-- ======================== 2017 Reports =========================================  -->
-												<div class="tab-pane fade" id="pills-2017" role="tabpanel"
-													aria-labelledby="pills-2017-tab">
-													<div class="row">
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2017/2017-ADT.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">ADT</h5>
-																	<p class="mb-0"><small>619 KB</small></p>
-																</div>
-															</div>
-														</div>
-
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2017/2017-Arduino-and-python.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">Arduino & Python</h5>
-																	<p class="mb-0"><small>415 KB</small></p>
-																</div>
-															</div>
-														</div>
-
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2017/2017-cmd.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">CMD Workshop</h5>
-																	<p class="mb-0"><small>11 KB</small></p>
-																</div>
-															</div>
-														</div>
-
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2017/2017-CSS-workshop.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">CSS Workshop</h5>
-																	<p class="mb-0"><small>114 KB</small></p>
-																</div>
-															</div>
-														</div>
-
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2017/2017-github.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">GitHub Workshop</h5>
-																	<p class="mb-0"><small>416 KB</small></p>
-																</div>
-															</div>
-														</div>
-
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2017/2017-HTMLworkshop1.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">HTML Workshop</h5>
-																	<p class="mb-0"><small>398 KB</small></p>
-																</div>
-															</div>
-														</div>
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2017/2017-Photoshop.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">Photoshop Workshop</h5>
-																	<p class="mb-0"><small>778 KB</small></p>
-																</div>
-															</div>
-														</div>
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2017/2017-semicode.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">Semicode 2018</h5>
-																	<p class="mb-0"><small>415 KB</small></p>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-
-
-												<!-- ======================== 2016 Reports =========================================  -->
-												<div class="tab-pane fade" id="pills-2016" role="tabpanel"
-													aria-labelledby="pills-2016-tab">
-													<div class="row">
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2016/2016-GitHub.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">GitHub Workshop</h5>
-																	<p class="mb-0"><small>837 KB</small></p>
-																</div>
-															</div>
-														</div>
-
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2016/2016-NODEJS.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">Node JS Workshop</h5>
-																	<p class="mb-0"><small>696 KB</small></p>
-																</div>
-															</div>
-														</div>
-
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2016/2016-photoshop.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">Photoshop Workshop</h5>
-																	<p class="mb-0"><small>305 KB</small></p>
-																</div>
-															</div>
-														</div>
-
-														<div class="col-lg-4 col-xl-4 col-6">
-															<div class="file-man-box">
-																<div class="file-img-box"><img
-																		src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-																		alt="icon"></div><a href="assets/docs/reports/2016/2016-Web-Development-Report.pdf" download
-																	class="file-download"><i
-																		class="fa fa-download"></i></a>
-																<div class="file-man-title">
-																	<h5 class="mb-0 text-overflow">Web Development Workshop</h5>
-																	<p class="mb-0"><small>516 KB</small></p>
-																</div>
-															</div>
-														</div>
-
-														
-													</div>
-												</div>
 
 
 
 											</div>
+
+											
 										</div>
 
 
@@ -818,6 +265,7 @@
 							</div>
 							<!-- end row -->
 						</div>
+					
 						<!-- container -->
 						<div class="container">
 							<div class="row">
@@ -829,201 +277,11 @@
 											</div>
 										</div>
 
-										<div class="row">
-											<div class="col-lg-3 col-xl-2 col-6">
-												<div class="file-man-box">
-													<div class="file-img-box"><img
-															src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-															alt="icon"></div><a href="assets/docs/reports/annual/2020.pdf" download class="file-download"><i
-															class="fa fa-download"></i></a>
-													<div class="file-man-title">
-														<h5 class="mb-0 text-overflow">2020</h5>
-														<p class="mb-0"><small>18 KB</small></p>
-													</div>
-												</div>
-											</div>
-
-											<div class="col-lg-3 col-xl-2 col-6">
-												<div class="file-man-box">
-													<div class="file-img-box"><img
-															src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-															alt="icon"></div><a href="assets/docs/reports/annual/2019.pdf" download class="file-download"><i
-															class="fa fa-download"></i></a>
-													<div class="file-man-title">
-														<h5 class="mb-0 text-overflow">2019</h5>
-														<p class="mb-0"><small>27 KB</small></p>
-													</div>
-												</div>
-											</div>
-
-											<div class="col-lg-3 col-xl-2 col-6">
-												<div class="file-man-box">
-													<div class="file-img-box"><img
-															src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-															alt="icon"></div><a href="assets/docs/reports/annual/2018.pdf" download class="file-download"><i
-															class="fa fa-download"></i></a>
-													<div class="file-man-title">
-														<h5 class="mb-0 text-overflow">2018</h5>
-														<p class="mb-0"><small>18 KB</small></p>
-													</div>
-												</div>
-											</div>
-
-											<div class="col-lg-3 col-xl-2 col-6">
-												<div class="file-man-box">
-													<div class="file-img-box"><img
-															src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-															alt="icon"></div><a href="assets/docs/reports/annual/2017.pdf" download class="file-download"><i
-															class="fa fa-download"></i></a>
-													<div class="file-man-title">
-														<h5 class="mb-0 text-overflow">2017</h5>
-														<p class="mb-0"><small>11 KB</small></p>
-													</div>
-												</div>
-											</div>
-
-											<div class="col-lg-3 col-xl-2 col-6">
-												<div class="file-man-box">
-													<div class="file-img-box"><img
-															src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-															alt="icon"></div><a href="assets/docs/reports/annual/2016.pdf" download class="file-download"><i
-															class="fa fa-download"></i></a>
-													<div class="file-man-title">
-														<h5 class="mb-0 text-overflow">2016</h5>
-														<p class="mb-0"><small>13 KB</small></p>
-													</div>
-												</div>
-											</div>
-
-											<div class="col-lg-3 col-xl-2 col-6">
-												<div class="file-man-box">
-													<div class="file-img-box"><img
-															src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-															alt="icon"></div><a href="assets/docs/reports/annual/2015.pdf" download class="file-download"><i
-															class="fa fa-download"></i></a>
-													<div class="file-man-title">
-														<h5 class="mb-0 text-overflow">2015</h5>
-														<p class="mb-0"><small>16 KB</small></p>
-													</div>
-												</div>
-											</div>
-											<div class="col-lg-3 col-xl-2 col-6">
-												<div class="file-man-box">
-													<div class="file-img-box"><img
-															src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-															alt="icon"></div><a href="assets/docs/reports/annual/2014.pdf" download class="file-download"><i
-															class="fa fa-download"></i></a>
-													<div class="file-man-title">
-														<h5 class="mb-0 text-overflow">2014</h5>
-														<p class="mb-0"><small>19 KB</small></p>
-													</div>
-												</div>
-											</div>
-
-											<div class="col-lg-3 col-xl-2 col-6">
-												<div class="file-man-box">
-													<div class="file-img-box"><img
-															src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-															alt="icon"></div><a href="assets/docs/reports/annual/2013.pdf" download class="file-download"><i
-															class="fa fa-download"></i></a>
-													<div class="file-man-title">
-														<h5 class="mb-0 text-overflow">2013</h5>
-														<p class="mb-0"><small>20 KB</small></p>
-													</div>
-												</div>
-											</div>
-
-											<div class="col-lg-3 col-xl-2 col-6">
-												<div class="file-man-box">
-													<div class="file-img-box"><img
-															src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-															alt="icon"></div><a href="assets/docs/reports/annual/2012.pdf" download class="file-download"><i
-															class="fa fa-download"></i></a>
-													<div class="file-man-title">
-														<h5 class="mb-0 text-overflow">2012</h5>
-														<p class="mb-0"><small>20 KB</small></p>
-													</div>
-												</div>
-											</div>
-
-											<div class="col-lg-3 col-xl-2 col-6">
-												<div class="file-man-box">
-													<div class="file-img-box"><img
-															src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-															alt="icon"></div><a href="assets/docs/reports/annual/2011.pdf" download class="file-download"><i
-															class="fa fa-download"></i></a>
-													<div class="file-man-title">
-														<h5 class="mb-0 text-overflow">2011</h5>
-														<p class="mb-0"><small>15 KB</small></p>
-													</div>
-												</div>
-											</div>
-
-											<div class="col-lg-3 col-xl-2 col-6">
-												<div class="file-man-box">
-													<div class="file-img-box"><img
-															src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-															alt="icon"></div><a href="assets/docs/reports/annual/2010.pdf" download class="file-download"><i
-															class="fa fa-download"></i></a>
-													<div class="file-man-title">
-														<h5 class="mb-0 text-overflow">2010</h5>
-														<p class="mb-0"><small>5 KB</small></p>
-													</div>
-												</div>
-											</div>
-
-											<div class="col-lg-3 col-xl-2 col-6">
-												<div class="file-man-box">
-													<div class="file-img-box"><img
-															src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-															alt="icon"></div><a href="assets/docs/reports/annual/2009.pdf" download class="file-download"><i
-															class="fa fa-download"></i></a>
-													<div class="file-man-title">
-														<h5 class="mb-0 text-overflow">2009</h5>
-														<p class="mb-0"><small>5 KB</small></p>
-													</div>
-												</div>
-											</div>
-											<div class="col-lg-3 col-xl-2 col-6">
-												<div class="file-man-box">
-													<div class="file-img-box"><img
-															src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-															alt="icon"></div><a href="assets/docs/reports/annual/2008.pdf" download class="file-download"><i
-															class="fa fa-download"></i></a>
-													<div class="file-man-title">
-														<h5 class="mb-0 text-overflow">2008</h5>
-														<p class="mb-0"><small>8 KB</small></p>
-													</div>
-												</div>
-											</div>
-
-											<div class="col-lg-3 col-xl-2 col-6">
-												<div class="file-man-box">
-													<div class="file-img-box"><img
-															src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-															alt="icon"></div><a href="assets/docs/reports/annual/2007.pdf" download class="file-download"><i
-															class="fa fa-download"></i></a>
-													<div class="file-man-title">
-														<h5 class="mb-0 text-overflow">2007</h5>
-														<p class="mb-0"><small>8 KB</small></p>
-													</div>
-												</div>
-											</div>
-
-											<div class="col-lg-3 col-xl-2 col-6">
-												<div class="file-man-box">
-													<div class="file-img-box"><img
-															src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-															alt="icon"></div><a href="assets/docs/reports/annual/2006.pdf" download class="file-download"><i
-															class="fa fa-download"></i></a>
-													<div class="file-man-title">
-														<h5 class="mb-0 text-overflow">2006</h5>
-														<p class="mb-0"><small>5 KB</small></p>
-													</div>
-												</div>
-											</div>
+										<div class="row" id="AcmAnnualReports">
+											
 
 										</div>
+
 
 									</div>
 								</div>
@@ -1042,55 +300,8 @@
 											</div>
 										</div>
 
-										<div class="row">
-											<div class="col-lg-3 col-xl-2 col-6">
-												<div class="file-man-box">
-													<div class="file-img-box"><img
-															src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-															alt="icon"></div><a href="assets/docs/reports/teknack/Teknack21.pdf" download class="file-download"><i
-															class="fa fa-download"></i></a>
-													<div class="file-man-title">
-														<h5 class="mb-0 text-overflow">2021 Report</h5>
-														<p class="mb-0"><small>9.69 MB</small></p>
-													</div>
-												</div>
-											</div>
-											<div class="col-lg-3 col-xl-2 col-6">
-												<div class="file-man-box">
-													<div class="file-img-box"><img
-															src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-															alt="icon"></div><a href="assets/docs/reports/teknack/Teknack20.pdf" download class="file-download"><i
-															class="fa fa-download"></i></a>
-													<div class="file-man-title">
-														<h5 class="mb-0 text-overflow">2020 Report</h5>
-														<p class="mb-0"><small>1.85 MB</small></p>
-													</div>
-												</div>
-											</div>
-											<div class="col-lg-3 col-xl-2 col-6">
-												<div class="file-man-box">
-													<div class="file-img-box"><img
-															src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-															alt="icon"></div><a href="assets/docs/reports/teknack/Teknack19.pdf" download class="file-download"><i
-															class="fa fa-download"></i></a>
-													<div class="file-man-title">
-														<h5 class="mb-0 text-overflow">2019 Report</h5>
-														<p class="mb-0"><small>18.05 MB</small></p>
-													</div>
-												</div>
-											</div>
-											<div class="col-lg-3 col-xl-2 col-6">
-												<div class="file-man-box">
-													<div class="file-img-box"><img
-															src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
-															alt="icon"></div><a href="assets/docs/reports/teknack/Teknack18.pdf" download class="file-download"><i
-															class="fa fa-download"></i></a>
-													<div class="file-man-title">
-														<h5 class="mb-0 text-overflow">2018 Report</h5>
-														<p class="mb-0"><small>0.77 MB</small></p>
-													</div>
-												</div>
-											</div>
+										<div class="row" id="TeknackAnnualReports">
+
 
 											
 										</div>
@@ -1107,6 +318,103 @@
 			</div>
 
 		</div>
+
+		<script>
+			function setAcmAnnualReports(files){
+				temp=``
+				for(var i=0;i<files.length;i++){
+
+				
+				temp+=` 
+				<div class="col-lg-3 col-xl-2 col-6">
+				<div class="file-man-box">
+					<div class="file-img-box"><img
+							src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
+							alt="icon"></div><a href="${files[i].url}" download class="file-download"><i
+							class="fa fa-download"></i></a>
+					<div class="file-man-title">
+						<h5 class="mb-0 text-overflow">${files[i].fileName}</h5>
+						<p class="mb-0"><small>${files[i].size/1000} KB</small></p>
+					</div>
+				</div>
+			</div>
+
+			`
+		}
+			return temp;
+			}
+			
+
+		function AddReports(){
+			console.log("here")
+			if(reportData.length==0){
+				setTimeout(AddReports,500)
+				return 
+			}
+			BuildYears();
+			console.log(reportData)
+			totalReports=""
+			
+			for(var i=0;i<reportData.length;i++){
+			if(reportData[i].year==999){
+				document.getElementById("AcmAnnualReports").innerHTML=setAcmAnnualReports(reportData[i].files)
+				continue
+			}
+			if(reportData[i].year==888){
+				document.getElementById("TeknackAnnualReports").innerHTML=setAcmAnnualReports(reportData[i].files)
+
+				continue
+			}
+			
+			if(i==2){
+
+			
+			totalReports+=`
+
+			<div class="tab-pane fade show active" id="pills-${reportData[i].year}" role="tabpanel"
+			aria-labelledby="pills-${reportData[i].year}-tab">
+			<div class="row">`
+				
+			}
+			else{
+				totalReports+=`	<div class="tab-pane fade" id="pills-${reportData[i].year}" role="tabpanel"
+			aria-labelledby="pills-${reportData[i].year}-tab">
+			<div class="row">`
+			}	
+			for (var j=0;j<reportData[i].files.length;j++){
+				var curr=reportData[i].files[j]
+			
+				totalReports+=`
+				<div class="col-lg-4 col-xl-4 col-6">
+					<div class="file-man-box">
+						<div class="file-img-box"><img
+								src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
+								alt="icon"></div><a href="${curr.url}" download
+							class="file-download"><i
+								class="fa fa-download"></i></a>
+						<div class="file-man-title">
+							<h5 class="mb-0 text-overflow">${curr.fileName}</h5>
+							<p class="mb-0"><small>${curr.size/1000} KB</small></p>
+						</div>
+					</div>
+				</div>
+				`
+			}
+
+
+
+				totalReports+=`
+
+
+			</div>
+		</div>
+			`
+		}
+		// console.log(totalReports)
+		document.getElementById("pills-tabContent").innerHTML=totalReports
+		}
+AddReports()
+</script>
 		<!-- Inner Content Box END ==== -->
 		<!-- Footer ==== -->
 		<footer>
@@ -1115,20 +423,20 @@
 					<div class="container">
 						<div class="d-flex align-items-stretch">
 							<div class="pt-logo mr-auto">
-								<a href="index" aria-label="Home Page" rel="noopner"><img
-										src="assets/images/2.png" alt="" /></a>
+								<a href="index.html" aria-label="Home Page" rel="noopner"><img src="assets/images/2.png"
+										alt="" /></a>
 							</div>
-							<div class="mr-auto my-auto">
-								<a rel="noopener" href="https://www.dbit.in/" target="_blank"
-									aria-label="Dbit website"><img src="assets/images/DBIT.png" alt="" width="75px" class="py-5"></a>
+							<div class="pt-logo mr-auto">
+								<a rel="noopener" href="https://www.dbit.in/" target="_blank" aria-label="Dbit website"><img
+										src="assets/images/DBIT.png" alt="" width="75px" class="img-fluid"></a>
 							</div>
-							<div class="mr-auto my-auto">
-								<a rel="noopener" href="https://dbit.acm.org/teknack"
-									aria-label="Teknack website"><img src="assets/images/teknack.png" alt=""
-										width="75px" class="py-5"></a>
+							<div class="pt-logo mr-auto">
+								<a rel="noopener" href="https://dbit.acm.org/teknack" aria-label="Teknack website"><img
+										src="assets/images/teknack.png" alt="" width="75px" class="img-fluid"></a>
 							</div>
 							<div class="pt-social-link">
 								<ul class="list-inline m-a0">
+
 									<li><a rel="noopener" href="https://www.instagram.com/acmdbitt/?hl=en"
 											target="_blank" aria-label="instagram" class="btn-link"><i
 												class="fa fa-instagram"></i></a></li>
@@ -1136,25 +444,27 @@
 											target="_blank" aria-label="linkedin" class="btn-link"><i
 												class="fa fa-linkedin"></i></a></li>
 									<li><a rel="noopener" href="https://twitter.com/acmdbit?lang=en" target="_blank"
-											aria-label="twitter" class="btn-link"><i class="fa fa-twitter"></i></a>
-									</li>
+											aria-label="twitter" class="btn-link"><i class="fa fa-twitter"></i></a></li>
 									<li><a rel="noopener"
 											href="https://www.youtube.com/channel/UC58zaYJo0LL_aJXvqLDJGLA"
 											aria-label="youtube" target="_blank" class="btn-link"><i
 												class="fa fa-youtube-play"></i></a></li>
-									<li><a rel="noopener" href="https://www.facebook.com/ACMDBIT/"
-											aria-label="facebook" target="_blank" class="btn-link"><i
-												class="fa fa-facebook"></i></a></li>
+									<li><a rel="noopener" href="https://www.facebook.com/ACMDBIT/" aria-label="facebook"
+											target="_blank" class="btn-link"><i class="fa fa-facebook"></i></a></li>
 								</ul>
 							</div>
+
 						</div>
+
 					</div>
+
 				</div>
 				<div class="row" style="width: 100%;">
 					<div class="col-lg-12 col-md-12 col-sm-12 text-center mb-3"> <a target="_blank"
-							href="index">&copy;2021 ACM DBIT Student Chapter.All Rights Reserved.</a></div>
+							href="index.html">&copy;2021 ACM DBIT Student Chapter. All Rights Reserved.</a></div>
 				</div>
 			</div>
+
 		</footer>
 		<!-- Footer END ==== -->
 		<button class="back-to-top fa fa-chevron-up"></button>
