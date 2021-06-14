@@ -42,6 +42,6 @@ async function getEventDataFromServer(){
     }
  
 
-    console.log(eventData,curr)
+    // console.log(eventData,curr)
 }
 getEventDataFromServer()
