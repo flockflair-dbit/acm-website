@@ -83,6 +83,7 @@
   transition: all 0.5s;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
+  transform: translate(0px, -50%);
   -moz-transform: translate(0px, -50%);
   -moz-transform: translate(0px, -50%);
   -o-transform: translate(0px, -50%);
@@ -1286,7 +1287,7 @@
   list-style: none;
 }
 .share-btn ul li {
-  display: inline-block;
+  display: block;
   margin-left: -40px;
   float: left;
   transition: all 0.5s;
