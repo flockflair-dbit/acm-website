@@ -15,8 +15,7 @@ eventData=[
 ]
 
 
-url="https://api-eu-central-1.graphcms.com/v2/ckpuxxcyxahs501wk7lu1epam/master?query=%7B%0A%20%20events%20%7B%0A%20%20%20%20id%0A%20%20%20%20title%0A%20%20%20%20blog%20%7B%0A%20%20%20%20%20%20raw%0A%20%20%20%20%20%20html%0A%20%20%20%20%20%20markdown%0A%20%20%20%20%20%20text%0A%20%20%20%20%7D%0A%20%20%20%20images%20%7B%0A%20%20%20%20%20%20url%0A%20%20%20%20%20%20handle%0A%20%20%20%20%20%20fileName%0A%20%20%20%20%20%20height%0A%20%20%20%20%20%20width%0A%20%20%20%20%20%20size%0A%20%20%20%20%20%20mimeType%0A%20%20%20%20%7D%0A%20%20%20%20slug%0A%20%20%20%20thumbnail%20%7B%0A%20%20%20%20%20%20url%0A%20%20%20%20%20%20handle%0A%20%20%20%20%20%20fileName%0A%20%20%20%20%20%20height%0A%20%20%20%20%20%20width%0A%20%20%20%20%20%20size%0A%20%20%20%20%20%20mimeType%0A%20%20%20%20%7D%0A%20%20%20%20date%20%0A%20%20%20%20month_name%0A%20%20%20%20date_number%0A%20%20%7D%0A%7D"
-
+url="https://api-eu-central-1.graphcms.com/v2/ckpv3up06dqcq01xxfy3y5xwn/master?query=%7B%0A%20%20events(orderBy%3Adate_DESC)%20%7B%0A%20%20%20%20id%0A%20%20%20%20blog%20%7B%0A%20%20%20%20%20%20html%0A%20%20%20%20%20%20text%0A%20%20%20%20%7D%0A%20%20%20%20title%0A%20%20%20%20slug%0A%20%20%20%20date%0A%20%20%20%20month_name%20%0A%20%20%20%20thumbnail%20%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20url%0A%20%20%20%20%20%20fileName%0A%20%20%20%20%7D%0A%20%20%20%20images%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20url%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D"
 async function getEventDataFromServer(){
     const reps = await fetch(url);
     var data = await reps.json();
@@ -34,14 +33,14 @@ async function getEventDataFromServer(){
            slug:curr.slug,
            fullDate:curr.date,
            date:curr.date.slice(-2),
-           month:curr.month_name,
+           month:curr.month_name ,
            footerImages:curr.images,
         
         }
         eventData.push(temp)
         // console.log(curr,temp)
     }
-   
+ 
 
     console.log(eventData,curr)
 }
