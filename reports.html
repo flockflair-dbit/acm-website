@@ -46,6 +46,17 @@
 	<link class="skin" rel="stylesheet" type="text/css" href="assets/css/color/color-1.css">
 	<link rel="stylesheet" href="assets/css/reports.css">
 	<script src="assets/js/reportData.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146434995-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-146434995-1');
+	</script>
+	
 </head>
 
 <body id="bg">
@@ -163,34 +174,33 @@
 												style="justify-content: space-evenly;">
 
 												<script>
-													function BuildYears(){
-												
-													var buildYears = ``
-													for(var i=0;i<reportData.length;i++){
-														if(reportData[i].year==999 || reportData[i].year==888  )
-														{
-															continue
-														}
-														if(i==0){
-														buildYears+=`
+													function BuildYears() {
+
+														var buildYears = ``
+														for (var i = 0; i < reportData.length; i++) {
+															if (reportData[i].year == 999 || reportData[i].year == 888) {
+																continue
+															}
+															if (i == 0) {
+																buildYears += `
 														<li class="nav-item px-3" role="presentation" style="margin-bottom:1rem">
 														<a class="btn nav-link active" id="pills-${reportData[i].year}-tab" data-toggle="pill"
 															href="#pills-${reportData[i].year}" role="tab" aria-controls="pills-${reportData[i].year}"
 															aria-selected="true">${reportData[i].year}</a>
 													</li>
 														`
-													}else{
-														buildYears+=`
+															} else {
+																buildYears += `
 														<li class="nav-item px-3" role="presentation" margin-bottom:1rem>
 														<a class="btn nav-link" id="pills-${reportData[i].year}-tab" data-toggle="pill"
 															href="#pills-${reportData[i].year}" role="tab" aria-controls="pills-${reportData[i].year}"
 															>${reportData[i].year}</a>
 													</li>`
+															}
+															document.getElementById("pills-tab").innerHTML = buildYears;
+
+														}
 													}
-													document.getElementById("pills-tab").innerHTML=buildYears;
-													
-												}
-												}
 												</script>
 											</ul>
 										</div>
