@@ -3428,3 +3428,8 @@ button.back-to-top {
 	text-overflow: clip;
 	overflow: hidden;
 }
+
+.teamNameLink:hover {
+  color: #f7b205;
+  transition-duration: 300ms;
+}
