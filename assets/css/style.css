@@ -3433,3 +3433,16 @@ button.back-to-top {
   color: #f7b205;
   transition-duration: 300ms;
 }
+
+@media only screen and (max-width: 500px) {
+  .collegeLogo {
+    width: 50px;
+  }
+  
+}
+
+@media only screen and (max-width: 992px) {
+.pt-social-link{
+  display: none !important;
+}
+}
