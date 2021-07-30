@@ -1901,7 +1901,7 @@ button.back-to-top {
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   position: relative;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 .service-bx [class*="feature-"] {
   box-shadow: 0 0 25px 0 rgba(29, 25, 0, 0.15);
@@ -3421,12 +3421,12 @@ button.back-to-top {
 }
 
 .eventsTitleLines {
-	height: 26px;
-	max-height: 26px;
-	line-clamp: 1;
-	max-lines: 1;
-	text-overflow: clip;
-	overflow: hidden;
+  height: 26px;
+  max-height: 26px;
+  line-clamp: 1;
+  max-lines: 1;
+  text-overflow: clip;
+  overflow: hidden;
 }
 
 .teamNameLink:hover {
@@ -3438,11 +3438,52 @@ button.back-to-top {
   .collegeLogo {
     width: 50px;
   }
-  
 }
 
 @media only screen and (max-width: 992px) {
-.pt-social-link{
-  display: none !important;
+  .pt-social-link {
+    display: none !important;
+  }
 }
+
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  /* background-image: url("../images/background/bg2.jpg"); */
+  background: linear-gradient(to right, rgba(2, 0, 11, 0.8),rgba(2, 0, 11, 0.8) ), url(../images/banner/b4.jpg) no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(2, 0, 11, 0.8);
+  border-color: rgba(0, 0, 0, 0);
+  border-width: 0px;
+  /* filter: blur(8px); */
+  /* -webkit-filter: blur(8px); */
+}
+
+.masthead .header-text {
+  margin-top: -20%;
+  /* margin: auto; */
+  color: #fff;
+  /* filter: blur(0px); */
+  /* -webkit-filter: blur(0px); */
+
+}
+
+@media only screen and (max-width: 500px) {
+  .masthead {
+    height: 50vh;
+  }
+  .header-text {
+    margin-top: 20% !important;
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  .masthead p {
+    font-size: 1.8em;
+  }
+  .masthead h1 {
+    font-size: 2.5em;
+  }
 }
