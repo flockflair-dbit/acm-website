@@ -100,3 +100,4 @@ async function getProjectDataFromServer() {
     console.log(projectsData)
 }
 getProjectDataFromServer()
+console.log(projectsData)
