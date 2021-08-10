@@ -3487,3 +3487,14 @@ button.back-to-top {
     font-size: 2.5em;
   }
 }
+
+.post-desc {
+  font-size: 1em !important;
+}
+
+.post-developer {
+  color: #061538;
+}
+.post-developer:hover {
+  color: #f7b205;
+}
