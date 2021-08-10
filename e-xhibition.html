@@ -173,13 +173,12 @@
 			<div class="content-block">
 				<div class="section-area section-sp1">
 					<div class="container">
-						<div class="row justify-content-center">
+						<div class="row justify-content-center" id="projectsHere">
 							<!-- Left part start -->
-							<div class="col-md-6 col-lg-6 col-xl-6">
+							<!-- <div class="col-md-6 col-lg-6 col-xl-6">
 								<div class="recent-news blog-lg m-b40">
 									<div class="action-box blog-lg">
-										<!-- <img src="assets/images/blog/default/thum1.jpg" alt=""> -->
-										<iframe width="560" height="315" src="https://www.youtube.com/embed/oz-lFDS5rUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										<iframe style="width: 100%;height: 300px;" src="https://www.youtube.com/embed/oz-lFDS5rUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 									</div>
 									<div class="info-bx">
 										<ul class="media-post">
@@ -190,69 +189,42 @@
 										<p class="post-desc">Developer: <a class="post-developer" href="https://www.linkedin.com/in/iyerhari9999/" target="_blank">Hariharan Iyer</a></p>
 										<a href="https://github.com/IyerHari9999/Selenium-Python-Project" target="_blank"><button class="btn btn-primary"><b>View on Github</b></button></a>
 										<div class="post-extra">
-											<!-- <a href="#" class="btn-link">READ MORE</a>
-											<a href="#" class="comments-bx"><i class="fa fa-comments-o"></i>78 Comment</a> -->
 										</div>
 									</div>
 								</div>
-								<!-- <div class="recent-news blog-lg m-b40">
-									<div class="action-box blog-lg">
-										<iframe width="560" height="315" src="https://www.youtube.com/embed/oz-lFDS5rUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-									</div>
-									<div class="info-bx">
-										<ul class="media-post">
-											<li><a href="#"><i class="fa fa-calendar"></i>Aug 08 2021</a></li>
-											<li><a href="https://www.linkedin.com/in/iyerhari9999/"><i class="fa fa-user"></i>Hariharan Iyer</a></li>
-										</ul>
-										<h5 class="post-title"><a href="https://github.com/IyerHari9999/Selenium-Python-Project">E-xhibition #1 | Google Map Automation</a></h5>
-										<p class="post-desc">Developer: <a class="post-developer" href="https://www.linkedin.com/in/iyerhari9999/" target="_blank">Hariharan Iyer</a></p>
-										<a href="https://github.com/IyerHari9999/Selenium-Python-Project" target="_blank"><button class="btn btn-primary"><b>View on Github</b></button></a>
-										<div class="post-extra">
+							</div> -->
+							<script src="assets/js/projectsData.js"></script>
+							<script>
+								console.log(projectsData.length)
+								var tempTotal = ""
+								for (var i = 0; i < projectsData.length; i++) {
+									console.log(projectsData[i])
+									tempTotal += `
+									<div class="col-md-6 col-lg-6 col-xl-6">
+										<div class="recent-news blog-lg m-b40">
+											<div class="action-box blog-lg">
+												<iframe style="width: 100%;height: 300px;" src="${projectsData[i].videoLink}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											</div>
+											<div class="info-bx">
+												<ul class="media-post">
+													<li><a href="#"><i class="fa fa-calendar"></i>${projectsData[i].month} ${projectsData[i].date} ${projectsData[i].year}</a></li>
+													<li><a href="#"><i class="fa fa-user"></i>${projectsData[i].developerName}</a></li>
+												</ul>
+												<h5 class="post-title"><a href="${projectsData[i].projectLink}">${projectsData[i].title}</a></h5>
+												<p class="post-desc">Developer: <a class="post-developer" href="#">${projectsData[i].developerName}</a></p>
+												<a href="${projectsData[i].projectLink}"><button class="btn btn-primary"><b>View Project</b></button></a>
+												<div class="post-extra">
+												</div>
+											</div>
 										</div>
-									</div>
-								</div> -->
-								
-								<!-- Pagination END -->
-							</div>
-							<!-- Right part -->
-							<div class="col-md-6 col-lg-6 col-xl-6">
-								<!-- <div class="recent-news blog-lg m-b40">
-									<div class="action-box blog-lg">
-										<iframe width="560" height="315" src="https://www.youtube.com/embed/oz-lFDS5rUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-									</div>
-									<div class="info-bx">
-										<ul class="media-post">
-											<li><a href="#"><i class="fa fa-calendar"></i>Aug 08 2021</a></li>
-											<li><a href="https://www.linkedin.com/in/iyerhari9999/"><i class="fa fa-user"></i>Hariharan Iyer</a></li>
-										</ul>
-										<h5 class="post-title"><a href="https://github.com/IyerHari9999/Selenium-Python-Project">E-xhibition #1 | Google Map Automation</a></h5>
-										<p class="post-desc">Developer: <a class="post-developer" href="https://www.linkedin.com/in/iyerhari9999/" target="_blank">Hariharan Iyer</a></p>
-										<a href="https://github.com/IyerHari9999/Selenium-Python-Project" target="_blank"><button class="btn btn-primary"><b>View on Github</b></button></a>
-										<div class="post-extra">
-										</div>
-									</div>
-								</div> -->
-								<!-- <div class="recent-news blog-lg m-b40">
-									<div class="action-box blog-lg">
-										<iframe width="560" height="315" src="https://www.youtube.com/embed/oz-lFDS5rUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-									</div>
-									<div class="info-bx">
-										<ul class="media-post">
-											<li><a href="#"><i class="fa fa-calendar"></i>Aug 08 2021</a></li>
-											<li><a href="https://www.linkedin.com/in/iyerhari9999/"><i class="fa fa-user"></i>Hariharan Iyer</a></li>
-										</ul>
-										<h5 class="post-title"><a href="https://github.com/IyerHari9999/Selenium-Python-Project">E-xhibition #1 | Google Map Automation</a></h5>
-										<p class="post-desc">Developer: <a class="post-developer" href="https://www.linkedin.com/in/iyerhari9999/" target="_blank">Hariharan Iyer</a></p>
-										<a href="https://github.com/IyerHari9999/Selenium-Python-Project" target="_blank"><button class="btn btn-primary"><b>View on Github</b></button></a>
-										<div class="post-extra">
-										</div>
-									</div>
-								</div> -->
-								
-								<!-- Pagination END -->
-							</div>
-							<!-- Left part END -->
-							
+									</div>`
+								}
+								document.getElementById("projectsHere").innerHTML = "";
+								document.getElementById("projectsHere").innerHTML = tempTotal;
+								console.log(tempTotal)
+							</script>
+
+
 						</div>
 					</div>
 				</div>
@@ -302,7 +274,8 @@
 					</div>
 				</div>
 				<div class="row" style="width: 100%;">
-					<div class="col-lg-12 col-md-12 col-sm-12 text-center mb-3" style="font-size: 0.9em;">&copy;2021 ACM DBIT Student Chapter.<br>Developed by Grejo Joby & Hayden Cordeiro.</div>
+					<div class="col-lg-12 col-md-12 col-sm-12 text-center mb-3" style="font-size: 0.9em;">&copy;2021 ACM
+						DBIT Student Chapter.<br>Developed by Grejo Joby & Hayden Cordeiro.</div>
 				</div>
 			</div>
 		</footer>
@@ -324,6 +297,7 @@
 	<script src="assets/vendors/owl-carousel/owl.carousel.js"></script>
 	<script src="assets/js/functions.js"></script>
 	<script src="assets/js/contact.js"></script>
+
 	<!-- <script src='assets/vendors/switcher/switcher.js'></script> -->
 </body>
 
