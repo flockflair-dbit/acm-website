@@ -1,118 +1,144 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <script>
-        linksData=[
-
-    ]
-    url="https://api-eu-central-1.graphcms.com/v2/ckpv3up06dqcq01xxfy3y5xwn/master?query=%7B%0A%20%20links%20%7B%0A%20%20%20%20id%0A%20%20%20%20title%0A%09%09url%20%20%20%20%0A%20%20%20%20%0A%20%20%7D%0A%7D"
-    async function getEventDataFromServer(){
+      linksData = [];
+      url =
+        "https://api-eu-central-1.graphcms.com/v2/ckpv3up06dqcq01xxfy3y5xwn/master?query=%7B%0A%20%20links%20%7B%0A%20%20%20%20id%0A%20%20%20%20title%0A%09%09url%20%20%20%20%0A%20%20%20%20%0A%20%20%7D%0A%7D";
+      async function getEventDataFromServer() {
         const reps = await fetch(url);
         var data = await reps.json();
-        data= (data.data.links);
+        data = data.data.links;
         // console.log(data);
-    
-        for(var i=0;i<data.length;i++){
-            linksData.push(data[i])
+
+        for (var i = 0; i < data.length; i++) {
+          linksData.push(data[i]);
         }
         // reportData.reverse();
         // console.log(linksData)
-    }
-    getEventDataFromServer()
-
-
-
+      }
+      getEventDataFromServer();
     </script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/links-style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/links-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
     <title>ACM DBIT Links</title>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="container OuterBox">
-        <div class="row text-center">
-            <div class="col-md-12">
-                <h1>ACM DBIT Links</h1>
-            </div>
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1>ACM DBIT Links</h1>
         </div>
-        <div style="width: 100%;display: flex;justify-content: center;margin-top: 20px;">
-            <a href="https://www.instagram.com/acmdbitt" class="px-5">
-                <i class="bi bi-instagram socialIcon" role="img" aria-label="Instagram" style="font-size: 1.7rem;"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/acm-dbit" class="px-5">
-                <i class="bi bi-linkedin socialIcon" role="img" aria-label="LinkedIn" style="font-size: 1.7rem;"></i>
-            </a>
-            <a href="https://www.facebook.com/ACMDBIT/" class="px-5">
-                <i class="bi bi-facebook socialIcon" role="img" aria-label="Facebook" style="font-size: 1.7rem;"></i>
-            </a>
-            <a href="https://twitter.com/acmdbit?lang=en" class="px-5">
-                <i class="bi bi-twitter socialIcon" role="img" aria-label="Twitter" style="font-size: 1.7rem;"></i>
-            </a>
-
-        </div>
-        <div class="row">
-            <hr style="width: 50%;margin: auto;margin-top: 30px;">
-            <!-- <h3 style="text-align: center;padding: 10px;padding-top: 30px;">
+      </div>
+      <div
+        style="
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+        "
+      >
+        <a href="https://www.instagram.com/acmdbitt" class="px-5">
+          <i
+            class="bi bi-instagram socialIcon"
+            role="img"
+            aria-label="Instagram"
+            style="font-size: 1.7rem"
+          ></i>
+        </a>
+        <a href="https://www.linkedin.com/company/acm-dbit" class="px-5">
+          <i
+            class="bi bi-linkedin socialIcon"
+            role="img"
+            aria-label="LinkedIn"
+            style="font-size: 1.7rem"
+          ></i>
+        </a>
+        <a href="https://www.facebook.com/ACMDBIT/" class="px-5">
+          <i
+            class="bi bi-facebook socialIcon"
+            role="img"
+            aria-label="Facebook"
+            style="font-size: 1.7rem"
+          ></i>
+        </a>
+        <a href="https://twitter.com/acmdbit?lang=en" class="px-5">
+          <i
+            class="bi bi-twitter socialIcon"
+            role="img"
+            aria-label="Twitter"
+            style="font-size: 1.7rem"
+          ></i>
+        </a>
+      </div>
+      <div class="row">
+        <hr style="width: 50%; margin: auto; margin-top: 30px" />
+        <!-- <h3 style="text-align: center;padding: 10px;padding-top: 30px;">
                 Gradesheet Forms
             </h3> -->
-            <div class="col-12 linkField text-center justify-content-center">
-                <a class="col-12" href="https://dbit.acm.org" target="_blank"><button class="linkButton py-3">Official
-                        Website</button></a>
-            </div>
-            <div class="col-12 linkField text-center justify-content-center">
-                <a class="col-12" href="https://forms.gle/JzxMqTp2GSbvyaeW6" target="_blank"><button class="linkButton py-3">Teknack
-                        Website</button></a>
-            </div>
+        <div class="col-12 linkField text-center justify-content-center">
+          <a class="col-12" href="https://dbit.acm.org" target="_blank"
+            ><button class="linkButton py-3">Official Website</button></a
+          >
         </div>
-        <hr style="width: 50%;margin: auto;margin-top: 30px;" class="my-3">
-        <div class="row" id="cmslinks">
-            <!-- <h3 style="text-align: center;padding: 10px;padding-top: 30px;">
+        <div class="col-12 linkField text-center justify-content-center">
+          <a
+            class="col-12"
+            href="https://forms.gle/JzxMqTp2GSbvyaeW6"
+            target="_blank"
+            ><button class="linkButton py-3">Teknack Website</button></a
+          >
+        </div>
+      </div>
+      <hr style="width: 50%; margin: auto; margin-top: 30px" class="my-3" />
+      <div class="row" id="cmslinks">
+        <!-- <h3 style="text-align: center;padding: 10px;padding-top: 30px;">
                 Gradesheet Forms
             </h3> -->
-
-            
-      
-          
-        </div>
-
+      </div>
     </div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"></script>
-</body>
-<script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <script>
     // while(linksData.length==0){
 
     // }
-    function test(){
-    
-       if(linksData.length==0){
-        setTimeout(test,100)
+    function injectLinkData() {
+      if (linksData.length == 0) {
+        setTimeout(injectLinkData, 100);
+      }
 
-       }
-        
-    var tempTotal = ""
-    for (var i = 0; i < linksData.length; i++) {
+      var tempTotal = "";
+      for (var i = 0; i < linksData.length; i++) {
         tempTotal += `
 
         <div class="col-12 linkField text-center justify-content-center">
         <a class="col-12" href="${linksData[i].url}" target="_blank"><button class="linkButton py-3">${linksData[i].title}</button></a>
     </div>
-        `
-    }
+        `;
+      }
 
-    document.getElementById("cmslinks").innerHTML = "";
-    document.getElementById("cmslinks").innerHTML = tempTotal;
+      document.getElementById("cmslinks").innerHTML = "";
+      document.getElementById("cmslinks").innerHTML = tempTotal;
     }
-    setTimeout(test,0)
-</script>
+    setTimeout(injectLinkData, 0);
+  </script>
 </html>
