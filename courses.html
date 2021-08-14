@@ -187,33 +187,7 @@
 								</div>
 								
 
-								<script>
-
-					var tempTotal = ""
-									for (var i = 0; i < courseData.length; i++) {
-										tempTotal += `
-									
-									<div class="col-md-6 col-lg-4 col-sm-6 m-b30">
-									<div class="cours-bx">
-										<div class="action-box">
-											<img src="https://img.youtube.com/vi/${courseData[i].youtubeID}/mqdefault.jpg" alt="">
-											<a href="#" class="btn">${courseData[i].eventDate}</a>
-										</div>
-										<div class="info-bx text-center">
-											<h5><a href="https://www.youtube.com/watch?v=${courseData[i].youtubeID}">${courseData[i].title}</a></h5>
-											<span>${courseData[i].taughtBy}</span>
-										</div>
-										
-									</div>
-								</div>
-									`
-									}
-					document.getElementById("coursesHere").innerHTML = "";
-					document.getElementById("coursesHere").innerHTML = tempTotal;
-			
-
-				
-								</script>
+	
 							</div>
 						</div>
 					</div>
@@ -288,6 +262,38 @@
 	<script src="assets/js/functions.js"></script>
 	<script src="assets/js/contact.js"></script>
 	<!-- <script src='assets/vendors/switcher/switcher.js'></script> -->
+	<script>
+function test(){
+	if(courseData.length==0){
+        setTimeout(test,100)
+
+       }
+		var tempTotal = ""
+						for (var i = 0; i < courseData.length; i++) {
+							tempTotal += `
+						
+						<div class="col-md-6 col-lg-4 col-sm-6 m-b30">
+						<div class="cours-bx">
+							<div class="action-box">
+								<img src="https://img.youtube.com/vi/${courseData[i].youtubeID}/mqdefault.jpg" alt="">
+								<a href="#" class="btn">${courseData[i].eventDate}</a>
+							</div>
+							<div class="info-bx text-center">
+								<h5><a href="https://www.youtube.com/watch?v=${courseData[i].youtubeID}">${courseData[i].title}</a></h5>
+								<span>${courseData[i].taughtBy}</span>
+							</div>
+							
+						</div>
+					</div>
+						`
+						}
+		document.getElementById("coursesHere").innerHTML = "";
+		document.getElementById("coursesHere").innerHTML = tempTotal;
+
+					}
+					setTimeout(test,0)
+	
+					</script>
 </body>
 
 </html>
