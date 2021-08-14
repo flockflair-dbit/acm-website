@@ -17,7 +17,7 @@ async function getEventDataFromServer(){
 
     }
     // courseData.reverse();
-    console.log(courseData)
+    // console.log(courseData)
 }
 getEventDataFromServer()
 
