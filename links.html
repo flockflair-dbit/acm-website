@@ -2,6 +2,28 @@
 <html lang="en">
 
 <head>
+    <script>
+        linksData=[
+
+    ]
+    url="https://api-eu-central-1.graphcms.com/v2/ckpv3up06dqcq01xxfy3y5xwn/master?query=%7B%0A%20%20links%20%7B%0A%20%20%20%20id%0A%20%20%20%20title%0A%09%09url%20%20%20%20%0A%20%20%20%20%0A%20%20%7D%0A%7D"
+    async function getEventDataFromServer(){
+        const reps = await fetch(url);
+        var data = await reps.json();
+        data= (data.data.links);
+        // console.log(data);
+    
+        for(var i=0;i<data.length;i++){
+            linksData.push(data[i])
+        }
+        // reportData.reverse();
+        // console.log(linksData)
+    }
+    getEventDataFromServer()
+
+
+
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
@@ -10,6 +32,7 @@
     <link rel="stylesheet" href="assets/css/links-style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <title>ACM DBIT Links</title>
+
 </head>
 
 <body>
@@ -49,18 +72,16 @@
             </div>
         </div>
         <hr style="width: 50%;margin: auto;margin-top: 30px;" class="my-3">
-        <div class="row">
+        <div class="row" id="cmslinks">
             <!-- <h3 style="text-align: center;padding: 10px;padding-top: 30px;">
                 Gradesheet Forms
             </h3> -->
-            <div class="col-12 linkField text-center justify-content-center">
-                <a class="col-12" href="https://links.dbitacm.co.in/register2021-22" target="_blank"><button class="linkButton py-3">ACM Student Chapter Membership</button></a>
-            </div>
-            <div class="col-12 linkField text-center justify-content-center">
-                <a class="col-12" href="https://forms.gle/g3shnsBwgfXHJFkf7" target="_blank"><button class="linkButton py-3">UI UX Workshop Registration</button></a>
-            </div>
+
+            
+      
           
         </div>
+
     </div>
 
 
@@ -68,5 +89,30 @@
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
 </body>
+<script>
+    // while(linksData.length==0){
 
+    // }
+    function test(){
+    
+       if(linksData.length==0){
+        setTimeout(test,100)
+
+       }
+        
+    var tempTotal = ""
+    for (var i = 0; i < linksData.length; i++) {
+        tempTotal += `
+
+        <div class="col-12 linkField text-center justify-content-center">
+        <a class="col-12" href="${linksData[i].url}" target="_blank"><button class="linkButton py-3">${linksData[i].title}</button></a>
+    </div>
+        `
+    }
+
+    document.getElementById("cmslinks").innerHTML = "";
+    document.getElementById("cmslinks").innerHTML = tempTotal;
+    }
+    setTimeout(test,0)
+</script>
 </html>
