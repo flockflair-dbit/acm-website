@@ -1,39 +1,24 @@
 courseData=[
-    {
-        videoID:"Ilq9hrPDKyI",
-    title:"Git - GitHub Workshop | Version Control",
-    taughtBy:"Grejo Joby",
-    date:"02/02/0220"
-},
-    {
-        videoID:"aBtZpZYKm38",
-    title:"Illustrator Tutorial | Logo Designing ",
-    taughtBy:"Hariharan Iyer | Slade Ferrao",
-    date:"02/02/2020"
-},
-    {
-        videoID:"13qLC8yJWtA",
-    title:"Domain, DNS and Web Hosting Workshop",
-    taughtBy:" Noble Mavely",
-    date:"02/02/2020"
-},
 
-    {
-        videoID:"5kHCgJj2EHY",
-    title:"Unity Workshop 1 | Teknack 2021",
-    taughtBy:"  Grejo Joby | Hayden Cordeiro",
-    date:"02/02/2020"
-},
-    {
-        videoID:"bC4xxGlM5eA",
-    title:"C++ Crash Course ",
-    taughtBy:" Grejo Joby | Hayden Cordeiro | Pakshal Ranawat",
-    date:"02/02/2020"
-},
-    {
-        videoID:"v4zxQ_q2Kzg",
-    title:"Macromedia Flash Workshop | ACM DBIT |",
-    taughtBy:" Hariharan Iyer",
-    date:"02/02/2020"
-}
 ]
+url="https://api-eu-central-1.graphcms.com/v2/ckpv3up06dqcq01xxfy3y5xwn/master?query=%7B%0A%20%20courses(orderBy%3AeventDate_DESC)%20%7B%0A%20%20%20%20id%0A%20%20%20%20title%0A%20%20%20%20youtubeID%0A%20%20%20%20taughtBy%0A%20%20%20%20eventDate%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%7D%0A%7D"
+async function getEventDataFromServer(){
+    const reps = await fetch(url);
+    var data = await reps.json();
+    data= (data.data.courses);
+    // console.log(data);
+   
+    for(var i=0;i<data.length;i++){
+        courseData.push(data[i])
+
+      
+
+        courseData[i]["eventDate"]=(courseData[i]["eventDate"].replaceAll("-", "/"));
+
+    }
+    // courseData.reverse();
+    console.log(courseData)
+}
+getEventDataFromServer()
+
+

@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+	<script src="assets/js/courseData.js"></script>
 	<!-- META ============================================= -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -344,31 +345,33 @@
 						</div>
 					</div>
 				</div>
-				<script src="assets/js/courseData.js"></script>
-
 				<script>
-					var tempTotal = ""
-					for (var i = 0; i < courseData.length; i++) {
-						tempTotal += `
+								var tempTotal = ""
+			for (var i = 0; i < courseData.length; i++) {
+				tempTotal += `
 
-					<div class="item">
-									<div class="cours-bx">
-										<div class="action-box">
-											<img src="https://img.youtube.com/vi/${courseData[i].videoID}/mqdefault.jpg" loading="lazy" alt="">
-											<a href="#" class="btn">${courseData[i].date}</a>
-										</div>
-										<div class="info-bx text-center">
-											<h5><a href="https://www.youtube.com/watch?v=${courseData[i].videoID}">${courseData[i].title}</a></h5>
-											<span>${courseData[i].taughtBy}</span>
-										</div>
-			
-									</div>
+			<div class="item">
+							<div class="cours-bx">
+								<div class="action-box">
+									<img src="https://img.youtube.com/vi/${courseData[i].youtubeID}/mqdefault.jpg" loading="lazy" alt="">
+									<a href="#" class="btn">${courseData[i].eventDate}</a>
 								</div>
-						`
-					}
-					document.getElementById("coursesHere").innerHTML = "";
-					document.getElementById("coursesHere").innerHTML = tempTotal;
+								<div class="info-bx text-center">
+									<h5><a href="https://www.youtube.com/watch?v=${courseData[i].youtubeID}">${courseData[i].title}</a></h5>
+									<span>${courseData[i].taughtBy}</span>
+								</div>
+	
+							</div>
+						</div>
+				`
+			}
+
+			document.getElementById("coursesHere").innerHTML = "";
+			document.getElementById("coursesHere").innerHTML = tempTotal;
 				</script>
+			
+
+			
 				<!-- Popular Courses END -->
 
 				<!-- Form -->

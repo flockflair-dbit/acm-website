@@ -17,7 +17,7 @@
 	<meta property="og:title" content="Courses | ACM-DBIT" />
 	<meta property="og:description" content="Largest Student Chapter in DBIT" />
 	<meta property="og:image" content="" />
-
+	<script src="assets/js/courseData.js"></script>
 	<!-- FAVICONS ICON ============================================= -->
 	<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
@@ -185,21 +185,22 @@
 
 
 								</div>
-								<script src="assets/js/courseData.js"></script>
+								
 
 								<script>
-									var tempTotal = ""
+
+					var tempTotal = ""
 									for (var i = 0; i < courseData.length; i++) {
 										tempTotal += `
 									
 									<div class="col-md-6 col-lg-4 col-sm-6 m-b30">
 									<div class="cours-bx">
 										<div class="action-box">
-											<img src="https://img.youtube.com/vi/${courseData[i].videoID}/mqdefault.jpg" alt="">
-											<a href="#" class="btn">${courseData[i].date}</a>
+											<img src="https://img.youtube.com/vi/${courseData[i].youtubeID}/mqdefault.jpg" alt="">
+											<a href="#" class="btn">${courseData[i].eventDate}</a>
 										</div>
 										<div class="info-bx text-center">
-											<h5><a href="https://www.youtube.com/watch?v=${courseData[i].videoID}">${courseData[i].title}</a></h5>
+											<h5><a href="https://www.youtube.com/watch?v=${courseData[i].youtubeID}">${courseData[i].title}</a></h5>
 											<span>${courseData[i].taughtBy}</span>
 										</div>
 										
@@ -207,8 +208,11 @@
 								</div>
 									`
 									}
-									document.getElementById("coursesHere").innerHTML = "";
-									document.getElementById("coursesHere").innerHTML = tempTotal;
+					document.getElementById("coursesHere").innerHTML = "";
+					document.getElementById("coursesHere").innerHTML = tempTotal;
+			
+
+				
 								</script>
 							</div>
 						</div>
