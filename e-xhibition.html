@@ -290,10 +290,10 @@
 											<div class="info-bx">
 												<ul class="media-post">
 													<li><a href="#"><i class="fa fa-calendar"></i>${projectsData[i].month} ${projectsData[i].date} ${projectsData[i].year}</a></li>
-													<li><a href="${projectsData[i].devProfile}" target="_blank"><i class="fa fa-user"></i>${projectsData[i].developerName}</a></li>
+													<li><a disabled><i class="fa fa-user"></i>${projectsData[i].developerName}</a></li>
 												</ul>
 												<h5 class="post-title"><a href="${projectsData[i].projectLink}">${projectsData[i].title}</a></h5>
-												<p class="post-desc">Developer: <a class="post-developer" href="${projectsData[i].devProfile}" target="_blank">${projectsData[i].developerName}</a></p>
+												<p class="post-desc">Developer: <a class="post-developer" disabled>${projectsData[i].developerName}</a></p>
 												<a href="${projectsData[i].projectLink}" target="_blank"><button class="btn btn-primary"><b>View Project</b></button></a>
 												<a href="${projectsData[i].share}" class="share-button"><button class="btn btn-primary" onclick="Copy('${projectsData[i].share}');"><b>Share</b></button></a>
 												<div class="post-extra">
