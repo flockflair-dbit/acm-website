@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-  <script src="assets/js/courseData.js"></script>
   <!-- META ============================================= -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,6 +15,8 @@
   <meta property="og:title" content="ACM-DBIT Student Chapter" />
   <meta property="og:description" content="Largest Student Chapter in DBIT" />
   <meta property="og:image" content="" />
+
+  <script src="assets/js/courseData.js"></script>
 
   <!-- FAVICONS ICON ============================================= -->
   <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png" />
@@ -374,38 +375,8 @@
             </div>
           </div>
         </div>
-        <script>
-          function injectCoursesData() {
-            if (courseData.length == 0) {
-              setTimeout(injectCoursesData, 50);
-            }
-            var tempTotal = "";
-            for (var i = 0; i < courseData.length; i++) {
-              tempTotal += `
-		  
-					  <div class="item">
-									  <div class="cours-bx">
-										  <div class="action-box">
-											  <img src="https://img.youtube.com/vi/${courseData[i].youtubeID}/mqdefault.jpg" loading="lazy" alt="">
-											  <a href="#" class="btn">${courseData[i].eventDate}</a>
-										  </div>
-										  <div class="info-bx text-center">
-											  <h5><a href="https://www.youtube.com/watch?v=${courseData[i].youtubeID}">${courseData[i].title}</a></h5>
-											  <span>${courseData[i].taughtBy}</span>
-										  </div>
-			  
-									  </div>
-								  </div>
-						  `;
-            }
 
-            document.getElementById("coursesHere").innerHTML = "";
-            document.getElementById("coursesHere").innerHTML = tempTotal;
-            setCourseCarousel();
-          }
-          setTimeout(injectCoursesData, 0);
-        </script>
-        
+
 
         <!-- Popular Courses END -->
 
@@ -672,9 +643,74 @@
   <script src="assets/vendors/masonry/masonry.js"></script>
   <script src="assets/vendors/masonry/filter.js"></script>
   <script src="assets/vendors/owl-carousel/owl.carousel.js"></script>
-<script src="assets/js/functions.js"></script>
+  <script src="assets/js/functions.js"></script>
   <script src="assets/js/contact.js"></script>
 
+  <script>
+    // $('#id'). children(). length > 0
+    var checkSelectorExistence = function (selectorName) {
+      if (courseData.length > 0) { return true; } else { return false; }
+    };
+    var setCourseCarousel = function () {
+      if (!checkSelectorExistence('.courses-carousel')) { return; }
+      $('.courses-carousel').owlCarousel({
+        loop: true,
+        autoplay: true,
+        margin: 0,
+        nav: true,
+        dots: false,
+        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+        responsive: {
+          0: {
+            items: 1
+          },
+          480: {
+            items: 2
+          },
+          1024: {
+            items: 3
+          },
+          1200: {
+            items: 4
+          }
+        }
+      });
+    }
+
+    function injectCoursesData() {
+      if (courseData.length == 0) {
+        setTimeout(injectCoursesData, 50);
+      }
+      else {
+
+
+        var tempTotal = "";
+        for (var i = 0; i < courseData.length; i++) {
+          tempTotal += `
+
+      <div class="item">
+              <div class="cours-bx">
+                <div class="action-box">
+                  <img src="https://img.youtube.com/vi/${courseData[i].youtubeID}/mqdefault.jpg" loading="lazy" alt="">
+                  <a href="#" class="btn">${courseData[i].eventDate}</a>
+                </div>
+                <div class="info-bx text-center">
+                  <h5><a href="https://www.youtube.com/watch?v=${courseData[i].youtubeID}">${courseData[i].title}</a></h5>
+                  <span>${courseData[i].taughtBy}</span>
+                </div>
+  
+              </div>
+            </div>
+        `;
+        }
+
+        document.getElementById("coursesHere").innerHTML = "";
+        document.getElementById("coursesHere").innerHTML = tempTotal;
+        setCourseCarousel();
+      }
+    }
+    setTimeout(injectCoursesData, 0);
+  </script>
 
 </body>
 

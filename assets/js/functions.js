@@ -1,38 +1,11 @@
 (function ($) {
 	'use strict';
 	var BasicFunction = function () {
-		var checkSelectorExistence = function (selectorName) {
-			if (jQuery(selectorName).length > 0) { return true; } else { return false; }
-		};
-
-		var setCourseCarousel = function () {
-			if (!checkSelectorExistence('.courses-carousel')) { return; }
-			jQuery('.courses-carousel').owlCarousel({
-				loop: true,
-				autoplay: true,
-				margin: 0,
-				nav: true,
-				dots: false,
-				navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-				responsive: {
-					0: {
-						items: 1
-					},
-					480: {
-						items: 2
-					},
-					1024: {
-						items: 3
-					},
-					1200: {
-						items: 4
-					}
-				}
-			});
-		}
-
+		
+				
 		var setTestimonialCarousel = function () {
 			if (!checkSelectorExistence('.testimonial-carousel')) { return; }
+			
 			jQuery('.testimonial-carousel').owlCarousel({
 				loop: true,
 				autoplay: true,
@@ -60,7 +33,6 @@
 
 		return {
 			initialHelper: function () {
-				setCourseCarousel();
 				setTestimonialCarousel();
 			}
 		}
