@@ -1,11 +1,13 @@
 (function ($) {
 	'use strict';
 	var BasicFunction = function () {
-		
-				
+		var checkSelectorExistence = function (selectorName) {
+			if (jQuery(selectorName).length > 0) { return true; } else { return false; }
+		};
+
 		var setTestimonialCarousel = function () {
 			if (!checkSelectorExistence('.testimonial-carousel')) { return; }
-			
+
 			jQuery('.testimonial-carousel').owlCarousel({
 				loop: true,
 				autoplay: true,
