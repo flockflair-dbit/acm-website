@@ -1901,6 +1901,7 @@ button.back-to-top {
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   position: relative;
+  border-radius: 5px;
   /* background-color: #fff; */
 }
 .service-bx [class*="feature-"] {

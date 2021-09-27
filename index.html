@@ -17,7 +17,8 @@
 
   <!-- OG -->
   <meta property="og:title" content="ACM-DBIT Student Chapter - Official Website" />
-  <meta property="og:description" content="Largest Student Chapter in DBIT! The ACM-DBIT student chapter first took root in the year 2003 and is currently in its seventeenth vent year of awesomeness. This chapter is the largest known student chapter in the campus of DBIT with over 700 members.Come be a part of us!!" />
+  <meta property="og:description"
+    content="Largest Student Chapter in DBIT! The ACM-DBIT student chapter first took root in the year 2003 and is currently in its seventeenth vent year of awesomeness. This chapter is the largest known student chapter in the campus of DBIT with over 700 members.Come be a part of us!!" />
   <meta property="og:image" content="" />
 
   <script src="assets/js/courseData.js"></script>
@@ -181,11 +182,11 @@
     <!-- Content -->
     <div class="page-content bg-white">
       <div class="content-block">
-        <div class="section-area content-inner service-info-bx">
+        <div class="section-area content-inner service-info-bx pb-5" style="background-color: rgba(208, 234, 245, 0.3);">
           <div class="container">
             <div class="row">
               <div class="col-lg-4 col-md-4 col-sm-6">
-                <div class="service-bx">
+                <div class="service-bx bg-white">
                   <div class="info-bx text-center">
                     <div class="feature-box-sm radius bg-white">
                       <i class="fa fa-bank text-primary"></i>
@@ -200,7 +201,7 @@
                 </div>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-6">
-                <div class="service-bx">
+                <div class="service-bx bg-white">
                   <div class="info-bx text-center">
                     <div class="feature-box-sm radius bg-white">
                       <i class="fa fa-book text-primary"></i>
@@ -214,7 +215,7 @@
                 </div>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="service-bx m-b0">
+                <div class="service-bx m-b0 bg-white">
                   <div class="info-bx text-center">
                     <div class="feature-box-sm radius bg-white">
                       <i class="fa fa-trophy text-primary"></i>
@@ -230,6 +231,65 @@
             </div>
           </div>
         </div>
+<!-- 
+        <div class="section-area section-sp1" style="background-color: rgba(208, 234, 245, 0.3);">
+          <div class="container px-3">
+            <div class="row">
+              <div class="col-6 text-center">
+                <img src="assets/images/teknack-horz-logo.png" class="img img-fluid col-12 col-md-8" alt="Teknack Logo">
+                <hr>
+                <h3 style="font-size: 1.2rem;">Teknack Gaming Studio</h3>
+                <button class="btn">Teknack Website</button>
+
+              </div>
+              <div class="col-6 text-center">
+                <img src="assets/images/flockflair-horiz-transperant-02.png" class="img img-fluid col-12 col-md-8"
+                  alt="FlockFlair Logo">
+                <hr>
+                <h3 style="font-size: 1.2rem;">FlockFlair Freelancing</h3>
+                <button class="btn">FlockFlair Website</button>
+
+              </div>
+
+            </div>
+          </div>
+        </div> -->
+
+        <div class="
+              section-area section-sp2
+              bg-fix
+              ovbl-dark
+              join-bx
+              text-center
+              text-white
+            " style="
+              background-image: url(assets/images/background/bg-teknack2.jpg);
+            ">
+          <div class="container">
+            <div class="row text-center text-white">
+              <h2 class="col-12 text-center">Our Ventures</h2>
+            </div>
+            <div class="row">
+              <div class="col-6 text-center">
+                <img src="assets/images/tknk-white.png" class="img img-fluid col-12 col-md-8" alt="Teknack Logo">
+                <hr>
+                <h3 style="font-size: 1.2rem;">Teknack Gaming Studio</h3>
+                <a href="https://dbit.acm.org/teknack" target="_blank" class="btn">Teknack Website</a>
+
+              </div>
+              <div class="col-6 text-center">
+                <img src="assets/images/ff-trasperant-light-04.png" class="img img-fluid col-12 col-md-8"
+                  alt="FlockFlair Logo">
+                <hr>
+                <h3 style="font-size: 1.2rem;">FlockFlair Freelancing</h3>
+                <a href="https://dbit.acm.org/flockflair" target="_blank" class="btn">FlockFlair Website</a>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
 
         <div class="section-area section-sp1">
           <div class="container">
@@ -309,6 +369,7 @@
             </div>
           </div>
         </div>
+
 
         <div class="section-area section-sp1 ovpr-dark bg-fix online-cours" style="
               background-image: url(assets/images/background/bg-teknack2.jpg);
@@ -692,19 +753,21 @@
         for (var i = 0; i < courseData.length; i++) {
           tempTotal += `
 
-      <div class="item">
-              <div class="cours-bx">
+          <div class="item">
+            <div class="cours-bx">
+              <a href="https://www.youtube.com/watch?v=${courseData[i].youtubeID}" target="_blank">
                 <div class="action-box">
-                  <img src="https://img.youtube.com/vi/${courseData[i].youtubeID}/mqdefault.jpg" loading="lazy" alt="">
-                  <a href="#" class="btn">${courseData[i].eventDate}</a>
+                    <img src="https://img.youtube.com/vi/${courseData[i].youtubeID}/mqdefault.jpg" alt="Course Image">
+                    <button class="btn">${courseData[i].eventDate}</button>
                 </div>
-                <div class="info-bx text-center">
-                  <h5><a href="https://www.youtube.com/watch?v=${courseData[i].youtubeID}">${courseData[i].title}</a></h5>
-                  <span>${courseData[i].taughtBy}</span>
-                </div>
-  
+              </a>
+              <div class="info-bx text-center">
+                <h5><a href="https://www.youtube.com/watch?v=${courseData[i].youtubeID}" target="_blank">${courseData[i].title}</a></h5>
+                <span>${courseData[i].taughtBy}</span>
               </div>
+              
             </div>
+          </div>
         `;
         }
 
