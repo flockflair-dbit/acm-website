@@ -10,7 +10,8 @@ def create_gallery_images_js():
   for subdir, dirs, files in os.walk('./assets/images/gallery'):
       for file in files:
         fileList.append(file)
-
+  fileList.reverse()
+  
   file1 = open("./assets/js/galleryData.js","w+")
   file1.write("var galleryList = [")
   for i in fileList:
