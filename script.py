@@ -11,7 +11,6 @@ def create_gallery_images_js():
       for file in files:
         fileList.append(file)
 
-  fileList.sort(key=lambda x: os.path.getctime('./assets/images/gallery/'+x), reverse=True)
   file1 = open("./assets/js/galleryData.js","w+")
   file1.write("var galleryList = [")
   for i in fileList:
