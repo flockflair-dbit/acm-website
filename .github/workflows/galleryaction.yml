@@ -1,6 +1,6 @@
 name: Gallery_action
 
-on:push
+on: push
 
 jobs:
   build:
