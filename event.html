@@ -7,16 +7,18 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="keywords"
-    content="acm, dbit, student, chapter, don bosco, mumbai, kurla, engineering, computer, Ventures, Gaming Studio,Website,Freelancing,Philosophy,Innovation,Advancing, Computing, Science, Profession,DBIT,Teknack,Flockflair,ACM,DBIT-Mumbai" />
+		content="acm, dbit, student, chapter, don bosco, mumbai, kurla, engineering, computer, Ventures, Gaming Studio,Website,Freelancing,Philosophy,Innovation,Advancing, Computing, Science, Profession,DBIT,Teknack,Flockflair,ACM,DBIT-Mumbai" />
 	<meta name="author" content="ACM DBIT" />
 	<link rel="canonical" href="https://dbit.acm.org/event" />
 
 	<!-- DESCRIPTION -->
-	<meta name="description" content="ACM DBIT believes in events that help the students to develop in all aspects. We provide events for students to boost up their creative skills and pump up their technical skills by amalgamating with newer ideas and facts to build up their skills and experience that lasts with them forever." />
+	<meta name="description"
+		content="ACM DBIT believes in events that help the students to develop in all aspects. We provide events for students to boost up their creative skills and pump up their technical skills by amalgamating with newer ideas and facts to build up their skills and experience that lasts with them forever." />
 
 	<!-- OG -->
 	<meta property="og:title" content="Events | ACM-DBIT" />
-	<meta property="og:description" content="ACM DBIT believes in events that help the students to develop in all aspects. We provide events for students to boost up their creative skills and pump up their technical skills by amalgamating with newer ideas and facts to build up their skills and experience that lasts with them forever." />
+	<meta property="og:description"
+		content="ACM DBIT believes in events that help the students to develop in all aspects. We provide events for students to boost up their creative skills and pump up their technical skills by amalgamating with newer ideas and facts to build up their skills and experience that lasts with them forever." />
 	<meta property="og:image" content="" />
 
 	<!-- FAVICONS ICON ============================================= -->
@@ -178,7 +180,7 @@
 				<div class="section-area section-sp1 gallery-bx">
 					<div class="container">
 						<div class="clearfix">
-							<ul id="masonry" class="ttr-gallery-listing magnific-image row">
+							<ul id="masonryEvent" class="ttr-gallery-listing magnific-image row" style="list-style: none;">
 
 							</ul>
 						</div>
@@ -195,17 +197,17 @@
 					<div class="container">
 						<div class="d-flex align-items-stretch">
 							<div class="pt-logo mr-auto">
-								<a href="index" aria-label="Home Page" rel="noopner"><img
-										src="assets/images/2.png" alt="" /></a>
+								<a href="index" aria-label="Home Page" rel="noopner"><img src="assets/images/2.png"
+										alt="" /></a>
 							</div>
 							<div class="mr-auto my-auto">
 								<a rel="noopener" href="https://www.dbit.in/" target="_blank"
-									aria-label="Dbit website"><img src="assets/images/DBIT.png" alt="" width="75px" class="py-5"></a>
+									aria-label="Dbit website"><img src="assets/images/DBIT.png" alt="" width="75px"
+										class="py-5"></a>
 							</div>
 							<div class="mr-auto my-auto">
-								<a rel="noopener" href="https://dbit.acm.org/teknack"
-									aria-label="Teknack website"><img src="assets/images/teknack.png" alt=""
-										width="75px" class="py-5"></a>
+								<a rel="noopener" href="https://dbit.acm.org/teknack" aria-label="Teknack website"><img
+										src="assets/images/teknack.png" alt="" width="75px" class="py-5"></a>
 							</div>
 							<div class="pt-social-link">
 								<ul class="list-inline m-a0">
@@ -222,16 +224,16 @@
 											href="https://www.youtube.com/channel/UC58zaYJo0LL_aJXvqLDJGLA"
 											aria-label="youtube" target="_blank" class="btn-link"><i
 												class="fa fa-youtube-play"></i></a></li>
-									<li><a rel="noopener" href="https://www.facebook.com/ACMDBIT/"
-											aria-label="facebook" target="_blank" class="btn-link"><i
-												class="fa fa-facebook"></i></a></li>
+									<li><a rel="noopener" href="https://www.facebook.com/ACMDBIT/" aria-label="facebook"
+											target="_blank" class="btn-link"><i class="fa fa-facebook"></i></a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="row" style="width: 100%;">
-					<div class="col-lg-12 col-md-12 col-sm-12 text-center mb-3" style="font-size: 0.9em;">&copy;2021 ACM DBIT Student Chapter.<br>Developed by Grejo Joby & Hayden Cordeiro.</div>
+					<div class="col-lg-12 col-md-12 col-sm-12 text-center mb-3" style="font-size: 0.9em;">&copy;2021 ACM
+						DBIT Student Chapter.<br>Developed by Grejo Joby & Hayden Cordeiro.</div>
 				</div>
 			</div>
 		</footer>
@@ -245,55 +247,41 @@
 	<script>
 		function generateEventBlock({ date, month, fullDate, contentRaw, title, imgSrc, slug }) {
 
-			tempCon=String(contentRaw).split("\\n")
-			description=""
-			for(var i=0;i<tempCon.length;i++){
-				description+=tempCon[i]
+			tempCon = String(contentRaw).split("\\n")
+			description = ""
+			for (var i = 0; i < tempCon.length; i++) {
+				description += tempCon[i]
 			}
 			// console.log(description)
 			return `
 			<li class="action-card col-lg-6 col-md-6 col-sm-12">
-										<div class="event-bx m-b30">
-											<div class="action-box">
-												<img src="${imgSrc}" style="height: 280px;" alt="" loading="lazy">
-											</div>
-											<div class="info-bx d-flex">
-												<div>
-													<div class="event-time">
-														<div class="event-date">${date}</div>
-														<div class="event-month">${month}</div>
-													</div>
-												</div>
-												<div class="event-info">
-													<h4 class="event-title eventsTitleLines"><a href="events-details#${slug}">${title}</h4>
-													<ul class="media-post">
-														<li><a href="#"><i class="fa fa-clock-o"></i> ${fullDate}</a></li>
-													
-													</ul>
-													<p class="eventShortDesc" style="word-break: break-word;">${description.substring(0, 200)}...</p>
-												</div>
-											</div>
-										</div>
-									</li>
-									
-								`
-		
-							}
-		function buildEvents() {
-		
-			var allEvents = ""
-			for (var i = 0; i < eventData.length; i++) {
+				<div class="event-bx m-b30">
+					<div class="action-box">
+						<img src="${imgSrc}" alt="Event Image" loading="lazy">
+					</div>
+					<div class="info-bx d-flex">
+						<div>
+							<div class="event-time">
+								<div class="event-date">${date}</div>
+								<div class="event-month">${month}</div>
+							</div>
+						</div>
+						<div class="event-info">
+							<h4 class="event-title eventsTitleLines"><a href="events-details#${slug}">${title}</h4>
+							<ul class="media-post">
+								<li><a href="#"><i class="fa fa-clock-o"></i> ${fullDate}</a></li>
+							
+							</ul>
+							<p class="eventShortDesc" style="word-break: break-word;">${description.substring(0, 200)}...</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			
+		`
 
-				allEvents += generateEventBlock(eventData[i])
-			}
-
-			document.getElementById("masonry").innerHTML = allEvents
-			if (allEvents == "") {
-				setTimeout(buildEvents, 500)
-
-			}
 		}
-		setTimeout(buildEvents, 500)
+
 		// buildEvents();
 
 	</script>
@@ -313,6 +301,25 @@
 	<script src="assets/js/functions.js"></script>
 	<script src="assets/js/contact.js"></script>
 	<!-- <script src='assets/vendors/switcher/switcher.js'></script> -->
+
+	<script>
+
+		function buildEvents() {
+
+			var allEvents = ""
+			for (var i = 0; i < eventData.length; i++) {
+
+				allEvents += generateEventBlock(eventData[i])
+			}
+
+			document.getElementById("masonryEvent").innerHTML = allEvents
+			if (allEvents == "") {
+				setTimeout(buildEvents, 500)
+
+			}
+		}
+		setTimeout(buildEvents, 500);
+	</script>
 </body>
 
 </html>
