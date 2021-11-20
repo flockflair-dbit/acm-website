@@ -395,7 +395,6 @@
 				setDivSameHeight('.equal-height-container .equal-height-container-item');
 				setCounterUp();
 				masonryLayout();
-				masonryLayoutEvents();
 				manageLoader();
 			},
 
