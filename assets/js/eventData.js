@@ -8,7 +8,7 @@ eventData=[
     //     content:``,
     //     fullDate:"20/06/2021",
     //     date:"26",
-    //     month:"20/06/2021"
+    //     month:"September"
     // },
  
 
