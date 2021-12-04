@@ -2359,7 +2359,7 @@ button.back-to-top {
   position: relative;
   z-index: 1;
 }
-.our-story:after {
+/* .our-story:after {
   width: 50%;
   content: "";
   height: 100%;
@@ -2368,7 +2368,7 @@ button.back-to-top {
   background-color: #fff;
   top: 0;
   z-index: -1;
-}
+} */
 .video-bx {
   position: relative;
 }
