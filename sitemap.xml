@@ -1,324 +1,211 @@
-<?xml version="1.0" encoding="UTF-8"?> 
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"> 
-<url>
-  <loc>https://dbit.acm.org/index</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/team-2021</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/gallery</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/courses</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/reports</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/events</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/e-xhibition</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/teknack</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/flockflair</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/teknack/</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/team-2020</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/060_Teknack2022_CallDev.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/059_CoreFelicitation2021_9.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/058_CoreFelicitation2021_8.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/057_CoreFelicitation2021_7.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/056_CoreFelicitation2021_6.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/053_CoreFelicitation2021_5.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/052_CoreFelicitation2021_4.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/051_CoreFelicitation2021_3.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/050_CoreFelicitation2021_2.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/049_CoreFelicitation2021_1.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/048_Wordpress.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/047_UIUX2021.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/046_Photoshop2021.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/045_BattleCode.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/044_WebDevCheatSheet2020.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/043_Cpp_2020.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/042_CodIT_2020.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/041_Illustrator2020.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/040_Git2020.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/039_DomainDNS.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/038.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/037.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/036.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/035_CoreInvite.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/034_Mystery2.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/033_MurderMystery2020.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/032_Flash2020.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/031.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/030.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/029.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/028.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/027.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/026.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/025.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/024_Teknack_2020_2.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/023_Teknack2020.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/022_CMS2019.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/021_VideoEditing2019.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/020_BattleCode.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/019.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/018_Unity-workshop-2019-20.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/017_MumbaiHackathon2020.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/016_PhotoshopWorkshop2019.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/015_SoundEnggWorkshop2019.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/014_JavaAppletWorkshop2019.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/013.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/012.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/011.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/010_ReactJSWorkshop.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/009_Refractus2014.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/008_Teknack2014.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/007_Refractus_2013.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/006_Teknack2013_1.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/005_IV.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/004.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/003_Teknack2012_3.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/002_Teknack2012_2.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/assets/images/gallery/001_Teknack2012.webp</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/event</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/event-details/photoshop-workshop-2021.html</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/event-details/battlecode-2021.html</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/event-details/ui-ux-workshop-2021.html</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/event-details/codemaster-2021.html</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/event-details/cpp-workshop-2020.html</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/event-details/flash-workshop-2020.html</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/event-details/codit-2020.html</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/event-details/illustrator-workshop-2020.html</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/event-details/git-github-workshop-2020.html</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/event-details/domain-dns-workshop-2020.html</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/event-details/murder-mystery-2020.html</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/event-details/mumbai-hackathon-2020.html</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/event-details/web-dev-workshop-2019.html</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/event-details/java-applet-workshop-2019.html</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/event-details/sound-engg-workshop-2019.html</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/event-details/video-editing-workshop-2019.html</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/event-details/wordpress-cms-workshop-2019.html</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/event-details/design-team-training-2019.html</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/event-details/photoshop-workshop-2019.html</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/index.html</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/about.html</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/games.html</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/hall-of-fame.html</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/gallery.html</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/contact.html</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/teknack-2019.html</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/teknack-2020.html</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/teknack-2021.html</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/../index</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/../team-2021</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/../gallery</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/../courses</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/../reports</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/../event</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/../e-xhibition</loc>
-</url>
-<url>
-  <loc>https://dbit.acm.org/../index.html</loc>
-</url>
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>https://dbit.acm.org</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/index</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/teknack/about</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/event-details/battlecode-2021</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/event-details/cpp-workshop-2020</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/event-details/codit-2020</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/event-details/codemaster-2021</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/teknack/contact</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/team-2020</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/team-2021</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/courses</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/event-details/design-team-training-2019</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/event-details/domain-dns-workshop-2020</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/e-xhibition</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/events</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/event</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/event-details/flash-workshop-2020</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/flockflair/</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/gallery</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/teknack/gallery</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/teknack/teknack-2019</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/teknack/teknack-2020</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/teknack/teknack-2021</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/teknack/games</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/event-details/git-github-workshop-2020</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/teknack/hall-of-fame</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/event-details/illustrator-workshop-2020</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/event-details/java-applet-workshop-2019</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/event-details/mumbai-hackathon-2020</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/event-details/murder-mystery-2020</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/event-details/photoshop-workshop-2019</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/event-details/photoshop-workshop-2021</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/reports</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/event-details/sound-engg-workshop-2019</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/teknack/</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/teknack/index</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/event-details/ui-ux-workshop-2021</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/event-details/video-editing-workshop-2019</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/event-details/web-dev-workshop-2019</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
+  <url>
+    <loc>https://dbit.acm.org/event-details/wordpress-cms-workshop-2019</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+  </url>
 </urlset>
+<!--<guid value="" />-->
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
