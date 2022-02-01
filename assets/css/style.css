@@ -3374,8 +3374,11 @@ button.back-to-top {
   .pt-logo img {
     width: 150px;
   }
+  .footer-logos img {
+    /* display: none !important; */
+  }
   .pt-social-link {
-    display: none !important;
+    border-left: none;
   }
   .all-review,
   .bar-bx .side {
@@ -3442,8 +3445,11 @@ button.back-to-top {
 }
 
 @media only screen and (max-width: 992px) {
+  .footer-logos {
+    /* display: none !important; */
+  }
   .pt-social-link {
-    display: none !important;
+    border-left: none;
   }
 }
 
@@ -3451,7 +3457,12 @@ button.back-to-top {
   height: 100vh;
   min-height: 500px;
   /* background-image: url("../images/background/bg2.jpg"); */
-  background: linear-gradient(to right, rgba(2, 0, 11, 0.8),rgba(2, 0, 11, 0.8) ), url(../images/banner/b4.webp) no-repeat center center;
+  background: linear-gradient(
+      to right,
+      rgba(2, 0, 11, 0.8),
+      rgba(2, 0, 11, 0.8)
+    ),
+    url(../images/banner/b4.webp) no-repeat center center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3468,7 +3479,6 @@ button.back-to-top {
   color: #fff;
   /* filter: blur(0px); */
   /* -webkit-filter: blur(0px); */
-
 }
 
 @media only screen and (max-width: 500px) {
@@ -3498,4 +3508,24 @@ button.back-to-top {
 }
 .post-developer:hover {
   color: #f7b205;
+}
+.pt-social-link li a {
+  font-size: 1.6em;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+@media only screen and (min-width: 700px) {
+  .footer-logo-bar img {
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .footer-logo-bar img {
+    height: 60px;
+  }
+}
+
+.footer-logo-bar img {
+  margin: auto;
+  padding: auto;
 }
