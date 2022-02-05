@@ -231,73 +231,72 @@
 							</div>
 						</div>
 						<div class="col-lg-7 col-md-7">
-							<form class="contact-bx ajax-form"
-								action="http://educhamp.themetrades.com/demo/assets/script/contact.php">
-								<div class="ajax-message"></div>
+							<form class="contact-bx ajax-form" name="google-sheet">
 								<div class="heading-bx left">
-									<h2 class="title-head">Get In <span>Touch</span></h2>
-									<p>It is a long established fact that a reader will be distracted by the readable
-										content of a page</p>
+									<h2 class="title-head">Submit <span>Your Project</span></h2>
+									<p>Want to publish your project to Open Source Community? Send us your project. We will get it published!</p>
 								</div>
 								<div class="row placeani">
-									<div class="col-lg-6">
+									<div class="col-lg-12">
 										<div class="form-group">
 											<div class="input-group">
-												<label>Your Name</label>
-												<input name="name" type="text" required
+												<label>Developer Full Name</label>
+												<input name="DeveloperName" id="DeveloperName" type="text" required
 													class="form-control valid-character">
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-6">
+									<div class="col-lg-12">
 										<div class="form-group">
 											<div class="input-group">
 												<label>Your Email Address</label>
-												<input name="email" type="email" class="form-control" required>
+												<input name="EmailID" id="EmailID" type="email" class="form-control" required>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12">
+										<div class="form-group">
+											<div class="input-group">
+												<label>College Name</label>
+												<input name="CollegeName" id="CollegeName" type="text" required class="form-control int-value">
 											</div>
 										</div>
 									</div>
 									<div class="col-lg-6">
 										<div class="form-group">
 											<div class="input-group">
-												<label>Your Phone</label>
-												<input name="phone" type="text" required class="form-control int-value">
+												<label>Branch</label>
+												<input name="Branch" id="Branch" type="text" required class="form-control">
 											</div>
 										</div>
 									</div>
 									<div class="col-lg-6">
 										<div class="form-group">
 											<div class="input-group">
-												<label>Subject</label>
-												<input name="subject" type="text" required class="form-control">
+												<label>Year</label>
+												<input name="Year" id="Year" type="text" required class="form-control int-value">
 											</div>
 										</div>
 									</div>
 									<div class="col-lg-12">
 										<div class="form-group">
 											<div class="input-group">
-												<label>Type Message</label>
-												<textarea name="message" rows="4" class="form-control"
-													required></textarea>
+												<label>Title of Project</label>
+												<input name="TitleofProject" id="TitleofProject" type="text" required class="form-control">
 											</div>
 										</div>
 									</div>
 									<div class="col-lg-12">
 										<div class="form-group">
 											<div class="input-group">
-												<div class="g-recaptcha"
-													data-sitekey="6Lf2gYwUAAAAAJLxwnZTvpJqbYFWqVyzE-8BWhVe"
-													data-callback="verifyRecaptchaCallback"
-													data-expired-callback="expiredRecaptchaCallback"></div>
-												<input class="form-control d-none" style="display:none;"
-													data-recaptcha="true" required
-													data-error="Please complete the Captcha">
+												<label>Project Link</label>
+												<input name="ProjectLink" id="ProjectLink" type="text" required class="form-control">
 											</div>
 										</div>
 									</div>
+									
 									<div class="col-lg-12">
-										<button name="submit" type="submit" value="Submit" class="btn button-md"> Send
-											Message</button>
+										<button name="submit" type="submit" value="Submit" id="form-submit" class="btn button-md"> Submit</button>
 									</div>
 								</div>
 							</form>
@@ -395,17 +394,24 @@
 	<script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
 	<script src="assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
 	<script src="assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
-	<script src="assets/vendors/magnific-popup/magnific-popup.js"></script>
-	<script src="assets/vendors/counter/waypoints-min.js"></script>
-	<script src="assets/vendors/counter/counterup.min.js"></script>
-	<script src="assets/vendors/imagesloaded/imagesloaded.js"></script>
-	<script src="assets/vendors/masonry/masonry.js"></script>
 	<script src="assets/vendors/masonry/filter.js"></script>
-	<script src="assets/vendors/owl-carousel/owl.carousel.js"></script>
 	<script src="assets/js/functions.js"></script>
-	<script src="assets/js/contact.js"></script>
 	<script src='assets/vendors/switcher/switcher.js'></script>
-	<script src='../../www.google.com/recaptcha/api.js'></script>
+
+	<script>
+ 
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxB6Nz38J-148436QwfuoWSrGlKQEiEJ3qpRj9ICFG5ofpPeVnO_0IvKjWpPVGr8fpp/exec'
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            $('#form-submit').prop('disabled', true);
+            $('#form-submit').html("...");
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Submitted Successfully!"))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 </body>
 
 
