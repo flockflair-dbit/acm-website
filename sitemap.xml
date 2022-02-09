@@ -57,6 +57,11 @@
 	<priority>1.0</priority>
 </url>
 <url>
+	<loc>https://dbit.acm.org/open-source-submit</loc>
+	<lastmod>2022-02-08T08:02:34+02:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
 	<loc>https://dbit.acm.org/flockflair/</loc>
 	<lastmod>2022-02-08T08:02:35+01:00</lastmod>
 	<priority>0.8</priority>
