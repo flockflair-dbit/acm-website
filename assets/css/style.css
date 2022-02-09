@@ -3529,3 +3529,13 @@ button.back-to-top {
   margin: auto;
   padding: auto;
 }
+
+.widget_getintuch a {
+  color: #f4f4f4;
+}
+
+.widget_getintuch a:hover {
+  color: #f7b205;
+  font-weight: 400;
+  transition-duration: 500ms;
+}
