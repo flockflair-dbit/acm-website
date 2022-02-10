@@ -242,7 +242,7 @@
 							</div>
 						</div>
 						<div class="col-lg-7 col-md-7">
-							<form class="contact-bx ajax-form" name="google-sheet">
+							<form class="contact-bx ajax-form" name="google-sheet" id="open-source-form">
 								<div class="heading-bx left">
 									<h2 class="title-head">Submit <span>Your Project</span></h2>
 									<p>Want to publish your project to Open Source Community? Send us your project. We
@@ -489,9 +489,11 @@
 			e.preventDefault()
 			$('#form-submit').prop('disabled', true);
 			$('#form-submit').html("...");
+
 			fetch(scriptURL, { method: 'POST', body: new FormData(form) })
 				.then(response => alert("Submitted Successfully!"))
-				.catch(error => console.error('Error!', error.message))
+				.catch(error => console.error('Error!', error.message));
+			$('#open-source-form')[0].reset();
 		})
 	</script>
 </body>
