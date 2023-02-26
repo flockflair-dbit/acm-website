@@ -9,14 +9,14 @@
 	<meta name="keywords"
 		content="acm, dbit, student, chapter, don bosco, mumbai, kurla, engineering, computer, Ventures, Gaming Studio,Website,Freelancing,Philosophy,Innovation,Advancing, Computing, Science, Profession,DBIT,Teknack,Flockflair,ACM,DBIT-Mumbai" />
 	<meta name="author" content="ACM DBIT" />
-	<link rel="canonical" href="https://dbit.acm.org/events-details" />
+	<link rel="canonical" href="https://dbit.acm.org/event" />
 
 	<!-- DESCRIPTION -->
 	<meta name="description"
 		content="ACM DBIT believes in events that help the students to develop in all aspects. We provide events for students to boost up their creative skills and pump up their technical skills by amalgamating with newer ideas and facts to build up their skills and experience that lasts with them forever." />
 
 	<!-- OG -->
-	<meta property="og:title" content="Event | ACM-DBIT" />
+	<meta property="og:title" content="Events | ACM-DBIT" />
 	<meta property="og:description"
 		content="ACM DBIT believes in events that help the students to develop in all aspects. We provide events for students to boost up their creative skills and pump up their technical skills by amalgamating with newer ideas and facts to build up their skills and experience that lasts with them forever." />
 	<meta property="og:image" content="" />
@@ -41,7 +41,7 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<!-- PAGE TITLE HERE ============================================= -->
-	<title>Event | ACM-DBIT</title>
+	<title>Events | ACM-DBIT</title>
 
 	<!-- MOBILE SPECIFIC ============================================= -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -64,8 +64,6 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link class="skin" rel="stylesheet" type="text/css" href="assets/css/color/color-1.css">
 
-	<script src="assets/js/eventData.js"></script>
-
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146434995-1"></script>
 	<script>
@@ -78,11 +76,9 @@
 
 </head>
 
-<body id="bg" style="width: 100%;margin: 0;">
-
+<body id="bg">
 	<div class="page-wraper">
 		<div id="loading-icon-bx"></div>
-		<div class="onepage"></div>
 		<!-- Header Top ==== -->
 		<header class="header rs-nav header-transparent">
 			<div class="sticky-header navbar-expand-lg">
@@ -113,10 +109,6 @@
 									<li><a href="https://www.linkedin.com/company/acm-dbit/" target="_blank"
 											aria-label="linkedin" rel="noopener" class="btn-link"><i
 												class="fa fa-linkedin"></i></a></li>
-									<li>
-										<a rel="noopener" href="https://github.com/acm-dbit" target="_blank"
-											aria-label="github" class="btn-link"><i class="fa fa-github"></i></a>
-									</li>
 									<li><a href="https://twitter.com/acmdbit?lang=en" target="_blank"
 											aria-label="Twitter" rel="noopener" class="btn-link"><i
 												class="fa fa-twitter"></i></a></li>
@@ -152,13 +144,8 @@
 								<li><a href="gallery">Gallery</a></li>
 								<li><a href="courses">Courses</a></li>
 								<li><a href="reports">Reports</a></li>
-								<li class="active"><a href="events">Events</a></li>
-								<li><a href="javascript:;">More<i class="fa fa-angle-down"></i></a>
-									<ul class="sub-menu">
-										<li><a href="e-xhibition">E-xhibition</a></li>
-										<li><a href="open-source-submit">Open-Source Projects</a></li>
-									</ul>
-								</li>
+								<li class="active"><a href="event">Events</a></li>
+								<li><a href="e-xhibition">E-xhibition</a></li>
 							</ul>
 						</div>
 						<!-- Navigation Menu END ==== -->
@@ -170,10 +157,10 @@
 		<!-- Content -->
 		<div class="page-content bg-white">
 			<!-- inner page banner -->
-			<div class="page-banner ovbl-dark" style="background-image:url(assets/images/banner/banner1.jpg);">
+			<div class="page-banner ovbl-dark" style="background-image:url(assets/images/banner/banner2.jpg);">
 				<div class="container">
 					<div class="page-banner-entry">
-						<h1 class="text-white">Event Details</h1>
+						<h1 class="text-white">Events</h1>
 					</div>
 				</div>
 			</div>
@@ -181,187 +168,160 @@
 			<div class="breadcrumb-row">
 				<div class="container">
 					<ul class="list-inline">
-						<li><a href="index.html">Home</a></li>
-						<li>Event Details</li>
+						<li><a href="#">Home</a></li>
+						<li>Events</li>
 					</ul>
 				</div>
 			</div>
 			<!-- Breadcrumb row END -->
-			<!-- inner page banner END -->
+			<!-- contact area -->
 			<div class="content-block">
-				<!-- About Us -->
-				<div class="section-area section-sp1">
+				<!-- Gallery  -->
+				<div class="section-area section-sp1 gallery-bx">
 					<div class="container">
-						<div class="row" id="eventDetailsData">
-
-						</div>
-					</div>
-				</div>
-				<!-- contact area END -->
-
-				<script>
-					function FillData() {
-
-						var temp = (window.location.href.split('#')[1]);
-						var selected = -1;
-						for (var i = 0; i < eventData.length; i++) {
-
-							if (temp == eventData[i].slug) {
-								selected = i;
-							}
-						}
-
-
-						if (selected < 0) {
-							setTimeout(FillData, 100)
-							return
-						}
-
-						console.log(selected)
-						var tempeventDetailsData = ""
-						tempeventDetailsData = `
-						<div class="courses-post px-3">
-							<div class="ttr-post-media media-effect">
-								<img src="${eventData[selected].imgSrc}" alt="">
-							</div>
-							<div class="ttr-post-info">
-								<div class="ttr-post-title ">
-									<h2 class="post-title">${eventData[selected].title}</h2>
-								</div>
-							</div>
-						</div>
-						<div class="courese-overview" id="overview" style="width:100%;">
-							<div class="px-3">
-								${eventData[selected].content}
-							</div>
-						</div>
 						<div class="clearfix">
-							<ul id="masonry" class="ttr-gallery-listing magnific-image row" style="list-style: none;">
-						
-			`
-						for (var i = 0; i < eventData[selected].footerImages.length; i++) {
-							tempeventDetailsData += `
-								<li class="action-card col-lg-3 col-md-4 col-sm-6 book">
-									<div class="ttr-box portfolio-bx">
-										<div class="ttr-media media-ov2 media-effect">
-											<a href="javascript:void(0);">
-												<img src="${eventData[selected].footerImages[0].url}" alt="" loading="lazy"> 
-											</a>
-										</div>
-									</div>
-								</li>	`
-						}
-						tempeventDetailsData += `
+							<ul id="masonryEvent" class="ttr-gallery-listing magnific-image row" style="list-style: none;">
+								
+
+								
 							</ul>
 						</div>
-			`
-						document.getElementById("eventDetailsData").innerHTML = tempeventDetailsData
-
-					}
-					setTimeout(FillData, 500)
-				</script>
-
-
-			</div>
-			<!-- Content END-->
-			<!-- Footer ==== -->
-			<footer>
-				<div class="footer-top">
-					<div class="pt-exebar">
-						<div class="container">
-							<div class="row d-flex align-items-center footer-logo-bar">
-								<div class="row col-12 col-md-8 justify-content-center pt-4 pb-3 footer-logos">
-									<div class="col-3">
-										<a rel="noopener" href="https://www.dbit.in/" target="_blank"
-											aria-label="Dbit website"><img src="assets/images/DBIT.png" alt="DBIT LOGO"
-												class="img-fluid my-1 mx-4" /></a>
-									</div>
-									<div class="col-3">
-										<a href="index" aria-label="Home Page" rel="noopener"><img
-												src="assets/images/acm.png" class="img-fluid my-1 mx-4"
-												alt="ACM DBIT LOGO" /></a>
-									</div>
-
-									<div class="col-3">
-										<a rel="noopener" href="https://dbit.acm.org/teknack"
-											aria-label="Teknack website"><img src="assets/images/teknack.png"
-												alt="Teknack Logo" class="img-fluid my-1 mx-4" /></a>
-									</div>
-									<div class="col-3">
-										<a rel="noopener" href="https://dbit.acm.org/flockflair"
-											aria-label="Flockflair website"><img src="assets/images/ff.png"
-												alt="Flockflair Logo" class="img-fluid my-1 mx-4" /></a>
-									</div>
-								</div>
-								<div class="col-12 col-md-4">
-									<div class="pt-social-link justify-content-center text-center py-4">
-										<ul class="list-inline m-a0 justify-content-center text-center">
-											<li>
-												<a rel="noopener" href="https://www.instagram.com/acmdbitt/?hl=en"
-													target="_blank" aria-label="instagram" class="btn-link"><i
-														class="fa fa-instagram"></i></a>
-											</li>
-											<li>
-												<a rel="noopener" href="https://www.linkedin.com/company/acm-dbit/"
-													target="_blank" aria-label="linkedin" class="btn-link"><i
-														class="fa fa-linkedin"></i></a>
-											</li>
-											<li>
-												<a rel="noopener" href="https://github.com/acm-dbit" target="_blank"
-													aria-label="github" class="btn-link"><i
-														class="fa fa-github"></i></a>
-											</li>
-											<li>
-												<a rel="noopener" href="https://twitter.com/acmdbit?lang=en"
-													target="_blank" aria-label="twitter" class="btn-link"><i
-														class="fa fa-twitter"></i></a>
-											</li>
-											<li>
-												<a rel="noopener"
-													href="https://www.youtube.com/channel/UC58zaYJo0LL_aJXvqLDJGLA"
-													aria-label="youtube" target="_blank" class="btn-link"><i
-														class="fa fa-youtube-play"></i></a>
-											</li>
-											<li>
-												<a rel="noopener" href="https://www.facebook.com/ACMDBIT/"
-													aria-label="facebook" target="_blank" class="btn-link"><i
-														class="fa fa-facebook"></i></a>
-											</li>
-										</ul>
-									</div>
-								</div>
-
-							</div>
-
-						</div>
 					</div>
-					<div class="row" style="width: 100%">
-						<div class="col-lg-12 col-md-12 col-sm-12 text-center mb-3" style="font-size: 0.9em">
-							&copy;2022 ACM DBIT Student Chapter.<br />Developed by Grejo Joby
-							& Hayden Cordeiro.
+				</div>
+			</div>
+			<!-- contact area END -->
+		</div>
+		<!-- Content END-->
+		<!-- Footer ==== -->
+		<footer>
+			<div class="footer-top">
+				<div class="pt-exebar">
+					<div class="container">
+						<div class="d-flex align-items-stretch">
+							<div class="pt-logo mr-auto">
+								<a href="index" aria-label="Home Page" rel="noopner"><img src="assets/images/2.png"
+										alt="" /></a>
+							</div>
+							<div class="mr-auto my-auto">
+								<a rel="noopener" href="https://www.dbit.in/" target="_blank"
+									aria-label="Dbit website"><img src="assets/images/DBIT.png" alt="" width="75px"
+										class="py-5"></a>
+							</div>
+							<div class="mr-auto my-auto">
+								<a rel="noopener" href="https://dbit.acm.org/teknack" aria-label="Teknack website"><img
+										src="assets/images/teknack.png" alt="" width="75px" class="py-5"></a>
+							</div>
+							<div class="pt-social-link">
+								<ul class="list-inline m-a0">
+									<li><a rel="noopener" href="https://www.instagram.com/acmdbitt/?hl=en"
+											target="_blank" aria-label="instagram" class="btn-link"><i
+												class="fa fa-instagram"></i></a></li>
+									<li><a rel="noopener" href="https://www.linkedin.com/company/acm-dbit/"
+											target="_blank" aria-label="linkedin" class="btn-link"><i
+												class="fa fa-linkedin"></i></a></li>
+									<li><a rel="noopener" href="https://twitter.com/acmdbit?lang=en" target="_blank"
+											aria-label="twitter" class="btn-link"><i class="fa fa-twitter"></i></a>
+									</li>
+									<li><a rel="noopener"
+											href="https://www.youtube.com/channel/UC58zaYJo0LL_aJXvqLDJGLA"
+											aria-label="youtube" target="_blank" class="btn-link"><i
+												class="fa fa-youtube-play"></i></a></li>
+									<li><a rel="noopener" href="https://www.facebook.com/ACMDBIT/" aria-label="facebook"
+											target="_blank" class="btn-link"><i class="fa fa-facebook"></i></a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
-			</footer>
-			<!-- Footer END ==== -->
-			<button class="back-to-top fa fa-chevron-up"></button>
-		</div>
-		<!-- External JavaScripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/vendors/bootstrap/js/popper.min.js"></script>
-		<script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-		<script src="assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
-		<script src="assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
-		<script src="assets/vendors/magnific-popup/magnific-popup.js"></script>
-		<script src="assets/vendors/counter/waypoints-min.js"></script>
-		<script src="assets/vendors/counter/counterup.min.js"></script>
-		<script src="assets/vendors/imagesloaded/imagesloaded.js"></script>
-		<script src="assets/vendors/masonry/masonry.js"></script>
-		<script src="assets/vendors/masonry/filter.js"></script>
-		<script src="assets/vendors/owl-carousel/owl.carousel.js"></script>
-		<script src="assets/js/functions.js"></script>
-		<script src="assets/js/contact.js"></script>
-		<!-- <script src='assets/vendors/switcher/switcher.js'></script> -->
+				<div class="row" style="width: 100%;">
+					<div class="col-lg-12 col-md-12 col-sm-12 text-center mb-3" style="font-size: 0.9em;">&copy;2022 ACM
+						DBIT Student Chapter.<br>Developed by Grejo Joby & Hayden Cordeiro.</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Footer END ==== -->
+		<button class="back-to-top fa fa-chevron-up"></button>
+	</div>
+
+	<!-- External JavaScripts -->
+	<script src="assets/js/eventData.js"></script>
+
+	<script>
+		function generateEventBlock({ date, month, fullDate, contentRaw, title, imgSrc, slug }) {
+
+			tempCon = String(contentRaw).split("\\n")
+			description = ""
+			for (var i = 0; i < tempCon.length; i++) {
+				description += tempCon[i]
+			}
+			// console.log(description)
+			return `
+			<li class="action-card col-lg-6 col-md-6 col-sm-12">
+				<div class="event-bx m-b30">
+					<div class="action-box">
+						<img src="${imgSrc}" alt="Event Image" loading="lazy">
+					</div>
+					<div class="info-bx d-flex">
+						<div>
+							<div class="event-time">
+								<div class="event-date">${date}</div>
+								<div class="event-month">${month}</div>
+							</div>
+						</div>
+						<div class="event-info">
+							<h4 class="event-title eventsTitleLines"><a href="events-details#${slug}">${title}</h4>
+							<ul class="media-post">
+								<li><a href="#"><i class="fa fa-clock-o"></i> ${fullDate}</a></li>
+							
+							</ul>
+							<p class="eventShortDesc" style="word-break: break-word;">${description.substring(0, 200)}...</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			
+		`
+
+		}
+
+		// buildEvents();
+
+	</script>
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/vendors/bootstrap/js/popper.min.js"></script>
+	<script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
+	<script src="assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
+	<script src="assets/vendors/magnific-popup/magnific-popup.js"></script>
+	<script src="assets/vendors/counter/waypoints-min.js"></script>
+	<script src="assets/vendors/counter/counterup.min.js"></script>
+	<script src="assets/vendors/imagesloaded/imagesloaded.js"></script>
+	<script src="assets/vendors/masonry/masonry.js"></script>
+	<script src="assets/vendors/masonry/filter.js"></script>
+	<script src="assets/vendors/owl-carousel/owl.carousel.js"></script>
+	<script src="assets/js/functions.js"></script>
+	<script src="assets/js/contact.js"></script>
+	<!-- <script src='assets/vendors/switcher/switcher.js'></script> -->
+
+	<script>
+
+		function buildEvents() {
+
+			var allEvents = ""
+			for (var i = 0; i < eventData.length; i++) {
+
+				allEvents += generateEventBlock(eventData[i])
+			}
+
+			document.getElementById("masonryEvent").innerHTML = allEvents
+			if (allEvents == "") {
+				setTimeout(buildEvents, 500)
+
+			}
+		}
+		setTimeout(buildEvents, 500);
+	</script>
 </body>
 
 </html>
