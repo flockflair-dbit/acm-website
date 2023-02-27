@@ -3538,6 +3538,7 @@ button.back-to-top {
   color: #f7b205;
   font-weight: 400;
   transition-duration: 500ms;
+<<<<<<< HEAD
 }
 
 /* Pop-up poster styles */
@@ -3582,3 +3583,6 @@ button.back-to-top {
   cursor: pointer;
 }
 
+=======
+}
+>>>>>>> 8c668d0c2222be2bc1af42cb74337248becbfd04

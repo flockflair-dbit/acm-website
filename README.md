@@ -54,10 +54,17 @@ Go to project root and open the index.html file in the browser
 
 
 ## Contributors <a id="contributors"></a>
+<<<<<<< HEAD
   - Grejo Joby<br> 
   [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/grejojoby)
   [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/grejojoby)
   - Hayden Cordeiro<br>
+=======
+  - [Grejo Joby](https://grejo.in/)<br> 
+  [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/grejojoby)
+  [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/grejojoby)
+  - [Hayden Cordeiro](https://hayden.co.in/)<br>
+>>>>>>> 8c668d0c2222be2bc1af42cb74337248becbfd04
   [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/haydencordeiro/)
   [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/haydencordeiro)
 

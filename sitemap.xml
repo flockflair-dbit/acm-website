@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 		<!--	created with www.mysitemapgenerator.com	-->
 		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
@@ -9,75 +10,146 @@
 <url>
 	<loc>https://dbit.acm.org/team-2021</loc>
 	<lastmod>2022-02-08T08:02:31+01:00</lastmod>
+=======
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://dbit.acm.org/</loc>
+	<lastmod>2023-01-28T12:14:04+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://dbit.acm.org/team-2022</loc>
+	<lastmod>2023-01-28T12:14:04+01:00</lastmod>
+>>>>>>> 8c668d0c2222be2bc1af42cb74337248becbfd04
 	<priority>1.0</priority>
 </url>
 <url>
 	<loc>https://dbit.acm.org/gallery</loc>
+<<<<<<< HEAD
 	<lastmod>2022-02-08T08:02:31+01:00</lastmod>
+=======
+	<lastmod>2023-01-28T12:14:04+01:00</lastmod>
+>>>>>>> 8c668d0c2222be2bc1af42cb74337248becbfd04
 	<priority>1.0</priority>
 </url>
 <url>
 	<loc>https://dbit.acm.org/courses</loc>
+<<<<<<< HEAD
 	<lastmod>2022-02-08T08:02:31+01:00</lastmod>
+=======
+	<lastmod>2023-01-28T12:14:04+01:00</lastmod>
+>>>>>>> 8c668d0c2222be2bc1af42cb74337248becbfd04
 	<priority>1.0</priority>
 </url>
 <url>
 	<loc>https://dbit.acm.org/reports</loc>
+<<<<<<< HEAD
 	<lastmod>2022-02-08T08:02:31+01:00</lastmod>
+=======
+	<lastmod>2023-01-28T12:14:04+01:00</lastmod>
+>>>>>>> 8c668d0c2222be2bc1af42cb74337248becbfd04
 	<priority>1.0</priority>
 </url>
 <url>
 	<loc>https://dbit.acm.org/events</loc>
+<<<<<<< HEAD
 	<lastmod>2022-02-08T08:02:31+01:00</lastmod>
+=======
+	<lastmod>2023-01-28T12:14:04+01:00</lastmod>
+>>>>>>> 8c668d0c2222be2bc1af42cb74337248becbfd04
 	<priority>1.0</priority>
 </url>
 <url>
 	<loc>https://dbit.acm.org/e-xhibition</loc>
+<<<<<<< HEAD
 	<lastmod>2022-02-08T08:02:31+01:00</lastmod>
+=======
+	<lastmod>2023-01-28T12:14:04+01:00</lastmod>
+>>>>>>> 8c668d0c2222be2bc1af42cb74337248becbfd04
 	<priority>1.0</priority>
 </url>
 <url>
 	<loc>https://dbit.acm.org/flockflair</loc>
+<<<<<<< HEAD
 	<lastmod>2022-02-08T08:02:31+01:00</lastmod>
+=======
+	<lastmod>2023-01-28T12:14:04+01:00</lastmod>
+>>>>>>> 8c668d0c2222be2bc1af42cb74337248becbfd04
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://dbit.acm.org/teknack/</loc>
+<<<<<<< HEAD
 	<lastmod>2022-02-08T08:02:31+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://dbit.acm.org/team-2020</loc>
 	<lastmod>2022-02-08T08:02:33+01:00</lastmod>
+=======
+	<lastmod>2023-01-28T12:14:04+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://dbit.acm.org/team-2021</loc>
+	<lastmod>2023-01-28T12:14:06+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://dbit.acm.org/team-2020</loc>
+	<lastmod>2023-01-28T12:14:06+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://dbit.acm.org/team-2019</loc>
+	<lastmod>2023-01-28T12:14:06+01:00</lastmod>
+>>>>>>> 8c668d0c2222be2bc1af42cb74337248becbfd04
 	<priority>1.0</priority>
 </url>
 <url>
 	<loc>https://dbit.acm.org/event</loc>
+<<<<<<< HEAD
 	<lastmod>2022-02-08T08:02:34+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
 	<loc>https://dbit.acm.org/open-source-submit</loc>
 	<lastmod>2022-02-08T08:02:34+02:00</lastmod>
+=======
+	<lastmod>2023-01-28T12:14:07+01:00</lastmod>
+>>>>>>> 8c668d0c2222be2bc1af42cb74337248becbfd04
 	<priority>1.0</priority>
 </url>
 <url>
 	<loc>https://dbit.acm.org/flockflair/</loc>
+<<<<<<< HEAD
 	<lastmod>2022-02-08T08:02:35+01:00</lastmod>
+=======
+	<lastmod>2023-01-28T12:14:07+01:00</lastmod>
+>>>>>>> 8c668d0c2222be2bc1af42cb74337248becbfd04
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://dbit.acm.org/teknack/index.html</loc>
+<<<<<<< HEAD
 	<lastmod>2022-02-08T08:02:37+01:00</lastmod>
+=======
+	<lastmod>2023-01-28T12:14:09+01:00</lastmod>
+>>>>>>> 8c668d0c2222be2bc1af42cb74337248becbfd04
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://dbit.acm.org/teknack/about.html</loc>
+<<<<<<< HEAD
 	<lastmod>2022-02-08T08:02:37+01:00</lastmod>
+=======
+	<lastmod>2023-01-28T12:14:09+01:00</lastmod>
+>>>>>>> 8c668d0c2222be2bc1af42cb74337248becbfd04
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://dbit.acm.org/teknack/games.html</loc>
+<<<<<<< HEAD
 	<lastmod>2022-02-08T08:02:37+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
@@ -104,25 +176,71 @@
 <url>
 	<loc>https://dbit.acm.org/teknack/teknack-2020.html</loc>
 	<lastmod>2022-02-08T08:02:37+01:00</lastmod>
+=======
+	<lastmod>2023-01-28T12:14:09+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://dbit.acm.org/teknack/teknack-2022.html</loc>
+	<lastmod>2023-01-28T12:14:09+01:00</lastmod>
+>>>>>>> 8c668d0c2222be2bc1af42cb74337248becbfd04
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://dbit.acm.org/teknack/teknack-2021.html</loc>
+<<<<<<< HEAD
 	<lastmod>2022-02-08T08:02:37+01:00</lastmod>
+=======
+	<lastmod>2023-01-28T12:14:09+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://dbit.acm.org/teknack/teknack-2020.html</loc>
+	<lastmod>2023-01-28T12:14:09+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://dbit.acm.org/teknack/teknack-2019.html</loc>
+	<lastmod>2023-01-28T12:14:09+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://dbit.acm.org/teknack/hall-of-fame.html</loc>
+	<lastmod>2023-01-28T12:14:09+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://dbit.acm.org/teknack/gallery.html</loc>
+	<lastmod>2023-01-28T12:14:09+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://dbit.acm.org/teknack/contact.html</loc>
+	<lastmod>2023-01-28T12:14:09+01:00</lastmod>
+>>>>>>> 8c668d0c2222be2bc1af42cb74337248becbfd04
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://dbit.acm.org/teknack/index</loc>
+<<<<<<< HEAD
 	<lastmod>2022-02-08T08:02:37+01:00</lastmod>
+=======
+	<lastmod>2023-01-28T12:14:09+01:00</lastmod>
+>>>>>>> 8c668d0c2222be2bc1af42cb74337248becbfd04
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://dbit.acm.org/teknack/about</loc>
+<<<<<<< HEAD
 	<lastmod>2022-02-08T08:02:37+01:00</lastmod>
+=======
+	<lastmod>2023-01-28T12:14:10+01:00</lastmod>
+>>>>>>> 8c668d0c2222be2bc1af42cb74337248becbfd04
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://dbit.acm.org/teknack/games</loc>
+<<<<<<< HEAD
 	<lastmod>2022-02-08T08:02:38+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
@@ -149,10 +267,24 @@
 <url>
 	<loc>https://dbit.acm.org/teknack/gallery</loc>
 	<lastmod>2022-02-08T08:02:40+01:00</lastmod>
+=======
+	<lastmod>2023-01-28T12:14:10+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://dbit.acm.org/teknack/teknack-2022</loc>
+	<lastmod>2023-01-28T12:14:10+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://dbit.acm.org/teknack/leaderboard22.html</loc>
+	<lastmod>2023-01-28T12:14:10+01:00</lastmod>
+>>>>>>> 8c668d0c2222be2bc1af42cb74337248becbfd04
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://dbit.acm.org/teknack/teknack-2021</loc>
+<<<<<<< HEAD
 	<lastmod>2022-02-08T08:02:40+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
@@ -250,5 +382,39 @@
     <loc>https://dbit.acm.org/event-details/video-editing-workshop-2019</loc>
 	<lastmod>2022-02-08T08:02:40+01:00</lastmod>
     <priority>0.8</priority>
+=======
+	<lastmod>2023-01-28T12:14:10+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://dbit.acm.org/teknack/teknack-2020</loc>
+	<lastmod>2023-01-28T12:14:10+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://dbit.acm.org/teknack/hall-of-fame</loc>
+	<lastmod>2023-01-28T12:14:10+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://dbit.acm.org/teknack/gallery</loc>
+	<lastmod>2023-01-28T12:14:11+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://dbit.acm.org/teknack/contact</loc>
+	<lastmod>2023-01-28T12:14:11+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://dbit.acm.org/teknack/leaderboard22</loc>
+	<lastmod>2023-01-28T12:14:12+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://dbit.acm.org/teknack/teknack-2019</loc>
+	<lastmod>2023-01-28T12:14:12+01:00</lastmod>
+	<priority>0.8</priority>
+>>>>>>> 8c668d0c2222be2bc1af42cb74337248becbfd04
 </url>
 </urlset>
