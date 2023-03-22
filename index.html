@@ -440,7 +440,7 @@
                   <div class="cours-search-bx m-b30">
                     <div class="icon-box">
                       <h3>
-                        <i class="ti-bar-chart"></i><span class="counter">17</span>+
+                        <i class="ti-bar-chart"></i><span class="counter" id = "years-of-growth"></span>+
                       </h3>
                     </div>
                     <span class="cours-search-text">Years of Growth</span>
@@ -491,7 +491,7 @@
                   <h5>India's first college-based gaming studio</h5>
                   <br />
                   <h4>
-                    <span class="counter">56</span>+ Games Published On Google
+                    <span class="counter">78</span>+ Games Published On Google
                     Play Store
                   </h4>
                   <p>
@@ -692,7 +692,7 @@
                   <div class="feature-container">
                     <div class="icon-content">
                       <h5 class="ttr-tilte">Email</h5>
-                      <p>acm@dbit.in</p>
+                      <a href="mailto:acm@dbit.in">acm@dbit.in</a>
                     </div>
                   </div>
                 </div>
@@ -790,7 +790,9 @@
     <script src="assets/vendors/masonry/filter.js"></script>
     <script src="assets/vendors/owl-carousel/owl.carousel.js"></script>
     <script src="assets/js/functions.js"></script>
-
+    <script>
+      document.getElementById('years-of-growth').textContent = new Date().getFullYear() - 2003 - 1;
+    </script>
     <script>
       // $('#id'). children(). length > 0
       var checkSelectorExistence = function (selectorName) {
