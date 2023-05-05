@@ -17,4 +17,4 @@ jobs:
         server: dbit.acm.org
         username: ${{ secrets.username}}
         password: ${{ secrets.password }}
-        server-dir: ./httpdocs/
+        server-dir: ./www/acmwebsite/
