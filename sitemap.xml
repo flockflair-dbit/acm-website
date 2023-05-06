@@ -6,6 +6,11 @@
 	<priority>1.0</priority>
 </url>
 <url>
+	<loc>https://dbit.acm.org/contributors</loc>
+	<lastmod>2023-01-28T12:14:04+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
 	<loc>https://dbit.acm.org/team-2022</loc>
 	<lastmod>2023-01-28T12:14:04+01:00</lastmod>
 	<priority>1.0</priority>
@@ -18,7 +23,7 @@
 <url>
 	<loc>https://dbit.acm.org/courses</loc>
 	<lastmod>2023-01-28T12:14:04+01:00</lastmod>
-	<priority>1.0</priority>
+	<priority>0.8riority>
 </url>
 <url>
 	<loc>https://dbit.acm.org/reports</loc>
