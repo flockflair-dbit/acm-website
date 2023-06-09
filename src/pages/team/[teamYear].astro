@@ -1,9 +1,9 @@
 ---
 import fs from "node:fs/promises";
 import type { InferGetStaticParamsType } from "astro";
-import type { teamDataInterface, memberInterface } from "./types";
+import type { teamDataInterface } from "../../components/team/types";
 import TeamLayout from "../../layouts/TeamLayout.astro";
-import TeamSection from "./components/TeamSection.astro";
+import TeamSection from "../../components/team/TeamSection.astro";
 
 const getMembers = async (teamYear: string) => {
     const dir = `./public/assets/images/team-${teamYear}`;
