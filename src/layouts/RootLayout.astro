@@ -12,6 +12,8 @@ import "../styles/shortcodes/shortcodes.css";
 import "../styles/style.css";
 import "../styles/color/color-1.css";
 
+import Navbar from "../components/Navbar";
+
 export interface Props {
     title?: string;
     description?: string;
@@ -126,6 +128,16 @@ const { title = "ACM-DBIT Student Chapter - Official Website", description } =
         <!-- MOBILE SPECIFIC ============================================= -->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+        <!-- PLUGINS CSS ============================================= -->
+        <link
+            rel="stylesheet"
+            href="/assets/vendors/fontawesome/css/font-awesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="/assets/vendors/themify/themify-icons.css"
+        />
+
         <!--[if lt IE 9]>
       <script src="assets/js/html5shiv.min.js"></script>
       <script src="assets/js/respond.min.js"></script>
@@ -146,7 +158,51 @@ const { title = "ACM-DBIT Student Chapter - Official Website", description } =
             gtag("config", "UA-146434995-1");
         </script> -->
     </head>
-    <body>
-        <slot />
+    <body id="bg">
+        <div class="page-wraper">
+            <!-- <div id="loading-icon-bx"></div>  -->
+
+            <!-- Header Top ====  -->
+            <Navbar />
+            <!-- Header Top END ====  -->
+
+            <slot />
+
+            <!-- Footer ====  -->
+            <!-- <Footer /> -->
+            <!-- Footer END ====  -->
+            <button
+                class="back-to-top fa fa-chevron-up"
+                aria-label="Back To Top"></button>
+        </div>
+
+        <!-- External JavaScripts -->
+
+        <script is:inline src="/assets/js/jquery.min.js"></script>
+        <script is:inline src="/assets/vendors/bootstrap/js/popper.min.js"
+        ></script>
+        <script is:inline src="/assets/vendors/bootstrap/js/bootstrap.min.js"
+        ></script>
+        <script
+            is:inline
+            src="/assets/vendors/bootstrap-select/bootstrap-select.min.js"
+        ></script>
+        <script
+            is:inline
+            src="/assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"
+        ></script>
+        <script is:inline src="/assets/vendors/magnific-popup/magnific-popup.js"
+        ></script>
+        <script is:inline src="/assets/vendors/counter/waypoints-min.js"
+        ></script>
+        <script is:inline src="/assets/vendors/counter/counterup.min.js"
+        ></script>
+        <script is:inline src="/assets/vendors/imagesloaded/imagesloaded.js"
+        ></script>
+        <script is:inline src="/assets/vendors/masonry/masonry.js"></script>
+        <script is:inline src="/assets/vendors/masonry/filter.js"></script>
+        <script is:inline src="/assets/vendors/owl-carousel/owl.carousel.js"
+        ></script>
+        <script is:inline src="/assets/js/functions.js"></script>
     </body>
 </html>

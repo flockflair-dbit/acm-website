@@ -171,11 +171,11 @@
 }
 
 .header-lang-bx .flag.flag-uk:after {
-  background-image: url(../images/flag/united-kingdom.svg);
+  background-image: url(/assets/images/flag/united-kingdom.svg);
 }
 
 .header-lang-bx .flag.flag-us:after {
-  background-image: url(../images/flag/united-states-of-america.svg);
+  background-image: url(/assets/images/flag/united-states-of-america.svg);
 }
 
 @media only screen and (max-width: 767px) {
@@ -2210,7 +2210,7 @@ button.back-to-top {
   top: 0;
   opacity: 1;
   z-index: 999999999;
-  background-image: url(../images/loading.gif);
+  background-image: url(/assets/images/loading.gif);
   background-repeat: no-repeat;
   background-size: 60px;
   background-position: center;
@@ -4076,11 +4076,11 @@ button.back-to-top {
 .masthead {
   height: 100vh;
   min-height: 500px;
-  /* background-image: url("../images/background/bg2.jpg"); */
+  /* background-image: url("/assets/images/background/bg2.jpg"); */
   background: linear-gradient(to right,
       rgba(2, 0, 11, 0.8),
       rgba(2, 0, 11, 0.8)),
-    url(../images/banner/b4.webp) no-repeat center center;
+    url(/assets/images/banner/b4.webp) no-repeat center center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

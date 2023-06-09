@@ -1,0 +1,73 @@
+{
+    "data": [
+        {
+            "name": "Sahil Shelke",
+            "position": "App Developer",
+            "src": "Sahil.webp",
+            "linkedIn": "https://www.linkedin.com/in/sahil-shelke-090b3a210/"
+        },
+        {
+            "name": "Aleron Jaisalroyan",
+            "position": "App Developer",
+            "src": "Aleron.webp"
+        },
+        {
+            "name": "Alston Fernandes",
+            "position": "Frontend Developer",
+            "src": "Alston.webp",
+            "linkedIn": "https://www.linkedin.com/in/alston-fernandes-b28720220/"
+        },
+        {
+            "name": "Bipin Giri",
+            "position": "Analyst and Developer",
+            "src": "Bipin.webp",
+            "linkedIn": "https://www.linkedin.com/in/bipin-giri/"
+        },
+        {
+            "name": "Shrikrishna Umbare",
+            "position": "System Security Engineer",
+            "src": "Shrikrishna.webp",
+            "linkedIn": "https://www.linkedin.com/in/shrikrishna-umbare-6ba376216/"
+        },
+        {
+            "name": "Manish Shingre",
+            "position": "System Security Engineer",
+            "src": "Manish.webp",
+            "linkedIn": "https://www.linkedin.com/in/manish-shingre-45804421a/"
+        },
+        {
+            "name": "Hrishikesh Panigrahi",
+            "position": "Backend Developer",
+            "src": "Hrishikesh.webp",
+            "linkedIn": "https://www.linkedin.com/in/hrishikesh-panigrahi-2b994a220"
+        },
+        {
+            "name": "Gaurav Samanta",
+            "position": "Backend Developer",
+            "src": "Gaurav.webp",
+            "linkedIn": "http://www.linkedin.com/in/gauravsamanta/"
+        },
+        {
+            "name": "Noel Jomichan",
+            "position": "Backend Developer",
+            "src": "Noel.webp",
+            "linkedIn": "https://www.linkedin.com/mwlite/in/noel-jomichan-838053226"
+        },
+        {
+            "name": "Kaushik Bedmutha",
+            "position": "Developer",
+            "src": "Kaushik.webp",
+            "linkedIn": "https://www.linkedin.com/in/kaushik-bedmutha-1730ba202"
+        },
+        {
+            "name": "Ashish Jha",
+            "position": "Developer",
+            "src": "Ashish.webp"
+        },
+        {
+            "name": "Andrea Alvares",
+            "position": "Social Media Manager",
+            "src": "Andrea.webp"
+        }
+    ]
+}
