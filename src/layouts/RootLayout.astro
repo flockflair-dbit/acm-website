@@ -9,7 +9,9 @@ export interface Props {
 
 const { title, description, canonical } = Astro.props as Props;
 
-const currPage = Astro.url.pathname.split("/")[1] ? "" : "home";
+const page = Astro.url.pathname.split("/")[1];
+let currPage = page;
+if (page == "") currPage = "home";
 ---
 
 <!DOCTYPE html>
