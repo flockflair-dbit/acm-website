@@ -1,47 +1,64 @@
-# Astro Starter Kit: Minimal
+# ACM DBIT
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)
+![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
+
+
+## Table of contents
+
+- [Overview](#overview)
+- [Screenshots](#screenshots)
+- [Getting Started](#gettingstarted)
+- [Contributors](#contributors)
+
+## Overview
+
+#### ACM DBIT - Dept. of Computer Engineering
+
+Learn from the best mentors. Get certified in the latest technologies. We understand the students needs and find the best suited training and workshops required and help the students polish their skillsets to guarantee an excellent career ahead.
+- Our Philosophy
+    - Creates opportunities for Innovation.
+- Our Motto
+    - Advancing Computing as a Science & Profession
+- Key Of Success
+    - We have a clear vision and are able to articulate the path forward to the team.
+- Our Team
+    - Diversity in skills with effective communication.
+                        
+                        
+
+
+
+
+### Screenshots
+<img src="./screenshots/1.png" width="50%" /> <br>
+<img src="./screenshots/2.png" width="25%"/> <img src="./screenshots/3.png" width="25%" />  
+
+
+
+## Getting Started  <a id="gettingstarted"></a>
+
+#### Step 1:
+
+Download or clone this repository by using the command given below:
 
 ```
-npm create astro@latest -- --template minimal
+git clone https://github.com/flockflair-dbit/acm-website
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+#### Step 2:
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Go to project root and open the index.html file in the browser
 
-## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
 
-```
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Contributors <a id="contributors"></a>
+  - [Grejo Joby](https://grejo.in/)<br> 
+  [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/grejojoby)
+  [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/grejojoby)
+  - [Hayden Cordeiro](https://hayden.co.in/)<br>
+  [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/haydencordeiro/)
+  [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/haydencordeiro)
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:3000`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

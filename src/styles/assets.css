@@ -1,0 +1,23 @@
+/*=========================
+	All css
+==========================*/
+@import url("/assets/vendors/bootstrap/css/bootstrap.min.css");
+@import url("/assets/vendors/fontawesome/css/font-awesome.min.css");
+@import url("/assets/vendors/themify/themify-icons.css");
+@import url("/assets/vendors/owl-carousel/owl.carousel.css");
+@import url("/assets/vendors/bootstrap-select/bootstrap-select.min.css");
+@import url("/assets/vendors/magnific-popup/magnific-popup.css");
+@import url("/assets/vendors/scroll/scrollbar.css");
+@import url("/assets/vendors/switcher/switcher.css");
+
+/*=========================
+	All css
+==========================*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:100,200,300,400,500,600,700,800,900|Roboto:100,300,400,500,700,900|Rubik:300,400,500,700,900');
+
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif;
+*/
