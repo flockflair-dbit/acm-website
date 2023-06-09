@@ -1,22 +1,28 @@
 ---
+// Team Page CSS
+import "../styles/teampage.css";
+
 import Head from "../components/Head.astro";
 import Navbar from "../components/Navbar";
+import PageBanner from "../components/PageBanner";
+import BreadCrumb from "../components/BreadCrumb";
 
 export interface Props {
-    title?: string;
-    description?: string;
-    canonical?: string;
+    teamYear: string | number;
 }
 
-const { title, description, canonical } = Astro.props as Props;
-
-const currPage = Astro.url.pathname.split("/")[1] ? "" : "home";
+let { teamYear = "" } = Astro.props as Props;
+const title = `Core Team ${teamYear} | ACM-DBIT`;
+const description = `Core Team ${teamYear} . Our team consists of the best talents in the institute who are fully focused in delivering the best achievements in developing an amazing and technically advanced community of students in the campus.`;
+const currPage = "team";
+teamYear = Number(teamYear);
+console.log(title);
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-    <Head title={title} description={description} canonical={canonical} />
-    <body id="bg">
+    <Head title={title} description={description} canonical="" />
+    <body>
         <div class="page-wraper">
             <!-- <div id="loading-icon-bx"></div>  -->
 
@@ -24,18 +30,30 @@ const currPage = Astro.url.pathname.split("/")[1] ? "" : "home";
             <Navbar page={currPage} />
             <!-- Header Top END ====  -->
 
-            <slot />
+            <div class="page-content">
+                <!-- Page Heading Box ==== -->
+                <PageBanner
+                    title={`Core Team ${teamYear} - ${teamYear + 1}`}
+                    background="/assets/images/banner/banner2.jpg"
+                />
+                <!-- BreadCrumb -->
+                <BreadCrumb>
+                    <li><a href="/">Home</a></li>
+                    <li>Core Team {teamYear} - {teamYear + 1}</li>
+                </BreadCrumb>
+                <!-- Page Heading Box END ==== -->
+
+                <!-- Page Content Box ==== -->
+                <slot />
+                <!-- Page Content Box END ==== -->
+            </div>
 
             <!-- Footer ====  -->
             <!-- <Footer /> -->
             <!-- Footer END ====  -->
-            <button
-                class="back-to-top fa fa-chevron-up"
-                aria-label="Back To Top"></button>
         </div>
 
         <!-- External JavaScripts -->
-
         <script is:inline src="/assets/js/jquery.min.js"></script>
         <script is:inline src="/assets/vendors/bootstrap/js/popper.min.js"
         ></script>

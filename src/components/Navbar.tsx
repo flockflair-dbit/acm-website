@@ -1,11 +1,14 @@
 import { useState } from "react";
 
-const Navbar = () => {
-    // const [pathname, setPathname] = useState(usePathname().split("/")[1]);
-    const [pathname, setPathname] = useState("home")
-    const handleRedirect = (e) => {
-        const path = e.target.innerText.toLowerCase()
-        setPathname(path)
+interface NavbarProps {
+    page: string
+}
+
+const Navbar: React.FC<NavbarProps> = ({ page }) => {
+    const [currPage, setCurrPage] = useState(page)
+    const handleRedirect = (e: any) => {
+        const temp = e.target.innerText.toLowerCase()
+        setCurrPage(temp)
     }
 
     return (
@@ -75,12 +78,12 @@ const Navbar = () => {
                                 <a href="/" aria-label="home page" rel="noopner"><img src="/assets/images/1.png" alt="" /></a>
                             </div>
                             <ul className="nav navbar-nav">
-                                <li className={pathname === "home" ? "active" : undefined}><a href="/" onClick={handleRedirect}>Home</a></li>
-                                <li className={pathname === "team" ? "active" : undefined}><a href="/team/2022" onClick={handleRedirect}>Team</a></li>
-                                <li className={pathname === "gallery" ? "active" : undefined}><a href="/gallery" onClick={handleRedirect}>Gallery</a></li>
-                                <li className={pathname === "courses" ? "active" : undefined}><a href="/courses" onClick={handleRedirect}>Courses</a></li>
-                                <li className={pathname === "reports" ? "active" : undefined}><a href="/reports" onClick={handleRedirect}>Reports</a></li>
-                                <li className={pathname === "events" ? "active" : undefined}><a href="/events" onClick={handleRedirect}>Events</a></li>
+                                <li className={currPage === "home" ? "active" : undefined}><a href="/" onClick={handleRedirect}>Home</a></li>
+                                <li className={currPage === "team" ? "active" : undefined}><a href="/team/2022" onClick={handleRedirect}>Team</a></li>
+                                <li className={currPage === "gallery" ? "active" : undefined}><a href="/gallery" onClick={handleRedirect}>Gallery</a></li>
+                                <li className={currPage === "courses" ? "active" : undefined}><a href="/courses" onClick={handleRedirect}>Courses</a></li>
+                                <li className={currPage === "reports" ? "active" : undefined}><a href="/reports" onClick={handleRedirect}>Reports</a></li>
+                                <li className={currPage === "events" ? "active" : undefined}><a href="/events" onClick={handleRedirect}>Events</a></li>
 
                                 <li><a href="/" onClick={(e) => e.preventDefault()}>More<i className="fa fa-angle-down" /></a>
                                     <ul className="sub-menu">
