@@ -1,0 +1,61 @@
+---
+import fs from "node:fs/promises";
+import type { InferGetStaticParamsType } from "astro";
+import type { teamDataInterface, memberInterface } from "./types";
+import TeamLayout from "../../layouts/TeamLayout.astro";
+import TeamSection from "./components/TeamSection.astro";
+
+const getMembers = async (teamYear: string) => {
+    const dir = `./public/assets/images/team-${teamYear}`;
+    const teamTypes = await fs.readdir(dir);
+    let members: any = {};
+    for (const teamType of teamTypes) {
+        const file = `${dir}/${teamType}/members.json`;
+        const data = await fs.readFile(file, "utf-8");
+        const json: teamDataInterface = JSON.parse(data);
+        json.data.forEach((member) => {
+            //member is of type memberInterface
+            member.src = `/assets/images/team-${teamYear}/${teamType}/${member.src}`;
+        });
+        members[teamType] = json.data;
+    }
+    return members;
+};
+
+export const getStaticPaths = () => {
+    const teamYears = ["2022", "2021"];
+    return teamYears.map((year) => {
+        return {
+            params: {
+                teamYear: year,
+            },
+        };
+    });
+};
+
+type Params = InferGetStaticParamsType<typeof getStaticPaths>;
+
+const { teamYear } = Astro.params as Params;
+
+const members = await getMembers(teamYear);
+
+const pdtYears = ["2022"];
+---
+
+<TeamLayout teamYear={teamYear}>
+    <div class="content-block">
+        <div class="section-area section-sp1">
+            <TeamSection members={members.core} title="Core" />
+            {
+                pdtYears.includes(teamYear) && (
+                    <TeamSection
+                        members={members.pdt}
+                        title="Product Development"
+                    />
+                )
+            }
+            <TeamSection members={members.tech} title="Tech" />
+            <TeamSection members={members.design} title="Design" />
+        </div>
+    </div>
+</TeamLayout>
