@@ -1,6 +1,5 @@
 ---
-import Head from "../components/layout/Head.astro";
-import Navbar from "../components/layout/Navbar";
+import { Head, Navbar, Footer } from "../components/layout";
 
 export interface Props {
     title?: string;
@@ -27,7 +26,7 @@ const currPage = Astro.url.pathname.split("/")[1] ? "" : "home";
             <slot />
 
             <!-- Footer ====  -->
-            <!-- <Footer /> -->
+            <Footer />
             <!-- Footer END ====  -->
             <button
                 class="back-to-top fa fa-chevron-up"
