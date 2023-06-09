@@ -2,10 +2,8 @@
 // Team Page CSS
 import "../styles/teampage.css";
 
-import Head from "../components/Head.astro";
-import Navbar from "../components/Navbar";
-import PageBanner from "../components/PageBanner";
-import BreadCrumb from "../components/BreadCrumb";
+import { Head, Navbar } from "../components/layout";
+import { PageBanner, BreadCrumb } from "../components/page";
 
 export interface Props {
     teamYear: string | number;
@@ -16,7 +14,6 @@ const title = `Core Team ${teamYear} | ACM-DBIT`;
 const description = `Core Team ${teamYear} . Our team consists of the best talents in the institute who are fully focused in delivering the best achievements in developing an amazing and technically advanced community of students in the campus.`;
 const currPage = "team";
 teamYear = Number(teamYear);
-console.log(title);
 ---
 
 <!DOCTYPE html>
