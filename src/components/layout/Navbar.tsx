@@ -85,10 +85,10 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
                                 <li className={currPage === "reports" ? "active" : undefined}><a href="/reports" onClick={handleRedirect}>Reports</a></li>
                                 <li className={currPage === "events" ? "active" : undefined}><a href="/events" onClick={handleRedirect}>Events</a></li>
 
-                                <li><a href="/" onClick={(e) => e.preventDefault()}>More<i className="fa fa-angle-down" /></a>
+                                <li><a href="#">More<i className="fa fa-angle-down" /></a>
                                     <ul className="sub-menu">
-                                        <li><a href="e-xhibition">E-xhibition</a></li>
-                                        <li><a href="open-source-submit">Open-Source Projects</a></li>
+                                        <li><a href="/e-xhibition">E-xhibition</a></li>
+                                        <li><a href="/open-source-submit">Open-Source Projects</a></li>
                                     </ul>
                                 </li>
                             </ul>
