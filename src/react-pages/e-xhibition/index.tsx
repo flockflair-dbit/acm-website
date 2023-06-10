@@ -104,8 +104,8 @@ const Project: React.FC<{ project: project }> = ({ project }) => {
                     </ul>
                     <h5 className="post-title"><a href="${project.projectLink}">{project.title}</a></h5>
                     <p className="post-desc">Developer: <a className="post-developer" href="#">{project.developerName}</a></p>
-                    <a href="${project.projectLink}" target="_blank"><button className="btn btn-primary"><b>View Project</b></button></a>
-                    <a href="${project.share}" className="share-button ml-1"><button className="btn btn-primary" onClick={() => Copy(project.share)}><b>Share</b></button></a>
+                    <a href={project.projectLink} target="_blank"><button className="btn btn-primary"><b>View Project</b></button></a>
+                    <a href={project.share} className="share-button ml-1"><button className="btn btn-primary" onClick={() => Copy(project.share)}><b>Share</b></button></a>
                     <div className="post-extra">
                     </div>
                 </div>
