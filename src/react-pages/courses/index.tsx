@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-import { PageBanner, BreadCrumb } from "../../components/page"
 
 interface course {
     id: string,
@@ -63,30 +62,19 @@ const Courses: React.FC<{}> = () => {
     }, [])
 
     return (
-        < div className="page-content bg-white" >
-            {/* inner page banner  */}
-            < PageBanner title="Our Courses" background="/assets/images/banner/banner3.jpg" />
-            {/* Breadcrumb row  */}
-            < BreadCrumb >
-                <li><a href="/">Home</a></li>
-                <li>Our Courses</li>
-            </BreadCrumb >
-            {/* Breadcrumb row END  */}
-            {/* inner page banner END  */}
-            <div className="content-block">
-                <div className="section-area section-sp1">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12 col-md-8 col-sm-12">
-                                <div className="row">
-                                    {courseBuilder(courses)}
-                                </div>
+        <div className="content-block">
+            <div className="section-area section-sp1">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-12 col-md-8 col-sm-12">
+                            <div className="row">
+                                {courseBuilder(courses)}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div >
+        </div>
     )
 }
 

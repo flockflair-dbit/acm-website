@@ -1,6 +1,5 @@
 import '../../styles/reports.css'
 import type { report } from './types'
-import { PageBanner, BreadCrumb } from "../../components/page"
 import { NavPill, EventReport, AnnualReport } from './components'
 import { useEffect, useState } from 'react'
 
@@ -43,52 +42,39 @@ const Reports = () => {
     }, [])
 
     return (
-        <div className="page-content">
-            {/* Page Heading Box */}
-            <PageBanner title="Reports" background="/assets/images/banner/banner2.jpg" />
-            <BreadCrumb>
-                <li><a href="/">Home</a></li>
-                <li>Reports</li>
-            </BreadCrumb>
-            {/* Page Heading Box END */}
-
-
-            {/* Page Content */}
-            <div className="content-block">
-                <div className="section-area section-sp1">
-                    {/* Import Font Awesome */}
-                    <div className="content">
-                        {/* Event Reports */}
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-12">
-                                    <div className="card-box">
-                                        <div className="row">
-                                            <div className="col-md-12 heading-bx left">
-                                                <h2 className="title-head text-uppercase">ACM<span> Event Reports</span>
-                                                </h2>
-                                            </div>
+        <div className="content-block">
+            <div className="section-area section-sp1">
+                {/* Import Font Awesome */}
+                <div className="content">
+                    {/* Event Reports */}
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-12">
+                                <div className="card-box">
+                                    <div className="row">
+                                        <div className="col-md-12 heading-bx left">
+                                            <h2 className="title-head text-uppercase">ACM<span> Event Reports</span>
+                                            </h2>
                                         </div>
-                                        <div className="row justify-content-center mb-5">
-                                            <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist" style={{ justifyContent: "space-evenly" }}>
-                                                {buildYears(reports)}
-                                            </ul>
-                                        </div>
-                                        <div className="row">
-                                            <div className="tab-content w-100" id="pills-tabContent">
-                                                {buildEventReports(reports)}
-                                            </div>
+                                    </div>
+                                    <div className="row justify-content-center mb-5">
+                                        <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist" style={{ justifyContent: "space-evenly" }}>
+                                            {buildYears(reports)}
+                                        </ul>
+                                    </div>
+                                    <div className="row">
+                                        <div className="tab-content w-100" id="pills-tabContent">
+                                            {buildEventReports(reports)}
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        {/* Annual & Teknack Reports */}
-                        {buildAnnualReports(reports)}
                     </div>
+                    {/* Annual & Teknack Reports */}
+                    {buildAnnualReports(reports)}
                 </div>
             </div>
-            {/* Page Content END */}
         </div>
     )
 }

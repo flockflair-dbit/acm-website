@@ -1,0 +1,32 @@
+---
+import RootLayout from "./RootLayout.astro";
+import { PageBanner, BreadCrumb } from "../components/page";
+
+interface Props {
+    headTitle: string;
+    description: string;
+    canonical: string;
+    pageTitle: string;
+    bannerBg: string;
+}
+
+const { headTitle, description, canonical, pageTitle, bannerBg } =
+    Astro.props as Props;
+---
+
+<RootLayout title={headTitle} description={description} canonical={canonical}>
+    <div class="page-content">
+        <!-- Page Heading Box ==== -->
+        <PageBanner title={pageTitle} background={bannerBg} />
+        <!-- BreadCrumb -->
+        <BreadCrumb>
+            <li><a href="/">Home</a></li>
+            <li>{pageTitle}</li>
+        </BreadCrumb>
+        <!-- Page Heading Box END ==== -->
+
+        <!-- Page Content Box ==== -->
+        <slot />
+        <!-- Page Content Box END ==== -->
+    </div>
+</RootLayout>

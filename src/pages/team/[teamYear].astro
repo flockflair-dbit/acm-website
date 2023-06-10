@@ -2,7 +2,7 @@
 import fs from "node:fs/promises";
 import type { InferGetStaticParamsType } from "astro";
 import type { teamDataInterface } from "../../components/team/types";
-import TeamLayout from "../../layouts/TeamLayout.astro";
+import PageLayout from "../../layouts/PageLayout.astro";
 import TeamSection from "../../components/team/TeamSection.astro";
 
 const getMembers = async (teamYear: string) => {
@@ -36,13 +36,23 @@ export const getStaticPaths = () => {
 type Params = InferGetStaticParamsType<typeof getStaticPaths>;
 
 const { teamYear } = Astro.params as Params;
+const teamYearNum = Number(teamYear);
+const headTitle = `Core Team ${teamYear} | ACM-DBIT`;
+const description = `Core Team ${teamYear} . Our team consists of the best talents in the institute who are fully focused in delivering the best achievements in developing an amazing and technically advanced community of students in the campus.`;
+const pageTitle = `Core Team ${teamYear} - ${teamYearNum + 1}`;
 
 const members = await getMembers(teamYear);
 
 const pdtYears = ["2022"];
 ---
 
-<TeamLayout teamYear={teamYear}>
+<PageLayout
+    headTitle={headTitle}
+    description={description}
+    canonical={"/team-" + teamYear}
+    pageTitle={pageTitle}
+    bannerBg="/assets/images/banner/banner2.jpg"
+>
     <div class="content-block">
         <div class="section-area section-sp1">
             <TeamSection members={members.core} title="Core" />
@@ -58,4 +68,4 @@ const pdtYears = ["2022"];
             <TeamSection members={members.design} title="Design" />
         </div>
     </div>
-</TeamLayout>
+</PageLayout>

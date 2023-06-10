@@ -1,7 +1,6 @@
 ---
 import fs from "node:fs/promises";
-import RootLayout from "../layouts/RootLayout.astro";
-import { PageBanner, BreadCrumb } from "../components/page";
+import PageLayout from "../layouts/PageLayout.astro";
 import ImageCard from "../components/gallery/ImageCard.astro";
 
 const getImages = async () => {
@@ -22,41 +21,29 @@ const getImages = async () => {
 const images = await getImages();
 ---
 
-<RootLayout
+<PageLayout
     canonical="/gallery"
-    title="Gallery | ACM-DBIT"
+    headTitle="Gallery | ACM-DBIT"
     description="Take a look at the amazing journey of ACM DBIT and all its amazing milestons. The gallery is filled with the energy of our team and students."
+    pageTitle="Gallery"
+    bannerBg="/assets/images/banner/banner1.jpg"
 >
-    <div class="page-content bg-white">
-        <!-- Inner Page Banner -->
-        <PageBanner
-            title="Gallery"
-            background="/assets/images/banner/banner1.jpg"
-        />
-        <!-- Breadcrum row -->
-        <BreadCrumb>
-            <li><a href="/">Home</a></li>
-            <li>Gallery</li>
-        </BreadCrumb>
-        <!-- Breadcrumb row END  -->
-
-        <!-- Content Area -->
-        <div class="content-block">
-            <!-- Gallery -->
-            <div class="section-area section-sp1 gallery-bx">
-                <div class="container">
-                    <div class="clearfix">
-                        <div
-                            id="masonry"
-                            class="ttr-gallery-listing magnific-image row"
-                            style="list-style: none;"
-                        >
-                            {images.map((image) => <ImageCard image={image} />)}
-                        </div>
+    <!-- Content Area -->
+    <div class="content-block">
+        <!-- Gallery -->
+        <div class="section-area section-sp1 gallery-bx">
+            <div class="container">
+                <div class="clearfix">
+                    <div
+                        id="masonry"
+                        class="ttr-gallery-listing magnific-image row"
+                        style="list-style: none;"
+                    >
+                        {images.map((image) => <ImageCard image={image} />)}
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Content Area END -->
     </div>
-</RootLayout>
+    <!-- Content Area END -->
+</PageLayout>
