@@ -1,0 +1,12 @@
+---
+import RootLayout from "../layouts/RootLayout.astro";
+import Page from "../react-pages/courses";
+---
+
+<RootLayout
+    canonical="/courses"
+    title="Courses | ACM-DBIT"
+    description="We provide the best courses with full practical training to be industry ready! Learn from the best mentors. Get certified in the latest technologies. We understand the students needs and find the best suited training and workshops required and help the students polish their skillsets to guarantee an excellent career ahead."
+>
+    <Page client:load />
+</RootLayout>
