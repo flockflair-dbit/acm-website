@@ -1,8 +1,7 @@
 ---
 // Team Page CSS
 import "../styles/teampage.css";
-
-import { Head, Navbar, Footer } from "../components/layout";
+import RootLayout from "./RootLayout.astro";
 import { PageBanner, BreadCrumb } from "../components/page";
 
 export interface Props {
@@ -12,74 +11,29 @@ export interface Props {
 let { teamYear = "" } = Astro.props as Props;
 const title = `Core Team ${teamYear} | ACM-DBIT`;
 const description = `Core Team ${teamYear} . Our team consists of the best talents in the institute who are fully focused in delivering the best achievements in developing an amazing and technically advanced community of students in the campus.`;
-const currPage = "team";
 teamYear = Number(teamYear);
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-    <Head
-        title={title}
-        description={description}
-        canonical={"/team-" + teamYear}
-    />
-    <body>
-        <div class="page-wraper">
-            <!-- <div id="loading-icon-bx"></div>  -->
+<RootLayout
+    title={title}
+    description={description}
+    canonical={"/team-" + teamYear}
+>
+    <div class="page-content">
+        <!-- Page Heading Box ==== -->
+        <PageBanner
+            title={`Core Team ${teamYear} - ${teamYear + 1}`}
+            background="/assets/images/banner/banner2.jpg"
+        />
+        <!-- BreadCrumb -->
+        <BreadCrumb>
+            <li><a href="/">Home</a></li>
+            <li>Core Team {teamYear} - {teamYear + 1}</li>
+        </BreadCrumb>
+        <!-- Page Heading Box END ==== -->
 
-            <!-- Header Top ====  -->
-            <Navbar page={currPage} />
-            <!-- Header Top END ====  -->
-
-            <div class="page-content">
-                <!-- Page Heading Box ==== -->
-                <PageBanner
-                    title={`Core Team ${teamYear} - ${teamYear + 1}`}
-                    background="/assets/images/banner/banner2.jpg"
-                />
-                <!-- BreadCrumb -->
-                <BreadCrumb>
-                    <li><a href="/">Home</a></li>
-                    <li>Core Team {teamYear} - {teamYear + 1}</li>
-                </BreadCrumb>
-                <!-- Page Heading Box END ==== -->
-
-                <!-- Page Content Box ==== -->
-                <slot />
-                <!-- Page Content Box END ==== -->
-            </div>
-
-            <!-- Footer ====  -->
-            <Footer />
-            <!-- Footer END ====  -->
-        </div>
-
-        <!-- External JavaScripts -->
-        <script is:inline src="/assets/js/jquery.min.js"></script>
-        <script is:inline src="/assets/vendors/bootstrap/js/popper.min.js"
-        ></script>
-        <script is:inline src="/assets/vendors/bootstrap/js/bootstrap.min.js"
-        ></script>
-        <script
-            is:inline
-            src="/assets/vendors/bootstrap-select/bootstrap-select.min.js"
-        ></script>
-        <script
-            is:inline
-            src="/assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"
-        ></script>
-        <script is:inline src="/assets/vendors/magnific-popup/magnific-popup.js"
-        ></script>
-        <script is:inline src="/assets/vendors/counter/waypoints-min.js"
-        ></script>
-        <script is:inline src="/assets/vendors/counter/counterup.min.js"
-        ></script>
-        <script is:inline src="/assets/vendors/imagesloaded/imagesloaded.js"
-        ></script>
-        <script is:inline src="/assets/vendors/masonry/masonry.js"></script>
-        <script is:inline src="/assets/vendors/masonry/filter.js"></script>
-        <script is:inline src="/assets/vendors/owl-carousel/owl.carousel.js"
-        ></script>
-        <script is:inline src="/assets/js/functions.js"></script>
-    </body>
-</html>
+        <!-- Page Content Box ==== -->
+        <slot />
+        <!-- Page Content Box END ==== -->
+    </div>
+</RootLayout>
