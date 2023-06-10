@@ -8,13 +8,13 @@
         {
             "name": "Grejo Joby",
             "position": "Chaiperson",
-            "linkedIn": "https://www.linkedin.com/in/grejojoby/",
+            "extLink": "https://www.linkedin.com/in/grejojoby/",
             "src": "1.webp"
         },
         {
             "name": "Hayden Cordeiro",
             "position": "Vice-Chairperson",
-            "linkedIn": "https://www.linkedin.com/in/haydencordeiro/",
+            "extLink": "https://www.linkedin.com/in/haydencordeiro/",
             "src": "2.webp"
         },
         {
@@ -25,7 +25,7 @@
         {
             "name": "Jivin Varghese",
             "position": "Secretary",
-            "linkedIn": "https://www.linkedin.com/in/jivinvarghese/",
+            "extLink": "https://www.linkedin.com/in/jivinvarghese/",
             "src": "4.webp"
         },
         {
@@ -36,7 +36,7 @@
         {
             "name": "Pradnya Tendolkar",
             "position": "Treasurer",
-            "linkedIn": "https://www.linkedin.com/in/pradnya-t-6270a7175/",
+            "extLink": "https://www.linkedin.com/in/pradnya-t-6270a7175/",
             "src": "6.webp"
         },
         {
@@ -47,31 +47,31 @@
         {
             "name": "Ruvin Rodrigues",
             "position": "Technical Head",
-            "linkedIn": "https://www.linkedin.com/in/ruvin-rodrigues/",
+            "extLink": "https://www.linkedin.com/in/ruvin-rodrigues/",
             "src": "8.webp"
         },
         {
             "name": "Siddharth Dhaigude",
             "position": "Asst. Technical Head",
-            "linkedIn": "https://www.linkedin.com/in/siddharth-dhaigude-584922206/",
+            "extLink": "https://www.linkedin.com/in/siddharth-dhaigude-584922206/",
             "src": "9.webp"
         },
         {
             "name": "Hariharan Iyer",
             "position": "Design Head",
-            "linkedIn": "https://www.linkedin.com/in/iyerhari9999/",
+            "extLink": "https://www.linkedin.com/in/iyerhari9999/",
             "src": "10.webp"
         },
         {
             "name": "Leona Varghese",
             "position": "Asst. Design Head",
-            "linkedIn": "https://www.linkedin.com/in/leona-varghese-95897921b/",
+            "extLink": "https://www.linkedin.com/in/leona-varghese-95897921b/",
             "src": "11.webp"
         },
         {
             "name": "Denzita Dsouza",
             "position": "Publicity Head",
-            "linkedIn": "https://www.linkedin.com/in/denzita-dsouza/",
+            "extLink": "https://www.linkedin.com/in/denzita-dsouza/",
             "src": "12.webp"
         },
         {
@@ -82,19 +82,19 @@
         {
             "name": "Chryselle Fernandes",
             "position": "Administration Head",
-            "linkedIn": "https://www.linkedin.com/in/chryselle-fernandes-a451b3180/",
+            "extLink": "https://www.linkedin.com/in/chryselle-fernandes-a451b3180/",
             "src": "14.webp"
         },
         {
             "name": "Grace Lewis",
             "position": "Asst. Administration Head",
-            "linkedIn": "https://www.linkedin.com/in/grace-lewis-557148205/",
+            "extLink": "https://www.linkedin.com/in/grace-lewis-557148205/",
             "src": "15.webp"
         },
         {
             "name": "Alvina Joy",
             "position": "Social Media Head",
-            "linkedIn": "https://www.linkedin.com/in/alvina-joy-135474188/",
+            "extLink": "https://www.linkedin.com/in/alvina-joy-135474188/",
             "src": "16.webp"
         },
         {

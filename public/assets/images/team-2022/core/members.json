@@ -9,19 +9,19 @@
             "name": "Leona Varghese",
             "position": "Chaiperson",
             "src": "Leona.webp",
-            "linkedIn": "https://www.linkedin.com/in/leona-varghese-95897921b/"
+            "extLink": "https://www.linkedin.com/in/leona-varghese-95897921b/"
         },
         {
             "name": "Siddharth Dhaigude",
             "position": "Vice Chaiperson",
             "src": "Siddharth.webp",
-            "linkedIn": "https://www.linkedin.com/in/siddharth-dhaigude-584922206/"
+            "extLink": "https://www.linkedin.com/in/siddharth-dhaigude-584922206/"
         },
         {
             "name": "Grace Lewis",
             "position": "Secretary",
             "src": "Grace.webp",
-            "linkedIn": "https://www.linkedin.com/in/grace-lewis-557148205/"
+            "extLink": "https://www.linkedin.com/in/grace-lewis-557148205/"
         },
         {
             "name": "Shweta Nadar",
@@ -32,7 +32,7 @@
             "name": "Pratik Daga",
             "position": "Treasurer",
             "src": "Pratik.webp",
-            "linkedIn": "https://www.linkedin.com/in/pratik-daga-20b864238"
+            "extLink": "https://www.linkedin.com/in/pratik-daga-20b864238"
         },
         {
             "name": "Niraj Pingle",
@@ -43,19 +43,19 @@
             "name": "Siddhesh Madkaikar",
             "position": "Technical Head",
             "src": "Siddhesh.webp",
-            "linkedIn": "https://www.linkedin.com/in/siddhesh-madkaikar-122037242/"
+            "extLink": "https://www.linkedin.com/in/siddhesh-madkaikar-122037242/"
         },
         {
             "name": "Prakhar Sharma",
             "position": "Asst. Technical Head",
             "src": "AsstTechHead.webp",
-            "linkedIn": "https://www.linkedin.com/in/prakhar-sharma-6680151b5/"
+            "extLink": "https://www.linkedin.com/in/prakhar-sharma-6680151b5/"
         },
         {
             "name": "Likla Sinha",
             "position": "Design Head",
             "src": "Likla.webp",
-            "linkedIn": "https://www.linkedin.com/in/likla-sinha-bb6244202"
+            "extLink": "https://www.linkedin.com/in/likla-sinha-bb6244202"
         },
         {
             "name": "Ananya Kulkarni",
@@ -66,7 +66,7 @@
             "name": "Lebisha Nadar",
             "position": "Publicity Head",
             "src": "Lebisha.webp",
-            "linkedIn": "https://www.linkedin.com/in/lebisha-nadar-73b9b7220"
+            "extLink": "https://www.linkedin.com/in/lebisha-nadar-73b9b7220"
         },
         {
             "name": "Manuel Ferreira",
@@ -87,7 +87,7 @@
             "name": "Smriti Sunil",
             "position": "PR Head",
             "src": "Smriti.webp",
-            "linkedIn": "https://www.linkedin.com/in/smritisunil"
+            "extLink": "https://www.linkedin.com/in/smritisunil"
         },
         {
             "name": "Leander Braganza",
@@ -108,7 +108,7 @@
             "name": "Sasha Rebello",
             "position": "Sponsorship Head",
             "src": "Sasha.webp",
-            "linkedIn": "https://www.linkedin.com/in/sasha-ann-rebello-8210241b1/"
+            "extLink": "https://www.linkedin.com/in/sasha-ann-rebello-8210241b1/"
         },
         {
             "name": "Manish Patil",
@@ -119,13 +119,13 @@
             "name": "Grejo Joby",
             "position": "Advisor",
             "src": "Grejo.webp",
-            "linkedIn": "https://www.linkedin.com/in/grejojoby/"
+            "extLink": "https://www.linkedin.com/in/grejojoby/"
         },
         {
             "name": "Pakshal Ranawat",
             "position": "Advisor",
             "src": "Pakshal.webp",
-            "linkedIn": "https://www.linkedin.com/in/pakshal-ranawat-16400420a"
+            "extLink": "https://www.linkedin.com/in/pakshal-ranawat-16400420a"
         }
     ]
 }

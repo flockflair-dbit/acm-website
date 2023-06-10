@@ -2,7 +2,7 @@ export interface memberInterface {
     name: string;
     position: string;
     src: string;
-    linkedIn?: string;
+    extLink?: string;
 }
 
 export interface teamDataInterface {
