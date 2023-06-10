@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react"
 import { PageBanner, BreadCrumb } from "../components/page"
 
 interface course {
@@ -54,9 +55,13 @@ const courseBuilder = (courses: course[]) => {
         return courses.map((course, index) => <Course key={index} course={course} />)
 }
 
-const courses = await getCourses()
-
+// This component is used to display all the courses
 const Courses: React.FC<{}> = () => {
+    const [courses, setCourses] = useState<course[]>([])
+    useEffect(() => {
+        getCourses().then(courses => setCourses(courses))
+    }, [])
+
     return (
         < div className="page-content bg-white" >
             {/* inner page banner  */}
