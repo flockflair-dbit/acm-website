@@ -1,4 +1,4 @@
-import '../../styles/reports.css'
+import './styles.css'
 import type { report } from './types'
 import { NavPill, EventReport, AnnualReport } from './components'
 import { useEffect, useState } from 'react'
@@ -37,9 +37,7 @@ const fetchReports = async () => {
 const Reports = () => {
     const [reports, setReports] = useState<report[]>([])
 
-    useEffect(() => {
-        fetchReports().then(reports => setReports(reports))
-    }, [])
+    useEffect(() => { fetchReports().then(reports => setReports(reports)) }, [])
 
     return (
         <div className="content-block">
