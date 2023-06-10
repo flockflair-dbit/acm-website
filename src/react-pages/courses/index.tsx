@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { PageBanner, BreadCrumb } from "../components/page"
+import { PageBanner, BreadCrumb } from "../../components/page"
 
 interface course {
     id: string,
