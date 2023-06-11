@@ -1,0 +1,84 @@
+{
+    "data": [
+        {
+            "name": "Dheeraj James",
+            "position": "Chaiperson",
+            "src": "10.webp"
+        },
+        {
+            "name": "Grejo Joby",
+            "position": "Vice Chair",
+            "src": "3.webp"
+        },
+        {
+            "name": "Nikhil Raote",
+            "position": "Vice Chair",
+            "src": "8.webp"
+        },
+        {
+            "name": "Manasi Anantpurkar",
+            "position": "Secretary",
+            "src": "9.webp"
+        },
+        {
+            "name": "Athira Lonappan",
+            "position": "Secretary",
+            "src": "12.webp"
+        },
+        {
+            "name": "Hayden Cordeiro",
+            "position": "Tech Head",
+            "src": "17.webp"
+        },
+        {
+            "name": "Rahul Pudurkar",
+            "position": "Tech Head",
+            "src": "7.webp"
+        },
+        {
+            "name": "Hariharan Iyer",
+            "position": "Design Head",
+            "src": "6.webp"
+        },
+        {
+            "name": "Slade Ferrao",
+            "position": "Design Head",
+            "src": "4.webp"
+        },
+        {
+            "name": "Agnel Salve",
+            "position": "Publicity Head",
+            "src": "5.webp"
+        },
+        {
+            "name": "Riya Mekkattukulam",
+            "position": "Publicity Head",
+            "src": "2.webp"
+        },
+        {
+            "name": "Joel Parakkal",
+            "position": "Administration Head",
+            "src": "13.webp"
+        },
+        {
+            "name": "Kevin Dsa",
+            "position": "Administration Head",
+            "src": "15.webp"
+        },
+        {
+            "name": "Denzita D'souza",
+            "position": "Social Media Head",
+            "src": "1.webp"
+        },
+        {
+            "name": "Ruvin Rodrigues",
+            "position": "Editor",
+            "src": "14.webp"
+        },
+        {
+            "name": "Cynthia Mascarenhas",
+            "position": "Advisor",
+            "src": "16.webp"
+        }
+    ]
+}

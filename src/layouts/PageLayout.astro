@@ -35,14 +35,7 @@ const breadCrumbs = generateBreadCrumbs(Astro.url.pathname);
         <!-- BreadCrumb -->
         <BreadCrumb>
             <li><a href="/">Home</a></li>
-            {
-                breadCrumbs.map((ele) => (
-                    <li>
-                        <a href={`/${ele.toLowerCase()}`}>{ele}</a>
-                    </li>
-                ))
-            }
-            <!-- <li>{pageTitle}</li> -->
+            {breadCrumbs.map((ele) => <li>{ele}</li>)}
         </BreadCrumb>
         <!-- Page Heading Box END ==== -->
 

@@ -1,0 +1,19 @@
+{
+    "data": [
+        {
+            "name": "Esther Fernandes",
+            "position": "Member",
+            "src": "esther.png"
+        },
+        {
+            "name": "Adonia Sequeria",
+            "position": "Member",
+            "src": "adonia.png"
+        },
+        {
+            "name": "Om Rajurkar",
+            "position": "Member",
+            "src": "om.png"
+        }
+    ]
+}
