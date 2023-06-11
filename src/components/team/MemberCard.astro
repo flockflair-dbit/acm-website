@@ -12,14 +12,17 @@ const { member } = Astro.props as Props;
     <div class="mt-4 pt-2">
         <a href={member.extLink}>
             <div class="team position-relative d-block text-center">
-                <div class="image position-relative d-block overflow-hidden">
-                    <img
-                        src={member.src}
-                        class="img-fluid rounded"
-                        alt={member.name}
-                    />
-                    <!-- <div class="overlay rounded bg-dark"></div> -->
-                </div>
+                {
+                    member.src && (
+                        <div class="image position-relative d-block overflow-hidden">
+                            <img
+                                src={member.src}
+                                class="img-fluid rounded"
+                                alt={member.name}
+                            />
+                        </div>
+                    )
+                }
                 <div
                     class="content py-2 member-position bg-white border-bottom overflow-hidden rounded d-inline-block"
                 >

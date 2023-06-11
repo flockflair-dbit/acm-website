@@ -1,7 +1,7 @@
 export interface memberInterface {
     name: string;
     position: string;
-    src: string;
+    src?: string;
     extLink?: string;
 }
 

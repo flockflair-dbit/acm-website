@@ -18,7 +18,8 @@ const getMembers = async (teamYear: string) => {
         const json: teamDataInterface = JSON.parse(data);
         json.data.forEach((member) => {
             //member is of type memberInterface
-            member.src = `/assets/images/teams/team-${teamYear}/${teamType}/${member.src}`;
+            if (member.src)
+                member.src = `/assets/images/teams/team-${teamYear}/${teamType}/${member.src}`;
         });
         members[teamType] = json.data;
     }
