@@ -1,16 +1,21 @@
 import type { eventInterface } from "../types"
 
-const EventCard: React.FC<{ event: eventInterface }> = ({ event }) => {
+const dirPath = "/assets/images/events"
+
+const EventCard: React.FC<{ event: eventInterface, imageDir: string[] }> = ({ event, imageDir }) => {
+    // TODO: replace 23.webp with a default image
+    const imgSrc = imageDir.includes(event.slug + ".webp") ? `${dirPath}/${event.slug}.webp` : `${dirPath}/23.webp`
+
     const tempCon = String(event.contentRaw).split("\\n")
     let description = ""
-    for (var i = 0; i < tempCon.length; i++) {
+    for (var i = 0; i < tempCon.length; i++)
         description += tempCon[i]
-    }
+
     return (
         <li className="action-card col-lg-6 col-md-6 col-sm-12">
             <div className="event-bx m-b30">
                 <div className="action-box">
-                    <img src="assets/images/events/1.webp" alt={event.title}
+                    <img src={imgSrc} alt={event.title}
                         loading="lazy" />
                 </div>
                 <div className="info-bx d-flex">

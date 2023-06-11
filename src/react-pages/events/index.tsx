@@ -1,5 +1,6 @@
-import type { eventRawInterface, eventInterface } from "./types"
+import fs from "node:fs/promises"
 import EventCard from "./components/EventCard"
+import type { eventRawInterface, eventInterface } from "./types"
 
 const url = "https://api-eu-central-1.graphcms.com/v2/ckpv3up06dqcq01xxfy3y5xwn/master?query=%7B%0A%20%20events(orderBy%3Adate_DESC)%20%7B%0A%20%20%20%20id%0A%20%20%20%20blog%20%7B%0A%20%20%20%20%20%20html%0A%20%20%20%20%20%20text%0A%20%20%20%20%7D%0A%20%20%20%20title%0A%20%20%20%20slug%0A%20%20%20%20date%0A%20%20%20%20month_name%20%0A%20%20%20%20thumbnail%20%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20url%0A%20%20%20%20%20%20fileName%0A%20%20%20%20%7D%0A%20%20%20%20images%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20url%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D"
 
@@ -24,11 +25,11 @@ const getEvents = async (): Promise<eventInterface[]> => {
         events.push(temp)
 
     }
-    return events
+    return events.splice(0, 23)
 }
 
 const events = await getEvents()
-
+const eventsImageDir = await fs.readdir("./public/assets/images/events")
 
 const Events: React.FC<{}> = () => {
     return (
@@ -38,7 +39,7 @@ const Events: React.FC<{}> = () => {
                     <div className="clearfix">
                         <ul id="masonryEvent" className="ttr-gallery-listing magnific-image row"
                             style={{ listStyle: "none" }}>
-                            <EventCard event={events[0]} />
+                            {events.map((event, index) => <EventCard key={index} event={event} imageDir={eventsImageDir} />)}
                         </ul>
                     </div>
                 </div>

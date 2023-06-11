@@ -1,4 +1,4 @@
-interface eventFooterImagesInterface {
+interface eventFooterImageInterface {
     id: string;
     url: string;
 }
@@ -18,7 +18,7 @@ export interface eventRawInterface {
         url: string;
         fileName: string;
     }
-    images: eventFooterImagesInterface[]
+    images: eventFooterImageInterface[]
 }
 
 export interface eventInterface {
@@ -31,5 +31,5 @@ export interface eventInterface {
     fullDate: string;
     date: string;
     month: string;
-    footerImages: eventFooterImagesInterface[]
+    footerImages: eventFooterImageInterface[]
 }
