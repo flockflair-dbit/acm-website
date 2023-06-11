@@ -18,3 +18,4 @@ jobs:
         username: ${{ secrets.username}}
         password: ${{ secrets.password }}
         server-dir: ./public_html/
+        local-dir: ./dist/
