@@ -1,0 +1,49 @@
+---
+import fs from "node:fs/promises";
+import PageLayout from "../layouts/PageLayout.astro";
+import ImageCard from "../components/gallery/ImageCard.astro";
+
+const getImages = async () => {
+    const galleryDir = `./public/assets/images/gallery/`;
+    const subDirs = await fs.readdir(galleryDir);
+    subDirs.reverse();
+    let images: string[] = [];
+    for (const subDir of subDirs) {
+        const files = await fs.readdir(galleryDir + subDir);
+        files.reverse();
+        images = images.concat(
+            files.map((file) => `/assets/images/gallery/${subDir}/${file}`)
+        );
+    }
+    return images;
+};
+
+const images = await getImages();
+---
+
+<PageLayout
+    canonical="/gallery"
+    headTitle="Gallery | ACM-DBIT"
+    description="Take a look at the amazing journey of ACM DBIT and all its amazing milestons. The gallery is filled with the energy of our team and students."
+    pageTitle="Gallery"
+    bannerBg="/assets/images/banner/banner1.jpg"
+>
+    <!-- Content Area -->
+    <div class="content-block">
+        <!-- Gallery -->
+        <div class="section-area section-sp1 gallery-bx">
+            <div class="container">
+                <div class="clearfix">
+                    <div
+                        id="masonry"
+                        class="ttr-gallery-listing magnific-image row"
+                        style="list-style: none;"
+                    >
+                        {images.map((image) => <ImageCard image={image} />)}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Content Area END -->
+</PageLayout>

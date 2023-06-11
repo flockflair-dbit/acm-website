@@ -1,0 +1,67 @@
+---
+import { Head, Navbar, Footer } from "../components/layout";
+
+export interface Props {
+    title?: string;
+    description?: string;
+    canonical?: string;
+}
+
+const { title, description, canonical } = Astro.props as Props;
+
+const page = Astro.url.pathname.split("/")[1];
+let currPage = page;
+if (page == "") currPage = "home";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <Head title={title} description={description} canonical={canonical} />
+    <body id="bg">
+        <div class="page-wraper">
+            <div id="loading-icon-bx"></div>
+
+            <!-- Header Top ====  -->
+            <Navbar page={currPage} />
+            <!-- Header Top END ====  -->
+
+            <slot />
+
+            <!-- Footer ====  -->
+            <Footer />
+            <!-- Footer END ====  -->
+            <button
+                class="back-to-top fa fa-chevron-up"
+                aria-label="Back To Top"></button>
+        </div>
+
+        <!-- External JavaScripts -->
+
+        <script is:inline src="/assets/js/jquery.min.js"></script>
+        <script is:inline src="/assets/vendors/bootstrap/js/popper.min.js"
+        ></script>
+        <script is:inline src="/assets/vendors/bootstrap/js/bootstrap.min.js"
+        ></script>
+        <script
+            is:inline
+            src="/assets/vendors/bootstrap-select/bootstrap-select.min.js"
+        ></script>
+        <script
+            is:inline
+            src="/assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"
+        ></script>
+        <script is:inline src="/assets/vendors/magnific-popup/magnific-popup.js"
+        ></script>
+        <script is:inline src="/assets/vendors/counter/waypoints-min.js"
+        ></script>
+        <script is:inline src="/assets/vendors/counter/counterup.min.js"
+        ></script>
+        <script is:inline src="/assets/vendors/imagesloaded/imagesloaded.js"
+        ></script>
+        <script is:inline src="/assets/vendors/masonry/masonry.js"></script>
+        <script is:inline src="/assets/vendors/masonry/filter.js"></script>
+        <script is:inline src="/assets/vendors/owl-carousel/owl.carousel.js"
+        ></script>
+        <script is:inline src="/assets/js/functions.js"></script>
+    </body>
+</html>

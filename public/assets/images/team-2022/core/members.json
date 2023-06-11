@@ -1,0 +1,131 @@
+{
+    "data": [
+        {
+            "name": "Mr. Mirza Ali Imran",
+            "position": "Faculty Co-ordinator",
+            "src": "faculty.jpg"
+        },
+        {
+            "name": "Leona Varghese",
+            "position": "Chaiperson",
+            "src": "Leona.webp",
+            "extLink": "https://www.linkedin.com/in/leona-varghese-95897921b/"
+        },
+        {
+            "name": "Siddharth Dhaigude",
+            "position": "Vice Chaiperson",
+            "src": "Siddharth.webp",
+            "extLink": "https://www.linkedin.com/in/siddharth-dhaigude-584922206/"
+        },
+        {
+            "name": "Grace Lewis",
+            "position": "Secretary",
+            "src": "Grace.webp",
+            "extLink": "https://www.linkedin.com/in/grace-lewis-557148205/"
+        },
+        {
+            "name": "Shweta Nadar",
+            "position": "Asst. Secretary",
+            "src": "AsstSecretary.webp"
+        },
+        {
+            "name": "Pratik Daga",
+            "position": "Treasurer",
+            "src": "Pratik.webp",
+            "extLink": "https://www.linkedin.com/in/pratik-daga-20b864238"
+        },
+        {
+            "name": "Niraj Pingle",
+            "position": "Asst. Treasurer",
+            "src": "AsstTreasurer.webp"
+        },
+        {
+            "name": "Siddhesh Madkaikar",
+            "position": "Technical Head",
+            "src": "Siddhesh.webp",
+            "extLink": "https://www.linkedin.com/in/siddhesh-madkaikar-122037242/"
+        },
+        {
+            "name": "Prakhar Sharma",
+            "position": "Asst. Technical Head",
+            "src": "AsstTechHead.webp",
+            "extLink": "https://www.linkedin.com/in/prakhar-sharma-6680151b5/"
+        },
+        {
+            "name": "Likla Sinha",
+            "position": "Design Head",
+            "src": "Likla.webp",
+            "extLink": "https://www.linkedin.com/in/likla-sinha-bb6244202"
+        },
+        {
+            "name": "Ananya Solanki",
+            "position": "Asst. Design Head",
+            "src": "AsstDesignHead.webp"
+        },
+        {
+            "name": "Lebisha Nadar",
+            "position": "Publicity Head",
+            "src": "Lebisha.webp",
+            "extLink": "https://www.linkedin.com/in/lebisha-nadar-73b9b7220"
+        },
+        {
+            "name": "Manuel Ferreira",
+            "position": "Asst. Publicity Head",
+            "src": "AsstPublicityHead.webp"
+        },
+        {
+            "name": "Sanika Chaudhari",
+            "position": "Administration Head",
+            "src": "Sanika.webp"
+        },
+        {
+            "name": "Shanaya Carvalho",
+            "position": "Asst. Administration Head",
+            "src": "AsstAdminHead.webp"
+        },
+        {
+            "name": "Smriti Sunil",
+            "position": "PR Head",
+            "src": "Smriti.webp",
+            "extLink": "https://www.linkedin.com/in/smritisunil"
+        },
+        {
+            "name": "Leander Braganza",
+            "position": "Asst. PR Head",
+            "src": "AsstPRHead.webp"
+        },
+        {
+            "name": "Tiffany Jesus",
+            "position": "Social Media Head",
+            "src": "Tiffany.webp"
+        },
+        {
+            "name": "Joshua Menezes",
+            "position": "Asst. Social Media Head",
+            "src": "AsstSocialMediaHead.webp"
+        },
+        {
+            "name": "Sasha Rebello",
+            "position": "Sponsorship Head",
+            "src": "Sasha.webp",
+            "extLink": "https://www.linkedin.com/in/sasha-ann-rebello-8210241b1/"
+        },
+        {
+            "name": "Manish Patil",
+            "position": "Asst. Sponsorship Head",
+            "src": "AsstSponsorshipHead.webp"
+        },
+        {
+            "name": "Grejo Joby",
+            "position": "Advisor",
+            "src": "Grejo.webp",
+            "extLink": "https://www.linkedin.com/in/grejojoby/"
+        },
+        {
+            "name": "Pakshal Ranawat",
+            "position": "Advisor",
+            "src": "Pakshal.webp",
+            "extLink": "https://www.linkedin.com/in/pakshal-ranawat-16400420a"
+        }
+    ]
+}
