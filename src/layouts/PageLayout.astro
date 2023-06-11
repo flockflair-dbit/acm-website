@@ -1,0 +1,53 @@
+---
+import RootLayout from "./RootLayout.astro";
+import { PageBanner, BreadCrumb } from "../components/page";
+
+interface Props {
+    headTitle?: string;
+    description?: string;
+    canonical?: string;
+    pageTitle: string;
+    bannerBg: string;
+}
+
+const { headTitle, description, canonical, pageTitle, bannerBg } =
+    Astro.props as Props;
+
+const capitalizeFirstLetter = (string: string) =>
+    string.charAt(0).toUpperCase() + string.slice(1);
+
+const generateBreadCrumbs = (path: string) => {
+    const pathArr = path.split("/");
+    pathArr.splice(0, 1);
+    pathArr.forEach((ele, index) => {
+        pathArr[index] = capitalizeFirstLetter(ele);
+    });
+    return pathArr;
+};
+
+const breadCrumbs = generateBreadCrumbs(Astro.url.pathname);
+---
+
+<RootLayout title={headTitle} description={description} canonical={canonical}>
+    <div class="page-content">
+        <!-- Page Heading Box ==== -->
+        <PageBanner title={pageTitle} background={bannerBg} />
+        <!-- BreadCrumb -->
+        <BreadCrumb>
+            <li><a href="/">Home</a></li>
+            {
+                breadCrumbs.map((ele) => (
+                    <li>
+                        <a href={`/${ele.toLowerCase()}`}>{ele}</a>
+                    </li>
+                ))
+            }
+            <!-- <li>{pageTitle}</li> -->
+        </BreadCrumb>
+        <!-- Page Heading Box END ==== -->
+
+        <!-- Page Content Box ==== -->
+        <slot />
+        <!-- Page Content Box END ==== -->
+    </div>
+</RootLayout>

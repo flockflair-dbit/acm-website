@@ -1,0 +1,37 @@
+{
+    "data": [
+        {
+            "name": "Rhea Dsouza",
+            "position": "Member",
+            "src": "1.webp"
+        },
+        {
+            "name": "Lovely Varshney",
+            "extLink": "https://www.linkedin.com/in/lovely-varshney-04b767211/",
+            "position": "Member",
+            "src": "2.webp"
+        },
+        {
+            "name": "Siddhant Naidu",
+            "extLink": "https://www.linkedin.com/in/siddhanth-naidu-495720220/",
+            "position": "Member",
+            "src": "3.webp"
+        },
+        {
+            "name": "Sneha Naphade",
+            "position": "Member",
+            "src": "4.webp"
+        },
+        {
+            "name": "Vaibhav Sinha",
+            "position": "Member",
+            "src": "5.webp"
+        },
+        {
+            "name": "Likla Sinha",
+            "extLink": "https://www.linkedin.com/in/likla-sinha-bb6244202",
+            "position": "Member",
+            "src": "6.webp"
+        }
+    ]
+}

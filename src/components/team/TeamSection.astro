@@ -1,0 +1,25 @@
+---
+import type { memberInterface } from "./types";
+import MemberCard from "./MemberCard.astro";
+
+export interface Props {
+    title: string;
+    members: memberInterface[];
+}
+
+const { title, members } = Astro.props as Props;
+---
+
+<div class="container mt-100 mt-60 mb-5 pb-5">
+    <div class="row">
+        <div class="col-md-12 heading-bx left mb-1">
+            <h2 class="title-head text-uppercase">
+                <span>Our</span>
+                {title} Team
+            </h2>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        {members.map((member) => <MemberCard member={member} />)}
+    </div>
+</div>

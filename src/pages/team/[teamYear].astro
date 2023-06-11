@@ -1,0 +1,102 @@
+---
+// Team Page CSS
+import "../../styles/teampage.css";
+
+import fs from "node:fs/promises";
+import type { InferGetStaticParamsType } from "astro";
+import type { teamDataInterface } from "../../components/team/types";
+import PageLayout from "../../layouts/PageLayout.astro";
+import TeamSection from "../../components/team/TeamSection.astro";
+
+const getMembers = async (teamYear: string) => {
+    const dir = `./public/assets/images/team-${teamYear}`;
+    const teamTypes = await fs.readdir(dir);
+    let members: any = {};
+    for (const teamType of teamTypes) {
+        const file = `${dir}/${teamType}/members.json`;
+        const data = await fs.readFile(file, "utf-8");
+        const json: teamDataInterface = JSON.parse(data);
+        json.data.forEach((member) => {
+            //member is of type memberInterface
+            member.src = `/assets/images/team-${teamYear}/${teamType}/${member.src}`;
+        });
+        members[teamType] = json.data;
+    }
+    return members;
+};
+
+export const getStaticPaths = () => {
+    const teamYears = ["2022", "2021"];
+    return teamYears.map((year) => {
+        return {
+            params: {
+                teamYear: year,
+            },
+        };
+    });
+};
+
+type Params = InferGetStaticParamsType<typeof getStaticPaths>;
+
+const { teamYear } = Astro.params as Params;
+const teamYearNum = Number(teamYear);
+const headTitle = `Core Team ${teamYear} | ACM-DBIT`;
+const description = `Core Team ${teamYear} . Our team consists of the best talents in the institute who are fully focused in delivering the best achievements in developing an amazing and technically advanced community of students in the campus.`;
+const pageTitle = `Core Team ${teamYear} - ${teamYearNum + 1}`;
+
+const members = await getMembers(teamYear);
+
+const prevYears = [];
+for (let i = 1; i < 5; i++) {
+    prevYears.push(teamYearNum - i);
+}
+
+const pdtYears = ["2022"];
+---
+
+<PageLayout
+    headTitle={headTitle}
+    description={description}
+    canonical={"/team-" + teamYear}
+    pageTitle={pageTitle}
+    bannerBg="/assets/images/banner/banner2.jpg"
+>
+    <div class="content-block">
+        <div class="section-area section-sp1">
+            <TeamSection members={members.core} title="Core" />
+            {
+                pdtYears.includes(teamYear) && (
+                    <TeamSection
+                        members={members.pdt}
+                        title="Product Development"
+                    />
+                )
+            }
+            <TeamSection members={members.tech} title="Tech" />
+            <TeamSection members={members.design} title="Design" />
+        </div>
+        <!-- Previous Team -->
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-md-12 heading-bx left">
+                    <h2 class="title-head text-uppercase">
+                        Previous <span>Teams</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                {
+                    prevYears.map((year) => {
+                        return (
+                            <div class="col-md-2 col-xs my-2">
+                                <a href={"/team/" + year} class="btn">
+                                    {year} - {year + 1}
+                                </a>
+                            </div>
+                        );
+                    })
+                }
+            </div>
+        </div>
+    </div>
+</PageLayout>

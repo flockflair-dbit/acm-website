@@ -7,10 +7,15 @@
 
 ## Table of contents
 
-- [Overview](#overview)
-- [Screenshots](#screenshots)
-- [Getting Started](#gettingstarted)
-- [Contributors](#contributors)
+- [ACM DBIT](#acm-dbit)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+      - [ACM DBIT - Dept. of Computer Engineering](#acm-dbit---dept-of-computer-engineering)
+    - [Screenshots](#screenshots)
+  - [Getting Started  ](#getting-started--)
+      - [Step 1:](#step-1)
+      - [Step 2:](#step-2)
+  - [Contributors ](#contributors-)
 
 ## Overview
 
@@ -49,7 +54,12 @@ git clone https://github.com/flockflair-dbit/acm-website
 
 #### Step 2:
 
-Go to project root and open the index.html file in the browser
+Go to project root and run the command below
+
+```
+npm install or yarn install
+npm run dev
+```
 
 
 
@@ -60,5 +70,7 @@ Go to project root and open the index.html file in the browser
   - [Hayden Cordeiro](https://hayden.co.in/)<br>
   [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/haydencordeiro/)
   [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/haydencordeiro)
-
+  - [Siddharth Dhaigude](https://github.com/sd8capricon)<br>
+  [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sdhaigude)
+  [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sd8capricon)
 

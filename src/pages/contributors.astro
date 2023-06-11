@@ -1,0 +1,101 @@
+---
+// Team Page CSS
+import "../styles/teampage.css";
+
+import PageLayout from "../layouts/PageLayout.astro";
+import MemberCard from "../components/team/MemberCard.astro";
+import type { memberInterface } from "../components/team/types";
+
+const chiefContributors: memberInterface[] = [
+	{
+		name: "Grejo Joby",
+		position: "grejo.in",
+		src: "/assets/images/team-2021/core/1.webp",
+		extLink: "https://grejo.in",
+	},
+	{
+		name: "Hayden Cordeiro",
+		position: "hayden.co.in",
+		src: "/assets/images/team-2021/core/2.webp",
+		extLink: "https://hayden.co.in",
+	},
+];
+
+const webSiteContributors: memberInterface[] = [
+	{
+		name: "Ruvin Rodrigues",
+		position: "Contributor",
+		src: "/assets/images/team-2021/core/8.webp",
+		extLink: "https://www.linkedin.com/in/ruvin-rodrigues/",
+	},
+	{
+		name: "Sarah Pradhan",
+		position: "Contributor",
+		src: "/assets/images/team-2021/core/3.webp",
+	},
+	{
+		name: "Siddharth Dhaigude",
+		position: "Developer",
+		src: "/assets/images/team-2021/core/9.webp",
+		extLink: "https://www.linkedin.com/in/siddharth-dhaigude-584922206/",
+	},
+	{
+		name: "Alston Fernandes",
+		position: "Contributor",
+		src: "/assets/images/team-2021/tech/1.webp",
+		extLink: "https://www.linkedin.com/in/alston-fernandes-b28720220/",
+	},
+	{
+		name: "Sahil Shelke",
+		position: "Contributor",
+		src: "/assets/images/team-2021/tech/4.webp",
+		extLink: "https://www.linkedin.com/in/sahil-shelke-090b3a210/",
+	},
+];
+---
+
+<PageLayout
+	headTitle="Contributors | ACM-DBIT"
+	bannerBg="/assets/images/banner/banner2.jpg"
+	pageTitle="Website Contributors"
+>
+	<!-- Page Content Box ==== -->
+	<div class="content-block">
+		<!-- About Us ==== -->
+		<div class="section-area section-sp1">
+			<div class="container mt-100 mt-60">
+				<div class="row">
+					<div class="col-md-12 heading-bx left mb-1">
+						<h2 class="title-head text-uppercase">
+							Chief <span>Developers</span>
+						</h2>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					{
+						chiefContributors.map((contributor) => (
+							<MemberCard member={contributor} />
+						))
+					}
+				</div>
+			</div>
+		</div>
+
+		<div class="container mt-100 mt-60 mb-5 pb-5">
+			<div class="row">
+				<div class="col-md-12 heading-bx left mb-1">
+					<h2 class="title-head text-uppercase">
+						Website<span> Contributors</span>
+					</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				{
+					webSiteContributors.map((contributor) => (
+						<MemberCard member={contributor} />
+					))
+				}
+			</div>
+		</div>
+	</div>
+</PageLayout>
