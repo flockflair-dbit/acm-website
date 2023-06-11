@@ -12,6 +12,20 @@ interface Props {
 
 const { headTitle, description, canonical, pageTitle, bannerBg } =
     Astro.props as Props;
+
+const capitalizeFirstLetter = (string: string) =>
+    string.charAt(0).toUpperCase() + string.slice(1);
+
+const generateBreadCrumbs = (path: string) => {
+    const pathArr = path.split("/");
+    pathArr.splice(0, 1);
+    pathArr.forEach((ele, index) => {
+        pathArr[index] = capitalizeFirstLetter(ele);
+    });
+    return pathArr;
+};
+
+const breadCrumbs = generateBreadCrumbs(Astro.url.pathname);
 ---
 
 <RootLayout title={headTitle} description={description} canonical={canonical}>
@@ -21,7 +35,14 @@ const { headTitle, description, canonical, pageTitle, bannerBg } =
         <!-- BreadCrumb -->
         <BreadCrumb>
             <li><a href="/">Home</a></li>
-            <li>{pageTitle}</li>
+            {
+                breadCrumbs.map((ele) => (
+                    <li>
+                        <a href={`/${ele.toLowerCase()}`}>{ele}</a>
+                    </li>
+                ))
+            }
+            <!-- <li>{pageTitle}</li> -->
         </BreadCrumb>
         <!-- Page Heading Box END ==== -->
 
