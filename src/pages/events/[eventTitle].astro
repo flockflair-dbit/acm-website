@@ -1,0 +1,30 @@
+---
+import type { InferGetStaticParamsType } from "astro";
+import PageLayout from "../../layouts/PageLayout.astro";
+
+export const getStaticPaths = () => {
+    const events: string[] = ["test"];
+    return events.map((event) => {
+        return {
+            params: {
+                eventTitle: event,
+            },
+        };
+    });
+};
+
+type Params = InferGetStaticParamsType<typeof getStaticPaths>;
+
+const { eventTitle } = Astro.params as Params;
+---
+
+<PageLayout
+    headTitle={eventTitle + " | ACM-DBIT"}
+    description="Desc"
+    bannerBg="/assets/images/banner/banner1.jpg"
+    pageTitle={eventTitle}
+>
+    <!-- Content Area -->
+    <div class="content-block"></div>
+    <!-- Content Area END -->
+</PageLayout>
