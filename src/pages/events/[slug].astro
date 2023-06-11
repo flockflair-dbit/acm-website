@@ -1,0 +1,81 @@
+---
+import type { InferGetStaticParamsType } from "astro";
+import fs from "fs/promises";
+import PageLayout from "../../layouts/PageLayout.astro";
+import { getEvents } from "../../react-pages/events/utils";
+
+export const getStaticPaths = async () => {
+    const eventsTemp = await getEvents();
+    return eventsTemp.map((event) => {
+        return {
+            params: {
+                slug: event.slug,
+            },
+        };
+    });
+};
+
+type Params = InferGetStaticParamsType<typeof getStaticPaths>;
+const { slug } = Astro.params as Params;
+
+const getImgSrc = (slug: string, imgDir: string[]) => {
+    if (imgDir.includes(slug + ".webp"))
+        return `/assets/images/events/${slug}.webp`;
+    else return `/assets/images/events/23.webp`;
+};
+
+// TODO: write query to get single event
+const event = (await getEvents()).filter((event) => event.slug === slug)[0];
+const eventsImageDir = await fs.readdir("./public/assets/images/events");
+const imgSrc = getImgSrc(event.slug, eventsImageDir);
+---
+
+<PageLayout
+    headTitle={event.title + " | ACM-DBIT"}
+    description="Desc"
+    bannerBg="/assets/images/banner/banner1.jpg"
+    pageTitle={event.title}
+>
+    <!-- Content Area -->
+    <div class="content-block">
+        <div class="section-area section-sp1">
+            <div class="container">
+                <div class="row" id="eventDetailsData">
+                    <div class="courses-post px-3">
+                        <div class="ttr-post-media media-effect">
+                            <img src={imgSrc} alt={event.title} />
+                        </div>
+                        <div class="ttr-post-info">
+                            <div class="ttr-post-title">
+                                <h2 class="post-title">
+                                    {event.title}
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="courese-overview"
+                        id="overview"
+                        style="width:100%;"
+                    >
+                        <div class="px-3" set:html={event.content} />
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div class="row">
+                        {
+                            event.footerImages?.map((img) => {
+                                return (
+                                    <div class="col-sm-6">
+                                        <img src={img.url} alt={event.title} />
+                                    </div>
+                                );
+                            })
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Content Area END -->
+</PageLayout>
