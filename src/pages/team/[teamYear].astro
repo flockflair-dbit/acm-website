@@ -9,7 +9,7 @@ import PageLayout from "../../layouts/PageLayout.astro";
 import TeamSection from "../../components/team/TeamSection.astro";
 
 const getMembers = async (teamYear: string) => {
-    const dir = `./public/assets/images/team-${teamYear}`;
+    const dir = `./public/assets/images/teams/team-${teamYear}`;
     const teamTypes = await fs.readdir(dir);
     let members: any = {};
     for (const teamType of teamTypes) {
@@ -18,7 +18,7 @@ const getMembers = async (teamYear: string) => {
         const json: teamDataInterface = JSON.parse(data);
         json.data.forEach((member) => {
             //member is of type memberInterface
-            member.src = `/assets/images/team-${teamYear}/${teamType}/${member.src}`;
+            member.src = `/assets/images/teams/team-${teamYear}/${teamType}/${member.src}`;
         });
         members[teamType] = json.data;
     }
