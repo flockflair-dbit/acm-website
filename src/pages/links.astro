@@ -5,24 +5,6 @@ import "../styles/links-style.css";
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script is:inline>
-      linksData = [];
-      url =
-        "https://api-eu-central-1.graphcms.com/v2/ckpv3up06dqcq01xxfy3y5xwn/master?query=%7B%0A%20%20links%20%7B%0A%20%20%20%20id%0A%20%20%20%20title%0A%09%09url%20%20%20%20%0A%20%20%20%20%0A%20%20%7D%0A%7D";
-      async function getEventDataFromServer() {
-        const reps = await fetch(url);
-        var data = await reps.json();
-        data = data.data.links;
-        // console.log(data);
-
-        for (var i = 0; i < data.length; i++) {
-          linksData.push(data[i]);
-        }
-        // reportData.reverse();
-        // console.log(linksData)
-      }
-      getEventDataFromServer();
-    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Bootstrap CSS -->
@@ -190,28 +172,34 @@ import "../styles/links-style.css";
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"></script>
   </body>
-  <script is:inline>
-    // while(linksData.length==0){
-
-    // }
-    function injectLinkData() {
-      if (linksData.length == 0) {
-        setTimeout(injectLinkData, 100);
-      }
-
-      var tempTotal = "";
-      for (var i = 0; i < linksData.length; i++) {
-        tempTotal += `
-
-        <div class="col-12 linkField text-center justify-content-center">
-        <a class="col-12" href="${linksData[i].url}" target="_blank"><button class="linkButton py-3">${linksData[i].title}</button></a>
-    </div>
-        `;
-      }
-
-      document.getElementById("cmslinks").innerHTML = "";
-      document.getElementById("cmslinks").innerHTML = tempTotal;
-    }
-    setTimeout(injectLinkData, 0);
-  </script>
 </html>
+
+<script>
+  interface link {
+    id: string;
+    title: string;
+    url: string;
+  }
+  const url =
+    "https://api-eu-central-1.graphcms.com/v2/ckpv3up06dqcq01xxfy3y5xwn/master?query=%7B%0A%20%20links%20%7B%0A%20%20%20%20id%0A%20%20%20%20title%0A%09%09url%20%20%20%20%0A%20%20%20%20%0A%20%20%7D%0A%7D";
+  const getLinks = async () => {
+    const res = await fetch(url);
+    const json = await res.json();
+    const data: link[] = json.data.links;
+    return data;
+  };
+  const linkComponent = (link: link) => {
+    return `<div class="col-12 linkField text-center justify-content-center">
+        <a class="col-12" href="${link.url}" target="_blank"><button class="linkButton py-3">${link.title}</button></a>
+    </div>`;
+  };
+  const buildLinks = (links: link[]) => {
+    let temp = "";
+    links.forEach((link) => {
+      temp += linkComponent(link);
+    });
+    return temp;
+  };
+  const links = await getLinks();
+  document.querySelector("#cmslinks")!.innerHTML = buildLinks(links);
+</script>
