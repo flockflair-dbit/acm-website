@@ -1,0 +1,19 @@
+{
+    "data": [
+        {
+            "name": "Reena Kale",
+            "position": "Member",
+            "src": "reena.png"
+        },
+        {
+            "name": "Siddhant Raje",
+            "position": "Member",
+            "src": "siddhant.png"
+        },
+        {
+            "name": "Tejas Redkar",
+            "position": "Member",
+            "src": "tejas.png"
+        }
+    ]
+}
