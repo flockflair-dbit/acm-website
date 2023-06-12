@@ -27,7 +27,7 @@ const getMembers = async (teamYear: string) => {
 };
 
 export const getStaticPaths = () => {
-    const teamYears = ["2022", "2021", "2020"];
+    const teamYears = ["2022", "2021", "2020", "2019", "2018", "2017"];
     return teamYears.map((year) => {
         return {
             params: {
