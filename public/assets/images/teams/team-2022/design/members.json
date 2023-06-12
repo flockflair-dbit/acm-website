@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "name": "Khushi Shetty",
+            "position": "Member",
+            "src": "Khushi.webp"
+        },
+        {
+            "name": "Prasad Alai",
+            "position": "Member",
+            "src": "Prasad.webp"
+        },
+        {
+            "name": "Shreya Doiphode",
+            "position": "Member",
+            "src": "Shreya.webp"
+        },
+        {
+            "name": "Srushti",
+            "position": "Member",
+            "src": "Srushti.webp"
+        }
+    ]
+}
