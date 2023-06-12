@@ -1,0 +1,96 @@
+{
+    "data": [
+        {
+            "name": "Dion George",
+            "position": "Chairperson"
+        },
+        {
+            "name": "Glady Thomas",
+            "position": "Vice Chair"
+        },
+        {
+            "name": "Sean D'cruz",
+            "position": "Vice Chair"
+        },
+        {
+            "name": "Hansel Presley",
+            "position": "Secretary"
+        },
+        {
+            "name": "Priyanka Puranik",
+            "position": "Secretary"
+        },
+        {
+            "name": "Janhavi Patil",
+            "position": "Treasurer"
+        },
+        {
+            "name": "Jaffrey Joy",
+            "position": "Tech Head"
+        },
+        {
+            "name": "David Varghese",
+            "position": "Asst. Tech Head"
+        },
+        {
+            "name": "Sherin Palamattam",
+            "position": "Design Head"
+        },
+        {
+            "name": "Clifford Fernandes",
+            "position": "Design Head"
+        },
+        {
+            "name": "Kevin Correia",
+            "position": "Publicity Head"
+        },
+        {
+            "name": "Christina Moraes",
+            "position": "Asst. Publicity Head"
+        },
+        {
+            "name": "Laxmi Naidu",
+            "position": "Administration Head"
+        },
+        {
+            "name": "Gaurav Singh",
+            "position": "Administration Head"
+        },
+        {
+            "name": "Mathew Jose",
+            "position": "Event Head"
+        },
+        {
+            "name": "Desmond Lobo",
+            "position": "Asst. Event Head"
+        },
+        {
+            "name": "Aarish Iyer",
+            "position": "Advisor"
+        },
+        {
+            "name": "Dion George",
+            "position": "Spark"
+        },
+        {
+            "name": "Tejas Pundpal",
+            "position": "Spirit"
+        },
+        {
+            "name": "Afi Adhikari",
+            "position": "Ducs Supervisor"
+        },
+        {
+            "name": "Raj Tiwary",
+            "position": "Ducs Supervisor"
+        },
+        {
+            "name": "Srijan Ramavat",
+            "position": "Spark Development"
+        },
+        {
+            "name": "Welisa Lewis",
+            "position": "Spark Development"
+        }
+    ]
+}

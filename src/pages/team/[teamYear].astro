@@ -8,9 +8,11 @@ import type { teamDataInterface } from "../../components/team/types";
 import PageLayout from "../../layouts/PageLayout.astro";
 import TeamSection from "../../components/team/TeamSection.astro";
 
+let teamTypes: string[] = [];
+
 const getMembers = async (teamYear: string) => {
     const dir = `./public/assets/images/teams/team-${teamYear}`;
-    const teamTypes = await fs.readdir(dir);
+    teamTypes = await fs.readdir(dir);
     let members: any = {};
     for (const teamType of teamTypes) {
         const file = `${dir}/${teamType}/members.json`;
@@ -27,13 +29,9 @@ const getMembers = async (teamYear: string) => {
 };
 
 export const getStaticPaths = () => {
-    const teamYears = ["2022", "2021", "2020"];
-    return teamYears.map((year) => {
-        return {
-            params: {
-                teamYear: year,
-            },
-        };
+    const teamYears = ["2022", "2021", "2020", "2019", "2018", "2017"];
+    return teamYears.map((teamYear) => {
+        return { params: { teamYear } };
     });
 };
 
@@ -51,8 +49,6 @@ const prevYears = [];
 for (let i = 1; i < 5; i++) {
     prevYears.push(teamYearNum - i);
 }
-
-const pdtYears = ["2022"];
 ---
 
 <PageLayout
@@ -64,17 +60,16 @@ const pdtYears = ["2022"];
 >
     <div class="content-block">
         <div class="section-area section-sp1">
-            <TeamSection members={members.core} title="Core" />
             {
-                pdtYears.includes(teamYear) && (
-                    <TeamSection
-                        members={members.pdt}
-                        title="Product Development"
-                    />
-                )
+                teamTypes.map((teamType) => {
+                    return (
+                        <TeamSection
+                            members={members[teamType]}
+                            title={teamType}
+                        />
+                    );
+                })
             }
-            <TeamSection members={members.tech} title="Tech" />
-            <TeamSection members={members.design} title="Design" />
         </div>
         <!-- Previous Team -->
         <div class="container mb-5">

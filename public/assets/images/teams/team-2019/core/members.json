@@ -1,0 +1,64 @@
+{
+    "data": [
+        {
+            "name": "Sean Dcruz",
+            "position": "Chairperson"
+        },
+        {
+            "name": "Sasha Pais",
+            "position": "Vice Chair"
+        },
+        {
+            "name": "Tina Sayapogu",
+            "position": "Secretary"
+        },
+        {
+            "name": "Jordan Dsouza",
+            "position": "Assistant Secretary"
+        },
+        {
+            "name": "Wayne Fernandes",
+            "position": "Treasurer"
+        },
+        {
+            "name": "Yogesh Patil",
+            "position": "Tech Head"
+        },
+        {
+            "name": "Jovin Nicholas",
+            "position": "Asst. Tech Head"
+        },
+        {
+            "name": "Reuben Crasto",
+            "position": "Design Head"
+        },
+        {
+            "name": "Paul Borges",
+            "position": "Design Head"
+        },
+        {
+            "name": "Sai Tarlekar",
+            "position": "Publicity Head"
+        },
+        {
+            "name": "Briana Rajan",
+            "position": "Asst. Publicity Head"
+        },
+        {
+            "name": "Kevin DSA",
+            "position": "Administration Head"
+        },
+        {
+            "name": "Dhreeraj James",
+            "position": "Administration Head"
+        },
+        {
+            "name": "Cynthia Mascarenhas",
+            "position": "Chief Editor"
+        },
+        {
+            "name": "Ankit Patel",
+            "position": "Spark Head"
+        }
+    ]
+}
