@@ -8,12 +8,18 @@ View the raw content of this file to understand the format. -->
 
 - [ ] Move Images from Public Assets to Src Assets  
 - [ ] Migrate React Components to Astro
-  <!-- - [ ] Sub-task or description   -->
+- [ ] Write query to get single event (event detail page)
+- [ ] Add Old Teams
+  - [ ] 2018
+  - [ ] 2017
 
 ### In Progress
 
-<!-- - [ ] Work on Github Repo  -->
+- [ ] Replace 23.webp in events with default image 
+- [ ] Add Old Teams
+  - [ ] 2019
 
 ### Done ✓
 
-<!-- - [x] Create my first TODO.md   -->
+- [x] Add Old Teams
+  - [x] 2020  
