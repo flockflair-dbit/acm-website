@@ -1,0 +1,126 @@
+---
+// All Plugins CSS
+import "../../styles/assets.css";
+
+// Typography CSS
+import "../../styles/typography.css";
+
+// Shortcodes CSS
+import "../../styles/shortcodes/shortcodes.css";
+
+// Style CSS
+import "../../styles/style.css";
+import "../../styles/color/color-1.css";
+
+interface Props {
+    title?: string;
+    description?: string;
+    canonical?: string;
+}
+
+const {
+    title = "ACM-DBIT Student Chapter - Official Website",
+    description = "Largest Student Chapter in DBIT! The ACM-DBIT student chapter first took root in the year 2003 and is currently in its twentieth year of awesomeness. This chapter is the largest known student chapter in the campus of DBIT with over 700 members.Come be a part of us!!",
+    canonical = "",
+} = Astro.props as Props;
+---
+
+<head>
+    <!-- META ============================================= -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+        name="keywords"
+        content="acm, dbit, student, chapter, don bosco, mumbai, kurla, engineering, computer, Ventures, Gaming Studio,Website,Freelancing,Philosophy,Innovation,Advancing, Computing, Science, Profession,DBIT,Teknack,Flockflair,ACM,DBIT-Mumbai"
+    />
+    <meta name="author" content="ACM DBIT" />
+
+    <link rel="canonical" href={"https://dbit.acm.org" + canonical} />
+
+    <!-- DESCRIPTION -->
+    <meta name="description" content={description} />
+
+    <!-- OG -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta name="robots" content="index,follow" />
+
+    <!-- <script src="assets/js/courseData.js"></script> -->
+
+    <!-- FAVICONS ICON ============================================= -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+    <link
+        rel="apple-touch-icon"
+        sizes="114x114"
+        href="/apple-icon-114x114.png"
+    />
+    <link
+        rel="apple-touch-icon"
+        sizes="120x120"
+        href="/apple-icon-120x120.png"
+    />
+    <link
+        rel="apple-touch-icon"
+        sizes="144x144"
+        href="/apple-icon-144x144.png"
+    />
+    <link
+        rel="apple-touch-icon"
+        sizes="152x152"
+        href="/apple-icon-152x152.png"
+    />
+    <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/apple-icon-180x180.png"
+    />
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="192x192"
+        href="/android-icon-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- PAGE TITLE HERE ============================================= -->
+    <title>{title}</title>
+
+    <!-- MOBILE SPECIFIC ============================================= -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- PLUGINS CSS ============================================= -->
+    <link
+        rel="stylesheet"
+        href="/assets/vendors/fontawesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/assets/vendors/themify/themify-icons.css" />
+
+    <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-146434995-1"
+    ></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "UA-146434995-1");
+    </script> -->
+</head>

@@ -1,0 +1,24 @@
+---
+export interface Props {
+    image: string;
+}
+
+const { image } = Astro.props as Props;
+---
+
+<div class="action-card col-lg-3 col-md-4 col-sm-6 book">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src={image} alt="" loading="lazy" />
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href={image} class="magnific-anchor" title="">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

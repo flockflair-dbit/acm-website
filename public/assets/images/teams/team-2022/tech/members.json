@@ -1,0 +1,19 @@
+{
+    "data": [
+        {
+            "name": "Jess John",
+            "position": "Member",
+            "src": "Jess.webp"
+        },
+        {
+            "name": "Aarol D Dsouza",
+            "position": "Member",
+            "src": "Aarol.webp"
+        },
+        {
+            "name": "Sameer",
+            "position": "Member",
+            "src": "Sameer.webp"
+        }
+    ]
+}
