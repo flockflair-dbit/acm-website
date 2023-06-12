@@ -1,4 +1,5 @@
 ---
+import CourseCarousel from "../components/CourseCarousel/CourseCarousel.astro"
 import RootLayout from "../layouts/RootLayout.astro";
 ---
 
@@ -395,11 +396,7 @@ import RootLayout from "../layouts/RootLayout.astro";
 					</div>
 				</div>
 				<div class="row">
-					<div
-						class="courses-carousel owl-carousel owl-btn-1 col-12 p-lr0"
-						id="coursesHere"
-					>
-					</div>
+					<CourseCarousel />
 				</div>
 			</div>
 		</div>
@@ -696,37 +693,10 @@ import RootLayout from "../layouts/RootLayout.astro";
 		<!-- contact area END  -->
 	</div>
 	<!-- Content END -->
-
 	<script is:inline>
-		const url =
-			"https://api-eu-central-1.graphcms.com/v2/ckpv3up06dqcq01xxfy3y5xwn/master?query=%7B%0A%20%20courses(orderBy%3AeventDate_DESC)%20%7B%0A%20%20%20%20id%0A%20%20%20%20title%0A%20%20%20%20youtubeID%0A%20%20%20%20taughtBy%0A%20%20%20%20eventDate%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%7D%0A%7D";
-		const getCourses = async () => {
-			const res = await fetch(url);
-			const json = await res.json();
-			const courses = json.data.courses;
-			courses.forEach(
-				(course) =>
-					(course.eventDate = course.eventDate.replaceAll("-", "/"))
-			);
-			return courses;
-		};
 
-		let courseData = [];
-		getCourses().then((courses) => (courseData = courses));
-
-		// $('#id'). children(). length > 0
-		var checkSelectorExistence = function (selectorName) {
-			if (courseData.length > 0) {
-				return true;
-			} else {
-				return false;
-			}
-		};
 		var setCourseCarousel = function () {
-			if (!checkSelectorExistence(".courses-carousel")) {
-				return;
-			}
-			$(".courses-carousel").owlCarousel({
+			$("#coursesHere").owlCarousel({
 				loop: true,
 				autoplay: true,
 				margin: 0,
@@ -752,38 +722,6 @@ import RootLayout from "../layouts/RootLayout.astro";
 				},
 			});
 		};
-
-		function injectCoursesData() {
-			if (courseData.length == 0) {
-				setTimeout(injectCoursesData, 50);
-			} else {
-				var tempTotal = "";
-				for (var i = 0; i < courseData.length; i++) {
-					tempTotal += `
-	
-			  <div class="item">
-				<div class="cours-bx">
-				  <a href="https://www.youtube.com/watch?v=${courseData[i].youtubeID}" target="_blank">
-					<div class="action-box">
-						<img src="https://img.youtube.com/vi/${courseData[i].youtubeID}/mqdefault.jpg" alt="Course Image">
-						<button class="btn">${courseData[i].eventDate}</button>
-					</div>
-				  </a>
-				  <div class="info-bx text-center">
-					<h5><a href="https://www.youtube.com/watch?v=${courseData[i].youtubeID}" target="_blank">${courseData[i].title}</a></h5>
-					<span>${courseData[i].taughtBy}</span>
-				  </div>
-				  
-				</div>
-			  </div>
-			`;
-				}
-
-				document.getElementById("coursesHere").innerHTML = "";
-				document.getElementById("coursesHere").innerHTML = tempTotal;
-				setCourseCarousel();
-			}
-		}
-		setTimeout(injectCoursesData, 0);
+		setTimeout(setCourseCarousel, 500);
 	</script>
 </RootLayout>
