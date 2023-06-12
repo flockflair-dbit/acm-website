@@ -1,0 +1,26 @@
+---
+import type { CourseData } from './type';
+export interface Props {
+    course: CourseData
+}
+
+
+
+const { course } = Astro.props as Props;
+---
+
+<div class="item">
+    <div class="cours-bx">
+      <a href={`https://www.youtube.com/watch?v=${course.youtubeID}`} target="_blank">
+        <div class="action-box">
+            <img src= {`https://img.youtube.com/vi/${course.youtubeID}/mqdefault.jpg`} alt="Course Image">
+            <button class="btn">{course.eventDate}</button>
+        </div>
+      </a>
+      <div class="info-bx text-center">
+        <h5><a href={`https://www.youtube.com/watch?v=${course.youtubeID}`} target="_blank">{course.title}</a></h5>
+        <span>{course.taughtBy}</span>
+      </div>
+      
+    </div>
+</div>

@@ -1,0 +1,17 @@
+---
+import type { CourseData } from './type';
+import CourseCard from './CourseCard.astro';
+interface Props {
+    courseData: CourseData[]
+}
+
+const { courseData } = Astro.props as Props;
+---
+
+<div class="courses-carousel owl-carousel owl-btn-1 col-12 p-lr0"
+id="coursesHere"
+>
+{courseData.map((course) => <CourseCard course = {course}/>)}
+
+</div>
+
