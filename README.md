@@ -65,7 +65,6 @@ npm run dev
 ```
 
 
-
 ## Contributors <a id="contributors"></a>
   - [Grejo Joby](https://grejo.in/)<br> 
   [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/grejojoby)
@@ -76,4 +75,5 @@ npm run dev
   - [Siddharth Dhaigude](https://github.com/sd8capricon)<br>
   [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sdhaigude)
   [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sd8capricon)
+
 

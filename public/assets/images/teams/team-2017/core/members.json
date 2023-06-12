@@ -1,0 +1,76 @@
+{
+    "data": [
+        {
+            "name": "Glen Martin",
+            "position": "Chairperson"
+        },
+        {
+            "name": "Dion George",
+            "position": "Vice Chair"
+        },
+        {
+            "name": "Aarish Iyer",
+            "position": "Vice Chair"
+        },
+        {
+            "name": "Linson Miranda",
+            "position": "Secretary"
+        },
+        {
+            "name": "Mathew",
+            "position": "Jose"
+        },
+        {
+            "name": "Larissa Fernandes",
+            "position": "Treasurer"
+        },
+        {
+            "name": "Sean D'cruz",
+            "position": "Asst. Treasurer"
+        },
+        {
+            "name": "Vineeth Survana",
+            "position": "Tech Head"
+        },
+        {
+            "name": "Haramrit Singh",
+            "position": "Asst. Tech Head"
+        },
+        {
+            "name": "Amey More",
+            "position": "Design Head"
+        },
+        {
+            "name": "Ivan Maria",
+            "position": "Asst. Design Head"
+        },
+        {
+            "name": "Sonali Vaidya",
+            "position": "Publicity Head"
+        },
+        {
+            "name": "Rishab Khosla",
+            "position": "Asst. Publicity Head"
+        }, 
+        {
+            "name": "Anto Christopher",
+            "position": "ADT Head"
+        },
+        {
+            "name": "Tushar Rao",
+            "position": "Event Head"
+        },
+        {
+            "name": "Glady Thomas",
+            "position": "Asst. Event Head"
+        },
+        {
+            "name": "Blessy Varghese",
+            "position": "Editor"
+        },
+        {
+            "name": "Gary Mendonca",
+            "position": "Webmaster"
+        }
+    ]
+}
