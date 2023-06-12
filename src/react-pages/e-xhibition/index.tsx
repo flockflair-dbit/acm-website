@@ -1,14 +1,5 @@
-import { useEffect, useState } from "react"
 import type { projectData, project } from "./types"
-
-const url = "https://api-eu-central-1.graphcms.com/v2/ckpv3up06dqcq01xxfy3y5xwn/master?query=%7B%0A%20%20projects(orderBy%3ApublishedAt_DESC)%20%7B%0A%20%20%20%20id%0A%20%20%20%20title%0A%20%20%20%20developerName%0A%20%20%20%20videoLink%0A%20%20%20%20projectLink%0A%20%20%20%20publishedAt%0A%20%20%20%20slug%0A%20%20%7D%0A%7D"
-
-const getProjects = async () => {
-    const res = await fetch(url)
-    const json = await res.json()
-    const data: projectData[] = json.data.projects
-    return data
-}
+import { getProjects } from "../../utils/cmsData"
 
 // Fn to copy link to clipboard
 const Copy = (text: string) => { }
@@ -114,9 +105,9 @@ const Project: React.FC<{ project: project }> = ({ project }) => {
     )
 }
 
+const projects: projectData[] = await getProjects()
+
 const EXhibition: React.FC<{}> = () => {
-    const [projects, setProjects] = useState<projectData[]>([])
-    useEffect(() => { getProjects().then((data) => setProjects(data)) }, [])
     return (
         <div className="content-block">
             <div className="section-area section-sp1">
