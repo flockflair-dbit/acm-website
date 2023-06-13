@@ -4,16 +4,25 @@ import "../../styles/teampage.css";
 
 import fs from "node:fs/promises";
 import type { InferGetStaticParamsType } from "astro";
-import type { teamDataInterface } from "../../components/team/types";
+import type {
+    teamDataInterface,
+    teamTitleInterface,
+    subTeamInterface,
+} from "../../components/team/types";
 import PageLayout from "../../layouts/PageLayout.astro";
 import TeamSection from "../../components/team/TeamSection.astro";
 
-let teamTypes: string[] = [];
+const teamTitles: teamTitleInterface = {
+    core: { title: "Amazing Core", renderOrder: 0 },
+    pdt: { title: "Product Development", renderOrder: 1 },
+    tech: { title: "Tech", renderOrder: 2 },
+    design: { title: "Design", renderOrder: 3 },
+};
 
-const getMembers = async (teamYear: string) => {
+const getTeam = async (teamYear: string) => {
     const dir = `./public/assets/images/teams/team-${teamYear}`;
-    teamTypes = await fs.readdir(dir);
-    let members: any = {};
+    const teamTypes = await fs.readdir(dir);
+    let team = [];
     for (const teamType of teamTypes) {
         const file = `${dir}/${teamType}/members.json`;
         const data = await fs.readFile(file, "utf-8");
@@ -23,9 +32,15 @@ const getMembers = async (teamYear: string) => {
             if (member.src)
                 member.src = `/assets/images/teams/team-${teamYear}/${teamType}/${member.src}`;
         });
-        members[teamType] = json.data;
+        const subTeam: subTeamInterface = {
+            title: teamTitles[teamType].title,
+            renderOrder: teamTitles[teamType].renderOrder,
+            members: json.data,
+        };
+        team.push(subTeam);
     }
-    return members;
+    team.sort((a, b) => a.renderOrder - b.renderOrder);
+    return team;
 };
 
 export const getStaticPaths = () => {
@@ -43,7 +58,7 @@ const headTitle = `Core Team ${teamYear} | ACM-DBIT`;
 const description = `Core Team ${teamYear} . Our team consists of the best talents in the institute who are fully focused in delivering the best achievements in developing an amazing and technically advanced community of students in the campus.`;
 const pageTitle = `Core Team ${teamYear} - ${teamYearNum + 1}`;
 
-const members = await getMembers(teamYear);
+const team = await getTeam(teamYear);
 
 const prevYears = [];
 for (let i = 1; i < 5; i++) {
@@ -61,11 +76,11 @@ for (let i = 1; i < 5; i++) {
     <div class="content-block">
         <div class="section-area section-sp1">
             {
-                teamTypes.map((teamType) => {
+                team.map((subTeam) => {
                     return (
                         <TeamSection
-                            members={members[teamType]}
-                            title={teamType}
+                            members={subTeam.members}
+                            title={subTeam.title}
                         />
                     );
                 })
