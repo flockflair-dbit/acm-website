@@ -12,12 +12,12 @@ const Footer: React.FC<{}> = () => {
                                         src="/assets/images/DBIT.png" alt="DBIT LOGO" className="img-fluid my-1 mx-4" /></a>
                                 </div>
                                 <div className="col-3">
-                                    <a href="index" aria-label="Home Page" rel="noopener"><img src="/assets/images/acm.png"
+                                    <a href="https://dbit.acm.org/" aria-label="Home Page" rel="noopener"><img src="/assets/images/acm.png"
                                         className="img-fluid my-1 mx-4" alt="ACM DBIT LOGO" /></a>
                                 </div>
 
                                 <div className="col-3">
-                                    <a rel="noopener" href="https://dbit.acm.org/teknack" aria-label="Teknack website"><img
+                                    <a rel="noopener" href="index.astro" aria-label="Teknack website"><img
                                         src="/assets/images/teknack.png" alt="Teknack Logo" className="img-fluid my-1 mx-4" /></a>
                                 </div>
                                 <div className="col-3">
