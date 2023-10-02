@@ -23,6 +23,12 @@
             "src": "Aarol.webp",
             "extLink": "https://www.linkedin.com/in/aarol-d-souza-a25893259/"
         },
+        {
+            "name": "Susanne Lobo",
+            "position": "Asst. Secretary",
+            "src": "Susanne.webp",
+            "extLink": "https://www.linkedin.com/in/susanne-lobo-865926284"
+        },
        
         {
             "name": "Niraj Pingale",
@@ -34,7 +40,13 @@
             "name": "Yashas Khot",
             "position": "Technical Head",
             "src": "Yashas.webp",
-            "extLink": "https://www.linkedin.com/in/yashas-khot-7ba74122b/"
+            "extLink": "https://www.linkedin.com/in/yashaskhot/"
+        },
+        {
+            "name": "Shaun Menezes",
+            "position": "Asst. Technical Head",
+            "src": "Shaun.webp",
+            "extLink": "https://www.linkedin.com/in/shaun-menezes-53b200290"
         },
         {
             "name": "Ananya Solanki",
@@ -43,22 +55,41 @@
             "extLink": "https://www.linkedin.com/in/ananya-solanki-b56a84245/"
         },
         {
+            "name": "Sahil Davkhar",
+            "position": "Asst. Design Head",
+            "src": "Sahil.webp",
+            "extLink": "https://www.linkedin.com/in/sahil-davkhar-779a94262"
+        },
+        {
             "name": "Manish Patil",
             "position": "Event Head",
             "src": "Manish.webp",
             "extLink": "https://in.linkedin.com/in/manish-patil-687356248"
         },
         {
-            "name": "Siddhi Ghadge",
+            "name": "Siddhi Gadge",
             "position": "Publicity Head",
             "src": "Siddhi.webp",
             "extLink": "https://in.linkedin.com/in/siddhi-gadge-b29745274"
         },
         {
+            "name": "Tanisha Raorane",
+            "position": "Asst. Publicity Head",
+            "src": "Tanisha.webp",
+            "extLink": "https://in.linkedin.com/in/tanisha-raorane-8087a2270"
+        },
+        
+        {
             "name": "Nicole Saldanha",
             "position": "Administration Head",
             "src": "Nicole.webp",
             "extLink":"https://in.linkedin.com/in/nicole-saldanha-97b12324b"
+        },
+        {
+            "name": "Erica Prasad",
+            "position": "Asst. Administration Head",
+            "src": "Erica.webp",
+            "extLink": "https://www.linkedin.com/in/erica-prasad-92ab64255"
         },
         {
             "name": "Shweta Nadar",
@@ -67,16 +98,34 @@
             "extLink": "https://in.linkedin.com/in/shweta-nadar-b4b3b3268"
         },
         {
+            "name": "Ria D'costa",
+            "position": "Asst. PR Head",
+            "src": "Ria.webp",
+            "extLink": "https://www.linkedin.com/in/ria-dcosta-436853246"
+        },
+        {
             "name": "Daryl Raj",
             "position": "Social Media Head",
             "src": "Daryl.webp",
             "extLink":"https://in.linkedin.com/in/daryl-raj-9373a3232"
         },
         {
+            "name": "Rucha Tatkare",
+            "position": "Asst. Social Media Head",
+            "src": "Rucha.webp",
+            "extLink": "https://in.linkedin.com/in/rucha-tatkare-03a6a1290"
+        },
+        {
             "name": "Manuel Ferraria",
             "position": "Sponsorship Head",
             "src": "Manuel.webp",
             "extLink": "https://in.linkedin.com/in/manuel-ferreira-b0a63b228"
+        },
+        {
+            "name": "Kenneth Ornello",
+            "position": "Asst. Sponsorship Head",
+            "src": "Kenneth.webp",
+            "extLink": "https://www.linkedin.com/in/kenneth-ornello-853095274"
         },
         {
             "name": "Shanaya Carvalho",

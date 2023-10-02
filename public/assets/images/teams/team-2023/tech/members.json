@@ -1,0 +1,19 @@
+{
+    "data": [
+        {
+            "name": "Merwin Rebello",
+            "position": "Member",
+            "src": "Merwin.webp"
+        },
+        {
+            "name": "Jowin Paulose",
+            "position": "Member",
+            "src": "Jowin.webp"
+        },
+        {
+            "name": "Rahul Boney",
+            "position": "Member",
+            "src": "Rahul.webp"
+        }
+    ]
+}
