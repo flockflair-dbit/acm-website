@@ -1,0 +1,14 @@
+{
+    "data": [
+        {
+            "name": "Andre Fernandes",
+            "position": "Member",
+            "src": "Andre.webp"
+        },
+        {
+            "name": "David James",
+            "position": "Member",
+            "src": "David.webp"
+        }
+    ]
+}
