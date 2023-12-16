@@ -9,7 +9,7 @@ const FileBox: React.FC<{ file: file }> = ({ file }) => {
                     alt="icon" />
             </div>
             <a href={`${file.url}`} target="_blank" className="file-download">
-                <i className="fa fa-download"></i>
+                <i className="fa fa-eye"></i>
             </a>
             <div className="file-man-title">
                 <h5 className="mb-0 text-overflow">{file.fileName}</h5>
