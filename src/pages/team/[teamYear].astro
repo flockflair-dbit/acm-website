@@ -62,7 +62,7 @@ const team = await getTeam(teamYear);
 
 const teamYears = ["2023", "2022", "2021", "2020", "2019", "2018", "2017"];
 const prevYears = [];
-for (let i = 1; i < 5; i++) {
+for (let i = 1; i < teamYears.length; i++) {
     const temp = teamYearNum - i;
     if (teamYears.includes(temp.toString())) prevYears.push(temp);
 }
