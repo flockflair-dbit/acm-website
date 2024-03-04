@@ -5,7 +5,7 @@ import ImageCard from "./components/ImageCard";
 const images = await getImages();
 
 const Gallery: React.FC<{}> = () => {
-    
+
     return (
         <div className="content-block">
         <div className="section-area section-sp1 gallery-bx">
