@@ -18,6 +18,7 @@ const getEvents = async (): Promise<eventInterface[]> => {
             date: event.date.slice(-2),
             month: event.month_name,
             footerImages: event.images,
+            description: event.blog.text
         }
         events.push(temp)
 
