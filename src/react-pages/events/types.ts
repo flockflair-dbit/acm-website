@@ -31,5 +31,6 @@ export interface eventInterface {
     fullDate: string;
     date: string;
     month: string;
-    footerImages: eventFooterImageInterface[]
+    footerImages: eventFooterImageInterface[];
+    description: string;
 }
