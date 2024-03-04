@@ -32,7 +32,7 @@ const imgSrc = getImgSrc(event.slug, eventsImageDir);
 
 <PageLayout
     headTitle={event.title + " | ACM-DBIT"}
-    description={"About the event: " + event.description}
+    description={"About the event: " + event.description.substring(0,140)}
     bannerBg="/assets/images/banner/banner1.jpg"
     pageTitle={event.title}
 >
