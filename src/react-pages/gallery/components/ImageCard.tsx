@@ -6,7 +6,7 @@ const ImageCard: React.FC<{ image: string }> = ({image }) => {
     <div className="ttr-box portfolio-bx">
         <div className="ttr-media media-ov2 media-effect">
             <a href="javascript:void(0);">
-                <img src={image} alt="" loading="lazy" />
+                <img src={image} alt="" loading="lazy" decoding="async"/>
             </a>
             <div className="ov-box">
                 <div className="overlay-icon align-m">
