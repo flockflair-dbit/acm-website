@@ -9,7 +9,8 @@ const getImages = async () => {
         const files = await fs.readdir(galleryDir + subDir);
         files.reverse();
         images = images.concat(
-            files.map((file) => `/assets/images/gallery/${subDir}/${file}`)
+            files.map((file) => `https://raw.githubusercontent.com/flockflair-dbit/acm-website/master/public/assets/images/gallery/${subDir}/${file}`)
+            // files.map((file) => `/assets/images/gallery/${subDir}/${file}`)
         );
     }
     return images;
