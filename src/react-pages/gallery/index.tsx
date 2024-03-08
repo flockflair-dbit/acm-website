@@ -16,7 +16,7 @@ const Gallery: React.FC<{}> = () => {
                         className="ttr-gallery-listing magnific-image row"
                         style={{listStyle: 'none'}}
                     >
-                        {images.map((image) => <ImageCard image={image} />)}
+                        {images.map((image, key) => <ImageCard image={image} key={key}/>)}
                     </div>
                 </div>
             </div>
