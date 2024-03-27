@@ -17,7 +17,7 @@ const Footer: React.FC<{}> = () => {
                                 </div>
 
                                 <div className="col-3">
-                                    <a rel="noopener" href="index.astro" aria-label="Teknack website"><img
+                                    <a rel="noopener" href="https://teknack.in" aria-label="Teknack website"><img
                                         src="/assets/images/teknack.png" alt="Teknack Logo" className="img-fluid my-1 mx-4" /></a>
                                 </div>
                                 <div className="col-3">
