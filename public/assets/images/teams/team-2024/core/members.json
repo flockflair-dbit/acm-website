@@ -1,0 +1,82 @@
+{
+    "data": [
+        {
+            "name": "Ms. Priya Kaul",
+            "position": "Faculty Co-ordinator",
+            "src": "faculty.webp"
+        },
+        {
+            "name": "Joshua Menezes",
+            "position": "Chairperson",
+            "src": "Joshua.webp",
+            "extLink": "https://www.linkedin.com/in/joshua-menezes-32b09b14b/"
+        },
+        {
+            "name": "Tanisha Raorane",
+            "position": "Vice Chaiperson",
+            "src": "Tanisha.webp",
+            "extLink": "https://in.linkedin.com/in/tanisha-raorane-8087a2270"
+        },
+        {
+            "name": "Susanne Lobo",
+            "position": "Secretary",
+            "src": "Susanne.webp",
+            "extLink": "https://www.linkedin.com/in/susanne-lobo-865926284"
+        },
+        {
+            "name": "Ria Dcosta",
+            "position": "Treasurer",
+            "src": "Ria.webp",
+            "extLink": "https://www.linkedin.com/in/ria-dcosta-436853246"
+        },
+        {
+            "name": "Andre Fernandes",
+            "position": "Product Designer",
+            "src": "Andre.webp",
+            "extLink": "https://www.linkedin.com/in/andre-fernandes-a04933248"
+        },
+        {
+            "name": "Jayesh Wani",
+            "position": "Technical Head",
+            "src": "Jayesh.webp",
+            "extLink": "https://www.linkedin.com/in/jayesh-wani/"
+        },
+        {
+            "name": "Sahil Davkhar",
+            "position": "Creative Head",
+            "src": "Sahil.webp",
+            "extLink": "https://www.linkedin.com/in/sahil-davkhar-779a94262"
+        },
+        {
+            "name": "Rucha Tatkare",
+            "position": "Publicity Head",
+            "src": "Rucha.webp",
+            "extLink": "https://in.linkedin.com/in/rucha-tatkare-03a6a1290"
+        },
+        {
+            "name": "Erica Prasad",
+            "position": "Administration Head",
+            "src": "Erica.webp",
+            "extLink": "https://www.linkedin.com/in/erica-prasad-92ab64255"
+        },
+        {
+            "name": "Kenneth Ornello",
+            "position": "Sponsorship Head",
+            "src": "Kenneth.webp",
+            "extLink": "https://www.linkedin.com/in/kenneth-ornello-853095274"
+        },
+        
+        {
+            "name": "Yashas Khot",
+            "position": "Advisor",
+            "src": "Yashas.webp",
+            "extLink": "https://www.linkedin.com/in/yashaskhot/"
+        },
+        {
+            "name": "Nicole Saldanha",
+            "position": "Event Advisor",
+            "src": "Nicole.webp",
+            "extLink": "https://in.linkedin.com/in/nicole-saldanha-97b12324b"
+        }
+    ]
+}

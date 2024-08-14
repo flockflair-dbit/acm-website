@@ -79,7 +79,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
                             </div>
                             <ul className="nav navbar-nav">
                                 <li className={currPage === "home" ? "active" : undefined}><a href="/" onClick={handleRedirect}>Home</a></li>
-                                <li className={currPage === "team" ? "active" : undefined}><a href="/team/2023" onClick={handleRedirect}>Team</a></li>
+                                <li className={currPage === "team" ? "active" : undefined}><a href="/team/2024" onClick={handleRedirect}>Team</a></li>
                                 <li className={currPage === "gallery" ? "active" : undefined}><a href="/gallery" onClick={handleRedirect}>Gallery</a></li>
                                 <li className={currPage === "courses" ? "active" : undefined}><a href="/courses" onClick={handleRedirect}>Courses</a></li>
                                 <li className={currPage === "reports" ? "active" : undefined}><a href="/reports" onClick={handleRedirect}>Reports</a></li>
