@@ -44,7 +44,7 @@ const getTeam = async (teamYear: string) => {
 };
 
 export const getStaticPaths = () => {
-    const teamYears = ["2023", "2022", "2021", "2020", "2019", "2018", "2017"];
+    const teamYears = ["2024","2023", "2022", "2021", "2020", "2019", "2018", "2017"];
     return teamYears.map((teamYear) => {
         return { params: { teamYear } };
     });
@@ -60,7 +60,7 @@ const pageTitle = `Core Team ${teamYear} - ${teamYearNum + 1}`;
 
 const team = await getTeam(teamYear);
 
-const teamYears = ["2023", "2022", "2021", "2020", "2019", "2018", "2017"];
+const teamYears = ["2024","2023", "2022", "2021", "2020", "2019", "2018", "2017"];
 ---
 
 <PageLayout
