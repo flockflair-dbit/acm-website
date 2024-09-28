@@ -1,0 +1,27 @@
+{
+    "data":[{
+        "name": "Asma Sayed",
+        "position": "Tech Team",
+        "src": "Asma.webp",
+        "extLink": "https://www.linkedin.com/in/kenneth-ornello-853095274"
+    },
+    {
+        "name": "Ratan Kalke",
+        "position": "Tech Team",
+        "src": "Ratan.webp",
+        "extLink": "https://www.linkedin.com/in/kenneth-ornello-853095274"
+    },
+    {
+        "name": "Samantha Anthony",
+        "position": "Tech Team",
+        "src": "Samantha.webp",
+        "extLink": "https://www.linkedin.com/in/kenneth-ornello-853095274"
+    },
+    {
+        "name": "Shariya Ansari",
+        "position": "Tech Team",
+        "src": "Shariya.webp",
+        "extLink": "https://www.linkedin.com/in/kenneth-ornello-853095274"
+    }
+]
+}
