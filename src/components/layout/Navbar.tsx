@@ -89,6 +89,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
                                     <ul className="sub-menu">
                                         <li><a href="/e-xhibition">E-xhibition</a></li>
                                         <li><a href="/open-source-submit">Open-Source Projects</a></li>
+                                        <li><a href="/calendar">Calender</a></li>
                                     </ul>
                                 </li>
                             </ul>

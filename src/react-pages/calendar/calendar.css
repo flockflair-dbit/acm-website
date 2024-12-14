@@ -1,0 +1,5 @@
+/* Custom FullCalendar Scroll Styles */
+.fc .fc-scroller-liquid-absolute {
+    inset: 0px; /* Ensures the scroller fills the available space */
+     /* Use absolute positioning to position the scroller correctly */
+}
