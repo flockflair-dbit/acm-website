@@ -5,7 +5,7 @@ const FileBox: React.FC<{ file: file }> = ({ file }) => {
         <div className="file-man-box">
             <div className="file-img-box">
                 <img
-                    src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg"
+                    src="public\assets\images\icon\pdf-svgrepo-com.svg"
                     alt="icon" />
             </div>
             <a href={`${file.url}`} target="_blank" className="file-download">
