@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "name": "Risa",
+      "position": "Tech Team",
+      "src": "risacutout.webp",
+      "extLink": ""
+    },
+    {
+      "name": "Varad",
+      "position": "Tech Team",
+      "src": "varadcutout.webp",
+      "extLink": ""
+    },
+    {
+      "name": "Swaroop",
+      "position": "Tech Team",
+      "src": "swaroopcutout.webp",
+      "extLink": ""
+    }
+  ]
+}

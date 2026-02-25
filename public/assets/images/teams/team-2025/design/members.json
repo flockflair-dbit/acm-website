@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "name": "Manish",
+      "position": "Designer",
+      "src": "manishcutout.webp",
+      "extLink": ""
+    },
+    {
+      "name": "Mrunal",
+      "position": "Designer",
+      "src": "mrunalcutout.webp",
+      "extLink": ""
+    },
+    {
+      "name": "Sharon",
+      "position": "Designer",
+      "src": "sharoncutout.webp",
+      "extLink": ""
+    },
+    {
+      "name": "Soham",
+      "position": "Designer",
+      "src": "sohamcutout.webp",
+      "extLink": ""
+    }
+  ]
+}

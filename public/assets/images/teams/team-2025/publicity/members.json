@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "name": "Blossom",
+      "position": "Publicity team",
+      "src": "blossomcutout.webp",
+      "extLink": ""
+    },
+    {
+      "name": "Marika",
+      "position": "Publicity team",
+      "src": "mrikacutout.webp ",
+      "extLink": ""
+    },
+    {
+      "name": "Darren",
+      "position": "Publicity team",
+      "src": "darrencutout.webp",
+      "extLink": ""
+    }
+  ]
+}
