@@ -1334,7 +1334,7 @@
 	8. PAGE BANNER
 =========================*/
 .page-banner {
-  height: 300px;
+  height: 350px;  
   background-size: cover;
   background-position: center center;
   display: table;
@@ -4078,8 +4078,8 @@ button.back-to-top {
   min-height: 500px;
   /* background-image: url("/assets/images/background/bg2.jpg"); */
   background: linear-gradient(to right,
-      rgba(2, 0, 11, 0.8),
-      rgba(2, 0, 11, 0.8)),
+      rgba(2, 0, 11, 0.5),
+      rgba(2, 0, 11, 0.5)),
     url(/assets/images/banner/b4.webp) no-repeat center center;
   background-size: cover;
   background-position: center;
