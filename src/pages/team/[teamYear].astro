@@ -17,6 +17,7 @@ const teamTitles: teamTitleInterface = {
     pdt: { title: "Product Development", renderOrder: 1 },
     tech: { title: "Tech", renderOrder: 2 },
     design: { title: "Design", renderOrder: 3 },
+    publicity: { title: "Publicity", renderOrder: 4},
     creative: { title: "Creative", renderOrder: 3 },
 };
 
@@ -45,7 +46,7 @@ const getTeam = async (teamYear: string) => {
 };
 
 export const getStaticPaths = () => {
-    const teamYears = ["2024","2023", "2022", "2021", "2020", "2019", "2018", "2017"];
+    const teamYears = ["2025","2024","2023", "2022", "2021", "2020", "2019", "2018", "2017"];
     return teamYears.map((teamYear) => {
         return { params: { teamYear } };
     });
@@ -61,7 +62,7 @@ const pageTitle = `Core Team ${teamYear} - ${teamYearNum + 1}`;
 
 const team = await getTeam(teamYear);
 
-const teamYears = ["2024","2023", "2022", "2021", "2020", "2019", "2018", "2017"];
+const teamYears = ["2025","2024","2023", "2022", "2021", "2020", "2019", "2018", "2017"];
 ---
 
 <PageLayout
@@ -69,7 +70,7 @@ const teamYears = ["2024","2023", "2022", "2021", "2020", "2019", "2018", "2017"
     description={description}
     canonical={"/team-" + teamYear}
     pageTitle={pageTitle}
-    bannerBg="/assets/images/banner/banner2.jpg"
+    bannerBg="/assets/images/banner/banner5.png"
 >
     <div class="content-block">
         <div class="section-area section-sp1">
