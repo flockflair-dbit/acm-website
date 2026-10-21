@@ -14,10 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Get latest code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Use Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with: 
         node-version: "18.x"
     - name: Install dependencies
@@ -25,7 +25,7 @@ jobs:
     - name: Build static site
       run: npm run build
     - name: Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.2.0
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: dbit.acm.org
         username: ${{ secrets.username}}

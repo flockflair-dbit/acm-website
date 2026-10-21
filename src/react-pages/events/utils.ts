@@ -23,6 +23,6 @@ const getEvents = async (): Promise<eventInterface[]> => {
         events.push(temp)
 
     }
-    return events.splice(0, 23)
+    return events
 }
 export { getEvents }
