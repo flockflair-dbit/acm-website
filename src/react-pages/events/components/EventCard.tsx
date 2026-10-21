@@ -3,8 +3,9 @@ import type { eventInterface } from "../types"
 const dirPath = "/assets/images/events"
 
 const EventCard: React.FC<{ event: eventInterface, imageDir: string[] }> = ({ event, imageDir }) => {
-    // TODO: replace 23.webp with a default image
-    const imgSrc = imageDir.includes(event.slug + ".webp") ? `${dirPath}/${event.slug}.webp` : `${dirPath}/23.webp`
+    const imgSrc = imageDir.includes(event.slug + ".webp")
+        ? `${dirPath}/${event.slug}.webp`
+        : (event.imgSrc || `${dirPath}/23.webp`)
 
     const tempCon = String(event.contentRaw).split("\\n")
     let description = ""

@@ -18,16 +18,18 @@ export const getStaticPaths = async () => {
 type Params = InferGetStaticParamsType<typeof getStaticPaths>;
 const { slug } = Astro.params as Params;
 
-const getImgSrc = (slug: string, imgDir: string[]) => {
+const getImgSrc = (slug: string, hygraphImg: string | undefined, imgDir: string[]) => {
     if (imgDir.includes(slug + ".webp"))
         return `/assets/images/events/${slug}.webp`;
+    else if (hygraphImg)
+        return hygraphImg;
     else return `/assets/images/events/23.webp`;
 };
 
 // TODO: write query to get single event
 const event = (await getEvents()).filter((event) => event.slug === slug)[0];
 const eventsImageDir = await fs.readdir("./public/assets/images/events");
-const imgSrc = getImgSrc(event.slug, eventsImageDir);
+const imgSrc = getImgSrc(event.slug, event.imgSrc, eventsImageDir);
 ---
 
 <PageLayout
