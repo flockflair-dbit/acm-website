@@ -1,6 +1,12 @@
 {
   "data": [
     {
+      "name": "Ms. Priti Andhale",
+      "position": "Faculty Coordinator",
+      "src": "priti.webp",
+      "extLink": ""
+    },
+    {
       "name": "Verushka Fernandes",
       "position": "Chairperson",
       "src": "verushka.webp",
@@ -67,36 +73,6 @@
       "extLink": "https://www.linkedin.com/in/arya-tarke-5969533b0/"
     },
     {
-      "name": "Serah Francis",
-      "position": "Advisor",
-      "src": "serah.webp",
-      "extLink": "https://www.linkedin.com/in/serah-francis-386999328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-    },
-    {
-      "name": "Kaustubh Deshmane",
-      "position": "Advisor",
-      "src": "kaustubh.webp",
-      "extLink": "https://www.linkedin.com/in/kaustubh-deshmane-162924278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-    },
-    {
-      "name": "Joshua Almeida",
-      "position": "Advisor",
-      "src": "joshua.webp",
-      "extLink": "https://www.linkedin.com/in/joshua-almeida-107771293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-    },
-    {
-      "name": "Johan Fernandes",
-      "position": "Advisor",
-      "src": "johan.webp",
-      "extLink": "https://www.linkedin.com/in/johan-fernandes-extacold?utm_source=share&utm_campaign=share_via"
-    },
-    {
-      "name": "Dev Dominic",
-      "position": "Advisor",
-      "src": "dev.webp",
-      "extLink": "https://www.linkedin.com/in/devdominic"
-    },
-    {
       "name": "Ishan Garud",
       "position": "Asst. Technical Head",
       "src": "ishan.webp",
@@ -143,6 +119,36 @@
       "position": "Asst. Social Media Head",
       "src": "juee.webp",
       "extLink": "https://www.linkedin.com/in/juee-chavan-972456366/"
+    },
+    {
+      "name": "Serah Francis",
+      "position": "Advisor",
+      "src": "serah.webp",
+      "extLink": "https://www.linkedin.com/in/serah-francis-386999328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      "name": "Kaustubh Deshmane",
+      "position": "Advisor",
+      "src": "kaustubh.webp",
+      "extLink": "https://www.linkedin.com/in/kaustubh-deshmane-162924278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      "name": "Joshua Almeida",
+      "position": "Advisor",
+      "src": "joshua.webp",
+      "extLink": "https://www.linkedin.com/in/joshua-almeida-107771293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      "name": "Johan Fernandes",
+      "position": "Advisor",
+      "src": "johan.webp",
+      "extLink": "https://www.linkedin.com/in/johan-fernandes-extacold?utm_source=share&utm_campaign=share_via"
+    },
+    {
+      "name": "Dev Dominic",
+      "position": "Advisor",
+      "src": "dev.webp",
+      "extLink": "https://www.linkedin.com/in/devdominic"
     }
   ]
 }
